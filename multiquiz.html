@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiQuiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MultiQuiz Viewer</h1>
+            <div class="controls">
+                <div class="upload-area" id="dropZone">
+                    <p><strong>.multiquiz</strong> ファイルをここにドラッグ&ドロップ<br>または</p>
+                    <label class="btn">
+                        ファイルを選択
+                        <input type="file" id="fileInput" accept=".multiquiz" style="display:none;">
+                    </label>
+                </div>
+                <div class="url-load">
+                    <input type="text" id="urlInput" placeholder="https://example.com/quiz.multiquiz">
+                    <button id="loadUrlBtn">URLから読み込み</button>
+                </div>
+            </div>
+        </header>
+
+        <div id="quizContainer" class="hidden">
+            <div class="quiz-header">
+                <h2 id="quizTitle"></h2>
+                <p id="quizDescription"></p>
+            </div>
+
+            <div id="sections"></div>
+
+            <div class="quiz-footer">
+                <button id="submitAllBtn">全問回答を提出</button>
+                <button id="resetBtn">リセット</button>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="hidden"></div>
+    </div>
+
+    <script src="scanner.js"></script>
+    <script>
+        let currentQuiz = null;
+        let userAnswers = {};
+
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const urlInput = document.getElementById('urlInput');
+        const loadUrlBtn = document.getElementById('loadUrlBtn');
+        const quizContainer = document.getElementById('quizContainer');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // Drag & Drop
+        dropZone.addEventListener('dragover', e => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+        dropZone.addEventListener('drop', e => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file && file.name.endsWith('.multiquiz')) loadFile(file);
+        });
+
+        fileInput.addEventListener('change', e => {
+            if (e.target.files[0]) loadFile(e.target.files[0]);
+        });
+
+        loadUrlBtn.addEventListener('click', async () => {
+            const url = urlInput.value.trim();
+            if (!url) return;
+            try {
+                showError('');
+                const res = await fetch(url);
+                if (!res.ok) throw new Error('ファイルの取得に失敗しました');
+                const text = await res.text();
+                parseAndRender(text);
+            } catch (err) {
+                showError(err.message);
+            }
+        });
+
+        function loadFile(file) {
+            const reader = new FileReader();
+            reader.onload = e => parseAndRender(e.target.result);
+            reader.readAsText(file);
+        }
+
+        function showError(msg) {
+            errorMessage.textContent = msg;
+            errorMessage.classList.toggle('hidden', !msg);
+        }
+
+        async function parseAndRender(content) {
+            try {
+                currentQuiz = window.MultiQuizScanner.parse(content);
+                userAnswers = {};
+                renderQuiz();
+                quizContainer.classList.remove('hidden');
+                showError('');
+            } catch (err) {
+                showError('解析エラー: ' + err.message);
+                console.error(err);
+            }
+        }
+
+        function renderQuiz() {
+            document.getElementById('quizTitle').textContent = currentQuiz.title || 'Untitled Quiz';
+            document.getElementById('quizDescription').textContent = currentQuiz.description || '';
+
+            const sectionsDiv = document.getElementById('sections');
+            sectionsDiv.innerHTML = '';
+
+            currentQuiz.sections.forEach((section, secIdx) => {
+                const sectionEl = document.createElement('div');
+                sectionEl.className = 'section';
+                sectionEl.innerHTML = `<h3>${section.title}</h3>`;
+
+                section.questions.forEach((q, qIdx) => {
+                    const globalQIdx = `${secIdx}-${qIdx}`;
+                    const qEl = document.createElement('div');
+                    qEl.className = 'question';
+                    
+                    qEl.innerHTML = `
+                        <div class="question-header">
+                            <span class="q-number">Q${qIdx + 1}</span>
+                            <span class="points">(${q.points || 2}点)</span>
+                        </div>
+                        <div class="question-text" id="text-${globalQIdx}"></div>
+                        <div class="answers" id="answers-${globalQIdx}"></div>
+                        ${q.note ? `<div class="note hidden" id="note-${globalQIdx}">解説: ${q.note}</div>` : ''}
+                    `;
+
+                    const textContainer = qEl.querySelector(`#text-${globalQIdx}`);
+                    const answersContainer = qEl.querySelector(`#answers-${globalQIdx}`);
+
+                    // 穴埋め問題の特別処理
+                    if (q.type === 'fill') {
+                        textContainer.innerHTML = `<strong>以下の本文中の入力欄に、適切な語句を入力しなさい。</strong>`;
+                        renderFillQuestion(q, answersContainer, globalQIdx);
+                    } else {
+                        textContainer.innerHTML = q.question || '';
+                        renderQuestionInput(q, answersContainer, globalQIdx);
+                    }
+
+                    sectionEl.appendChild(qEl);
+                });
+
+                sectionsDiv.appendChild(sectionEl);
+            });
+        }
+
+        function renderQuestionInput(q, container, globalQIdx) {
+            const type = q.type;
+
+            if (type === 'single') {
+                q.options.forEach((opt, i) => {
+                    const label = document.createElement('label');
+                    label.className = 'option';
+                    label.innerHTML = `<input type="radio" name="q-${globalQIdx}" value="${i}"> ${opt}`;
+                    label.querySelector('input').addEventListener('change', e => userAnswers[globalQIdx] = parseInt(e.target.value));
+                    container.appendChild(label);
+                });
+            }
+            else if (type === 'multiple') {
+                q.options.forEach((opt, i) => {
+                    const label = document.createElement('label');
+                    label.className = 'option';
+                    label.innerHTML = `<input type="checkbox" value="${i}"> ${opt}`;
+                    label.querySelector('input').addEventListener('change', () => {
+                        const checked = Array.from(container.querySelectorAll('input:checked')).map(cb => parseInt(cb.value));
+                        userAnswers[globalQIdx] = checked;
+                    });
+                    container.appendChild(label);
+                });
+            }
+            else if (type === 'truefalse') {
+                const div = document.createElement('div');
+                div.className = 'truefalse';
+                div.innerHTML = `
+                    <label><input type="radio" name="q-${globalQIdx}" value="true"> True</label>
+                    <label><input type="radio" name="q-${globalQIdx}" value="false"> False</label>
+                `;
+                div.querySelectorAll('input').forEach(r => {
+                    r.addEventListener('change', e => userAnswers[globalQIdx] = e.target.value === 'true');
+                });
+                container.appendChild(div);
+            }
+            else if (type === 'input') {
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.placeholder = 'ここに回答を入力してください';
+                input.addEventListener('input', e => userAnswers[globalQIdx] = e.target.value.trim());
+                container.appendChild(input);
+            }
+            else if (type === 'sort') {
+                const ul = document.createElement('ul');
+                ul.className = 'sortable';
+                q.items.forEach(item => {
+                    const li = document.createElement('li');
+                    li.draggable = true;
+                    li.textContent = item;
+                    li.dataset.value = item;
+                    ul.appendChild(li);
+                });
+                makeSortable(ul, globalQIdx);
+                container.appendChild(ul);
+                userAnswers[globalQIdx] = [...q.items];
+            }
+            else if (type === 'matching') {
+                const matchDiv = document.createElement('div');
+                matchDiv.className = 'matching';
+                q.left.forEach((leftItem, i) => {
+                    const row = document.createElement('div');
+                    row.className = 'match-row';
+                    row.innerHTML = `
+                        <span>${leftItem}</span>
+                        <select data-index="${i}">
+                            <option value="">選択...</option>
+                            ${q.right.map((r, j) => `<option value="${j}">${r}</option>`).join('')}
+                        </select>
+                    `;
+                    row.querySelector('select').addEventListener('change', e => {
+                        if (!userAnswers[globalQIdx]) userAnswers[globalQIdx] = [];
+                        userAnswers[globalQIdx][i] = parseInt(e.target.value);
+                    });
+                    matchDiv.appendChild(row);
+                });
+                container.appendChild(matchDiv);
+            }
+        }
+
+        // 穴埋め問題専用表示
+        function renderFillQuestion(q, container, globalQIdx) {
+            const fillDiv = document.createElement('div');
+            fillDiv.className = 'fill-container';
+            fillDiv.innerHTML = q.question || '';
+
+            Object.keys(q.blanks || {}).forEach(key => {
+                const regex = new RegExp(`\\[\\[${key}\\]\\]`, 'g');
+                fillDiv.innerHTML = fillDiv.innerHTML.replace(regex, 
+                    `<input type="text" class="blank-input" data-key="${key}" placeholder="${key}">`);
+            });
+
+            fillDiv.querySelectorAll('.blank-input').forEach(inp => {
+                inp.addEventListener('input', () => {
+                    if (!userAnswers[globalQIdx]) userAnswers[globalQIdx] = {};
+                    userAnswers[globalQIdx][inp.dataset.key] = inp.value.trim();
+                });
+            });
+
+            container.appendChild(fillDiv);
+        }
+
+        function makeSortable(ul, globalQIdx) {
+            ul.addEventListener('dragstart', e => {
+                e.dataTransfer.setData('text/plain', e.target.dataset.value);
+                e.target.classList.add('dragging');
+            });
+            ul.addEventListener('dragend', e => e.target.classList.remove('dragging'));
+            ul.addEventListener('dragover', e => e.preventDefault());
+            ul.addEventListener('drop', e => {
+                e.preventDefault();
+                const dragging = ul.querySelector('.dragging');
+                const target = e.target.closest('li');
+                if (dragging && target && dragging !== target) {
+                    const children = Array.from(ul.children);
+                    if (children.indexOf(dragging) < children.indexOf(target)) {
+                        target.after(dragging);
+                    } else {
+                        target.before(dragging);
+                    }
+                }
+                userAnswers[globalQIdx] = Array.from(ul.children).map(li => li.dataset.value);
+            });
+        }
+
+        // 提出ボタン
+        document.getElementById('submitAllBtn').addEventListener('click', () => {
+            if (!currentQuiz) return;
+            let score = 0, total = 0;
+
+            currentQuiz.sections.forEach((section, secIdx) => {
+                section.questions.forEach((q, qIdx) => {
+                    const idx = `${secIdx}-${qIdx}`;
+                    const ans = userAnswers[idx];
+                    total += q.points || 2;
+
+                    let correct = false;
+                    if (q.type === 'single') correct = parseInt(ans) === q.correct;
+                    else if (q.type === 'multiple') correct = JSON.stringify((ans||[]).sort()) === JSON.stringify((q.correct||[]).sort());
+                    else if (q.type === 'truefalse') correct = ans === q.correct;
+                    else if (q.type === 'input') {
+                        const user = String(ans||'').trim();
+                        const corr = String(q.correct||'').trim();
+                        correct = q.caseSensitive ? user === corr : user.toLowerCase() === corr.toLowerCase();
+                    }
+                    else if (q.type === 'fill') {
+                        correct = Object.keys(q.blanks).every(k => (ans && ans[k]) === q.blanks[k]);
+                    }
+                    else if (q.type === 'sort' || q.type === 'matching') {
+                        correct = JSON.stringify(ans) === JSON.stringify(q.correct);
+                    }
+
+                    if (correct) score += q.points || 2;
+
+                    const note = document.getElementById(`note-${idx}`);
+                    if (note) note.classList.remove('hidden');
+                });
+            });
+
+            alert(`採点結果: ${score} / ${total} 点`);
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            if (confirm('すべての回答をリセットしますか？')) location.reload();
+        });
+    </script>
+</body>
+</html>
