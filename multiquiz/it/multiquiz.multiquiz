@@ -1,119 +1,149 @@
 // ========================================
 // タイトル・全体設定
 // ========================================
-title: "MultiQuiz 完全記法テスト"
-description: "すべての問題タイプを網羅したテストファイル（全12問）"
-points_default: 2
+title: ".multiquiz 記法 マスタークイズ"
+description: "あなたが作った.multiquizファイルの記法を徹底的に確認するテストです。"
+points_default: 3
 
 // ========================================
-// 大問1: 全問題タイプテスト
+// 大問1: 基本構造
 // ========================================
-section: "大問1: 問題タイプ完全テスト"
+section: "大問1: 基本構造"
 
 {
-  question: "単一選択問題の例です。正解は選択肢2です。",
+  question: ".multiquizファイルの先頭に書くべきタイトル設定の正しい書き方は？",
   type: "single",
-  options: ["選択肢1", "選択肢2（正解）", "選択肢3", "選択肢4"],
+  options: ["title = \"クイズ\"", "title: \"クイズ\"", "title = クイズ", "# title: クイズ"],
   correct: 1,
-  points: 2,
-  note: "0から始まるインデックスで正解を指定"
-}
-
-{
-  question: "複数選択問題（2つ以上選択可）",
-  type: "multiple",
-  options: ["選択肢A", "選択肢B", "選択肢C", "選択肢D"],
-  correct: [0, 2],
   points: 4,
-  note: "正解はAとC"
+  note: "コロン(:)を使う"
 }
 
 {
-  question: "True / False問題",
-  type: "truefalse",
-  correct: true,
-  points: 2,
-  note: "正解はTrue"
-}
-
-{
-  question: "記述式問題：Markdownの見出しレベル1の記法は？",
+  question: "全体のデフォルト得点を設定するキーは？",
   type: "input",
-  correct: "#",
-  caseSensitive: false,
-  points: 3,
-  note: "大文字小文字は無視"
+  correct: "points_default",
+  points: 3
 }
 
 {
-  question: "穴埋め問題：本文中の [[1]] と [[2]] に適切な語句を入れてください。",
-  type: "fill",
-  blanks: {
-    "1": "マークダウン",
-    "2": "最強"
-  },
+  question: "セクション（大問）を作る正しい記法は？",
+  type: "input",
+  correct: "section: \"大問1: タイトル\"",
+  points: 4
+}
+
+// ========================================
+// 大問2: 問題ブロック
+// ========================================
+section: "大問2: 問題ブロックの書き方"
+
+{
+  question: "問題ブロックは必ず何で囲む？",
+  type: "single",
+  options: ["[]", "{}", "()", "<>"],
+  correct: 1,
+  points: 3
+}
+
+{
+  question: "単一選択問題のtypeに指定する文字列は？",
+  type: "input",
+  correct: "single",
+  points: 2
+}
+
+{
+  question: "複数選択問題の正解の書き方は？",
+  type: "input",
+  correct: "correct: [0, 2]",
   points: 5,
-  note: "[[キー名]] で穴を指定"
+  note: "配列でインデックスを指定"
 }
 
 {
-  question: "以下の語句を正しい順序に並び替えてください。",
-  type: "sort",
-  items: ["HTML", "Markdown", "LaTeX", "Asciidoc"],
-  correct: ["Markdown", "HTML", "LaTeX", "Asciidoc"],
-  points: 6,
-  note: "ドラッグ&ドロップで並び替え"
-}
-
-{
-  question: "左と右を正しく対応させてください。",
-  type: "matching",
-  left: ["太字", "斜体", "インラインコード", "リンク"],
-  right: ["**テキスト**", "*テキスト*", "`コード`", "[テキスト](URL)"],
-  correct: [0, 1, 2, 3],
-  points: 8,
-  note: "左をクリック→右をクリックで線を繋げてください"
-}
-
-// ========================================
-// 大問2: 高度なテスト
-// ========================================
-section: "大問2: 高度な記法テスト"
-
-{
-  question: "Markdownで引用の中にリストを入れる正しい書き方は？（1行で）",
-  type: "input",
-  correct: "> - リスト",
-  points: 7
-}
-
-{
-  question: "以下のうちGitHub Flavored Markdown特有の機能はどれ？",
-  type: "multiple",
-  options: ["テーブル", "絵文字 :smile:", "タスクリスト", "脚注"],
-  correct: [0, 1, 2],
-  points: 5
-}
-
-{
-  question: "コードブロックに言語指定と行番号表示をしたい場合の書き始めは？",
-  type: "input",
-  correct: "```python",
+  question: "記述問題（input）で大文字小文字を区別させるには？",
+  type: "single",
+  options: ["caseSensitive: true", "sensitive: yes", "strict: true", "ignoreCase: false"],
+  correct: 0,
   points: 4
 }
 
 {
-  question: "超難問：以下の要件をすべて満たすMarkdownを書け。\n・見出し2\n・中にコードブロック（javascript）\n・引用文の中に太字",
+  question: "穴埋め問題で使うキー名と正解の書き方は？",
   type: "input",
-  correct: "## タイトル\n\n```javascript\nconsole.log('Hello');\n```\n\n> **重要**",
-  points: 12,
-  note: "厳密に判定されます"
+  correct: "blanks: { \"1\": \"正解語\" }",
+  points: 6
+}
+
+// ========================================
+// 大問3: 高度な記法
+// ========================================
+section: "大問3: 高度な記法"
+
+{
+  question: "並び替え問題で使うプロパティ名は？（2つ）",
+  type: "multiple",
+  options: ["items", "correct", "options", "order"],
+  correct: [0, 1],
+  points: 5
 }
 
 {
-  question: "このクイズの総問題数は？",
-  type: "single",
-  options: ["10問", "12問", "15問", "30問"],
-  correct: 1,
+  question: "マッチング問題で左側の配列名は？",
+  type: "input",
+  correct: "left",
   points: 3
+}
+
+{
+  question: "解説を表示させるプロパティ名は？",
+  type: "input",
+  correct: "note",
+  points: 3
+}
+
+{
+  question: "変数を定義したい場合の書き方は？",
+  type: "input",
+  correct: "username = \"テスト\"",
+  points: 4,
+  note: "イコール(=)を使う"
+}
+
+{
+  question: "コメントアウトに使う記号は？",
+  type: "single",
+  options: ["//", "#", "/* */", "すべて使える"],
+  correct: 0,
+  points: 3
+}
+
+// ========================================
+// 大問4: 総まとめ（超難）
+// ========================================
+section: "大問4: 総まとめ（難問）"
+
+{
+  question: "以下のうち正しい記述はどれ？（複数選択）",
+  type: "multiple",
+  options: ["correct: 2", "correct: [0,3]", "points: 5", "type: \"fill\""],
+  correct: [0,1,2,3],
+  points: 8
+}
+
+{
+  question: "完全な単一選択問題の最小構成を記述せよ（重要な部分だけ）。",
+  type: "input",
+  correct: "question: \"...\"\ntype: \"single\"\noptions: [...]\ncorrect: 0",
+  points: 12,
+  note: "厳密一致ではないが主要キーを含むこと"
+}
+
+{
+  question: ".multiquizファイル全体の構造で正しい順序は？",
+  type: "sort",
+  items: ["titleとdescription", "変数定義", "section宣言", "問題ブロック{}"],
+  correct: ["titleとdescription", "変数定義", "section宣言", "問題ブロック{}"],
+  points: 10
 }
