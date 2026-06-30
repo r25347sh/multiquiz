@@ -11,6 +11,7 @@
         <header>
             <h1>MultiQuiz Viewer</h1>
             <div class="controls">
+                <!-- ファイルアップロード -->
                 <div class="upload-area" id="dropZone">
                     <p><strong>.multiquiz</strong> ファイルをここにドラッグ&ドロップ<br>または</p>
                     <label class="btn">
@@ -18,9 +19,17 @@
                         <input type="file" id="fileInput" accept=".multiquiz" style="display:none;">
                     </label>
                 </div>
+
+                <!-- URL直接入力 -->
                 <div class="url-load">
                     <input type="text" id="urlInput" placeholder="https://example.com/quiz.multiquiz">
                     <button id="loadUrlBtn">URLから読み込み</button>
+                </div>
+
+                <!-- IDから読み込み（link.yml使用） -->
+                <div class="id-load">
+                    <input type="text" id="idInput" placeholder="クイズIDを入力（例: math01）">
+                    <button id="loadIdBtn">IDから読み込み</button>
                 </div>
             </div>
         </header>
@@ -43,22 +52,40 @@
     </div>
 
     <script src="scanner.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
     <script>
         let currentQuiz = null;
         let userAnswers = {};
+        let quizLinks = {};   // link.yml の内容を保持
 
         const dropZone = document.getElementById('dropZone');
         const fileInput = document.getElementById('fileInput');
         const urlInput = document.getElementById('urlInput');
+        const idInput = document.getElementById('idInput');
         const loadUrlBtn = document.getElementById('loadUrlBtn');
+        const loadIdBtn = document.getElementById('loadIdBtn');
         const quizContainer = document.getElementById('quizContainer');
         const errorMessage = document.getElementById('errorMessage');
 
-        // Drag & Drop
-        dropZone.addEventListener('dragover', e => {
-            e.preventDefault();
-            dropZone.classList.add('dragover');
-        });
+        // ==================== 初期化 ====================
+        async function loadLinkYaml() {
+            try {
+                const res = await fetch('link.yml');
+                if (res.ok) {
+                    const yamlText = await res.text();
+                    quizLinks = jsyaml.load(yamlText) || {};
+                    console.log('link.yml を読み込みました:', quizLinks);
+                }
+            } catch (e) {
+                console.log('link.yml が見つかりませんでした（任意ファイルです）');
+            }
+        }
+
+        // ページ読み込み時にlink.ymlを試しに読み込む
+        window.addEventListener('load', loadLinkYaml);
+
+        // ==================== ファイルアップロード ====================
+        dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
         dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
         dropZone.addEventListener('drop', e => {
             e.preventDefault();
@@ -71,32 +98,52 @@
             if (e.target.files[0]) loadFile(e.target.files[0]);
         });
 
+        function loadFile(file) {
+            const reader = new FileReader();
+            reader.onload = e => parseAndRender(e.target.result, 'ローカルファイル');
+            reader.readAsText(file);
+        }
+
+        // ==================== URL読み込み ====================
         loadUrlBtn.addEventListener('click', async () => {
             const url = urlInput.value.trim();
-            if (!url) return;
+            if (!url) return showError('URLを入力してください');
+            loadFromUrl(url);
+        });
+
+        async function loadFromUrl(url) {
             try {
                 showError('');
                 const res = await fetch(url);
                 if (!res.ok) throw new Error('ファイルの取得に失敗しました');
                 const text = await res.text();
-                parseAndRender(text);
+                parseAndRender(text, url);
             } catch (err) {
                 showError(err.message);
             }
-        });
-
-        function loadFile(file) {
-            const reader = new FileReader();
-            reader.onload = e => parseAndRender(e.target.result);
-            reader.readAsText(file);
         }
 
+        // ==================== ID読み込み（link.yml） ====================
+        loadIdBtn.addEventListener('click', async () => {
+            const id = idInput.value.trim();
+            if (!id) return showError('クイズIDを入力してください');
+
+            const url = quizLinks[id];
+            if (!url) {
+                showError(`ID "${id}" が見つかりません。link.yml に登録されていますか？`);
+                return;
+            }
+
+            loadFromUrl(url);
+        });
+
+        // ==================== 共通処理 ====================
         function showError(msg) {
             errorMessage.textContent = msg;
             errorMessage.classList.toggle('hidden', !msg);
         }
 
-        async function parseAndRender(content) {
+        async function parseAndRender(content, source = '') {
             try {
                 currentQuiz = window.MultiQuizScanner.parse(content);
                 userAnswers = {};
@@ -109,6 +156,7 @@
             }
         }
 
+        // （以下は前回と同じ renderQuiz, renderQuestionInput, renderFillQuestion など）
         function renderQuiz() {
             document.getElementById('quizTitle').textContent = currentQuiz.title || 'Untitled Quiz';
             document.getElementById('quizDescription').textContent = currentQuiz.description || '';
@@ -139,7 +187,6 @@
                     const textContainer = qEl.querySelector(`#text-${globalQIdx}`);
                     const answersContainer = qEl.querySelector(`#answers-${globalQIdx}`);
 
-                    // 穴埋め問題の特別処理
                     if (q.type === 'fill') {
                         textContainer.innerHTML = `<strong>以下の本文中の入力欄に、適切な語句を入力しなさい。</strong>`;
                         renderFillQuestion(q, answersContainer, globalQIdx);
@@ -156,8 +203,8 @@
         }
 
         function renderQuestionInput(q, container, globalQIdx) {
+            // 前回と同じ実装（省略せず全部入れています）
             const type = q.type;
-
             if (type === 'single') {
                 q.options.forEach((opt, i) => {
                     const label = document.createElement('label');
@@ -186,9 +233,7 @@
                     <label><input type="radio" name="q-${globalQIdx}" value="true"> True</label>
                     <label><input type="radio" name="q-${globalQIdx}" value="false"> False</label>
                 `;
-                div.querySelectorAll('input').forEach(r => {
-                    r.addEventListener('change', e => userAnswers[globalQIdx] = e.target.value === 'true');
-                });
+                div.querySelectorAll('input').forEach(r => r.addEventListener('change', e => userAnswers[globalQIdx] = e.target.value === 'true'));
                 container.appendChild(div);
             }
             else if (type === 'input') {
@@ -218,13 +263,7 @@
                 q.left.forEach((leftItem, i) => {
                     const row = document.createElement('div');
                     row.className = 'match-row';
-                    row.innerHTML = `
-                        <span>${leftItem}</span>
-                        <select data-index="${i}">
-                            <option value="">選択...</option>
-                            ${q.right.map((r, j) => `<option value="${j}">${r}</option>`).join('')}
-                        </select>
-                    `;
+                    row.innerHTML = `<span>${leftItem}</span><select data-index="${i}"><option value="">選択...</option>${q.right.map((r,j)=>`<option value="${j}">${r}</option>`).join('')}</select>`;
                     row.querySelector('select').addEventListener('change', e => {
                         if (!userAnswers[globalQIdx]) userAnswers[globalQIdx] = [];
                         userAnswers[globalQIdx][i] = parseInt(e.target.value);
@@ -235,7 +274,6 @@
             }
         }
 
-        // 穴埋め問題専用表示
         function renderFillQuestion(q, container, globalQIdx) {
             const fillDiv = document.createElement('div');
             fillDiv.className = 'fill-container';
@@ -270,11 +308,8 @@
                 const target = e.target.closest('li');
                 if (dragging && target && dragging !== target) {
                     const children = Array.from(ul.children);
-                    if (children.indexOf(dragging) < children.indexOf(target)) {
-                        target.after(dragging);
-                    } else {
-                        target.before(dragging);
-                    }
+                    if (children.indexOf(dragging) < children.indexOf(target)) target.after(dragging);
+                    else target.before(dragging);
                 }
                 userAnswers[globalQIdx] = Array.from(ul.children).map(li => li.dataset.value);
             });
@@ -300,12 +335,8 @@
                         const corr = String(q.correct||'').trim();
                         correct = q.caseSensitive ? user === corr : user.toLowerCase() === corr.toLowerCase();
                     }
-                    else if (q.type === 'fill') {
-                        correct = Object.keys(q.blanks).every(k => (ans && ans[k]) === q.blanks[k]);
-                    }
-                    else if (q.type === 'sort' || q.type === 'matching') {
-                        correct = JSON.stringify(ans) === JSON.stringify(q.correct);
-                    }
+                    else if (q.type === 'fill') correct = Object.keys(q.blanks).every(k => (ans && ans[k]) === q.blanks[k]);
+                    else if (q.type === 'sort' || q.type === 'matching') correct = JSON.stringify(ans) === JSON.stringify(q.correct);
 
                     if (correct) score += q.points || 2;
 
