@@ -1,0 +1,163 @@
+// ========================================
+// タイトル・全体設定
+// ========================================
+title: "Markdown マスタークイズ"
+description: "マークダウン記述能力を試す全30問。基本から超難問まで。"
+points_default: 3
+
+// ========================================
+// 大問1: 基本構文
+// ========================================
+section: "大問1: 基本構文（1-10）"
+
+{
+  question: "見出しレベル3を正しく記述せよ。",
+  type: "input",
+  correct: "###",
+  points: 2,
+  note: "### の後に半角スペースを入れるのが一般的"
+}
+
+{
+  question: "太字と斜体の両方を同時に適用する正しい書き方は？",
+  type: "single",
+  options: ["***テキスト***", "**_テキスト_**", "__*テキスト*__", "すべて正しい"],
+  correct: 3,
+  points: 3
+}
+
+{
+  question: "インラインコードを正しく記述せよ（例: console.log）。",
+  type: "input",
+  correct: "`console.log`",
+  points: 2
+}
+
+{
+  question: "番号付きリストの2番目を正しく書け。",
+  type: "input",
+  correct: "2.",
+  points: 2
+}
+
+{
+  question: "リンクの書き方で正しいものは？",
+  type: "single",
+  options: ["[Google](https://google.com)", "[Google](google.com)", "<Google|https://google.com>", "すべて正しい"],
+  correct: 0,
+  points: 3
+}
+
+// ========================================
+// 大問2: 中級構文
+// ========================================
+section: "大問2: 中級構文（11-20）"
+
+{
+  question: "画像に代替テキストとタイトルを付ける正しい書き方は？",
+  type: "input",
+  correct: "![代替テキスト](image.jpg \"タイトル\")",
+  points: 4,
+  note: "タイトルはダブルクォートで囲む"
+}
+
+{
+  question: "引用ブロックの中に引用ブロックを入れる（ネスト）するには？",
+  type: "input",
+  correct: "> >",
+  points: 3
+}
+
+{
+  question: "水平線を3種類すべて挙げよ（1行で）。",
+  type: "input",
+  correct: "--- *** ___",
+  caseSensitive: false,
+  points: 5
+}
+
+{
+  question: "テーブルで右寄せのセルを作るには？",
+  type: "single",
+  options: [":---:", "---:", ":---", ":-:"],
+  correct: 1,
+  points: 4
+}
+
+{
+  question: "タスクリストの未完了と完了の書き方は？",
+  type: "input",
+  correct: "- [ ] と - [x]",
+  points: 3
+}
+
+// ========================================
+// 大問3: 上級・拡張構文
+// ========================================
+section: "大問3: 上級・拡張構文（21-27）"
+
+{
+  question: "コードブロックに言語指定をした場合の正しい書き方は？",
+  type: "input",
+  correct: "```javascript",
+  points: 3
+}
+
+{
+  question: "脚注（footnote）の書き方で正しい組み合わせは？",
+  type: "single",
+  options: ["[^1] と [^1]: 説明", "[^1] と [1]: 説明", "<footnote>1</footnote>", "すべて誤り"],
+  correct: 0,
+  points: 5
+}
+
+{
+  question: "定義リストの正しい書き方を記述せよ。",
+  type: "input",
+  correct: "用語\n: 定義文",
+  points: 6
+}
+
+{
+  question: "HTMLコメントをMarkdown内で書く正しい方法は？",
+  type: "input",
+  correct: "<!-- コメント -->",
+  points: 3
+}
+
+{
+  question: "GitHub Flavored Markdown特有の機能として正しいものは？",
+  type: "multiple",
+  options: ["テーブル", "絵文字ショートコード", "タスクリスト", "すべて正しい"],
+  correct: [0,1,2],
+  points: 5
+}
+
+// ========================================
+// 大問4: 超難問
+// ========================================
+section: "大問4: 超難問（28-30）"
+
+{
+  question: "Markdownで折りたたみ（<details>）を使ったFAQの書き方を記述せよ。",
+  type: "input",
+  correct: "<details><summary>質問</summary>回答</details>",
+  points: 8,
+  note: "HTML直書きが必要"
+}
+
+{
+  question: "複雑なネスト（リストの中にテーブル、さらに引用）を記述できるか？ 正解例を1行で。",
+  type: "input",
+  correct: "- 項目\n  | 表 | 格 |",
+  points: 10,
+  note: "インデントが重要"
+}
+
+{
+  question: "以下の要件をすべて満たすMarkdownを書け：\n1. 見出し2\n2. その中にコードブロック（python）\n3. 引用の中に太字",
+  type: "input",
+  correct: "## タイトル\n\n```python\nprint('hello')\n```\n\n> **重要**",
+  points: 12,
+  note: "完全一致で判定（改行も重要）"
+}
