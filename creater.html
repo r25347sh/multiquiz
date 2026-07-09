@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiQuiz 問題作成ツール</title>
+    <style>
+        body { font-family: system-ui, sans-serif; background: #f9f5f0; margin: 0; padding: 20px; }
+        .container { max-width: 1300px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); overflow: hidden; }
+        header { background: #5c4a3d; color: #f4e9d8; padding: 25px 40px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.3rem; }
+        .main { display: flex; height: calc(100vh - 180px); }
+        .sidebar { width: 280px; background: #f4ede0; padding: 20px; border-right: 1px solid #d4c4a8; overflow-y: auto; }
+        .content { flex: 1; padding: 30px; overflow-y: auto; }
+        button { padding: 10px 16px; margin: 6px 0; border: none; border-radius: 6px; cursor: pointer; width: 100%; }
+        .btn-primary { background: #5c4a3d; color: white; }
+        .btn-secondary { background: #8a6f52; color: white; }
+        .form-group { margin-bottom: 16px; }
+        label { display: block; margin-bottom: 5px; font-weight: 600; }
+        input, textarea, select { width: 100%; padding: 10px; border: 1px solid #d4c4a8; border-radius: 6px; }
+        .section-block, .question-block { 
+            border: 2px solid #d4c4a8; 
+            border-radius: 10px; 
+            padding: 20px; 
+            margin-bottom: 25px; 
+            background: #fffef8; 
+            position: relative;
+        }
+        .drag-handle { cursor: move; position: absolute; left: 12px; top: 12px; color: #aaa; font-size: 1.4rem; }
+        .preview { 
+            background: #f9f5f0; 
+            padding: 25px; 
+            border-radius: 8px; 
+            margin-top: 30px; 
+            font-family: monospace; 
+            white-space: pre-wrap; 
+            font-size: 0.92rem; 
+            line-height: 1.5;
+            border: 1px solid #d4c4a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>MultiQuiz 問題作成ツール</h1></header>
+        
+        <div class="main">
+            <div class="sidebar">
+                <h3>全体設定</h3>
+                <div class="form-group">
+                    <label>タイトル</label>
+                    <input type="text" id="title" value="クイズタイトル" oninput="updatePreview()">
+                </div>
+                <div class="form-group">
+                    <label>説明</label>
+                    <textarea id="description" rows="2" oninput="updatePreview()">説明文</textarea>
+                </div>
+                <div class="form-group">
+                    <label>デフォルト配点</label>
+                    <input type="number" id="pointsDefault" value="2" oninput="updatePreview()">
+                </div>
+
+                <hr>
+                <h3>大問追加</h3>
+                <button class="btn-primary" onclick="addSection()">新しい大問追加</button>
+
+                <hr>
+                <h3>問題追加</h3>
+                <button class="btn-primary" onclick="addQuestion('single')">単一選択</button>
+                <button class="btn-primary" onclick="addQuestion('multiple')">複数選択</button>
+                <button class="btn-primary" onclick="addQuestion('truefalse')">True/False</button>
+                <button class="btn-primary" onclick="addQuestion('input')">記述式</button>
+                <button class="btn-primary" onclick="addQuestion('fill')">穴埋め</button>
+                <button class="btn-primary" onclick="addQuestion('sort')">並び替え</button>
+                <button class="btn-primary" onclick="addQuestion('matching')">マッチング</button>
+
+                <hr>
+                <button class="btn-secondary" onclick="generateFile()">.multiquiz として保存</button>
+                <button class="btn-secondary" onclick="copyToClipboard()">クリップボードにコピー</button>
+            </div>
+
+            <div class="content">
+                <h2>問題一覧</h2>
+                <div id="contentArea"></div>
+
+                <div class="preview">
+                    <strong>生成される.multiquiz プレビュー</strong><br><br>
+                    <pre id="previewCode"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let sections = [{ title: "大問1: 基本問題", questions: [] }];
+
+        function addSection() {
+            sections.push({ title: `大問${sections.length + 1}`, questions: [] });
+            renderAll();
+        }
+
+        function addQuestion(type) {
+            const sec = sections[sections.length - 1];
+            const q = { type, points: 2, note: "" };
+
+            q.question = type === 'fill' ? "本文中に [[1]] を入れてください。" : "問題文を入力してください";
+
+            if (type === 'single') { q.options = ["選択肢1", "選択肢2", "選択肢3"]; q.correct = 0; }
+            else if (type === 'multiple') { q.options = ["選択肢1", "選択肢2", "選択肢3"]; q.correct = [0]; }
+            else if (type === 'truefalse') { q.correct = true; }
+            else if (type === 'input') { q.correct = "正解文字列"; }
+            else if (type === 'fill') { q.blanks = { "1": "正解語" }; }
+            else if (type === 'sort') { q.items = ["A", "B", "C"]; q.correct = ["A", "B", "C"]; }
+            else if (type === 'matching') { q.left = ["左1", "左2"]; q.right = ["右1", "右2"]; q.correct = [0, 1]; }
+
+            sec.questions.push(q);
+            renderAll();
+        }
+
+        function renderAll() {
+            const container = document.getElementById('contentArea');
+            let html = '';
+
+            sections.forEach((sec, sIdx) => {
+                html += `<div class="section-block" draggable="true" data-type="section" data-index="${sIdx}">`;
+                html += `<span class="drag-handle">≡</span>`;
+                html += `<input type="text" value="${sec.title}" style="font-size:1.25rem;font-weight:bold;width:85%" oninput="sections[${sIdx}].title=this.value;updatePreview()">`;
+
+                sec.questions.forEach((q, qIdx) => {
+                    html += `<div class="question-block" draggable="true" data-type="question" data-sidx="${sIdx}" data-qidx="${qIdx}">`;
+                    html += `<span class="drag-handle">≡</span>`;
+                    html += `<strong>Q${qIdx+1} - ${q.type}</strong> `;
+                    html += `<input type="number" value="${q.points}" style="width:70px" onchange="updateField(${sIdx},${qIdx},'points',this.value)">`;
+                    html += `<textarea rows="3" onchange="updateField(${sIdx},${qIdx},'question',this.value)">${q.question||''}</textarea>`;
+                    
+                    if (q.options) html += `<textarea rows="4" onchange="updateArray(${sIdx},${qIdx},'options',this.value)">${q.options.join('\n')}</textarea>`;
+                    if (q.items) html += `<textarea rows="3" onchange="updateArray(${sIdx},${qIdx},'items',this.value)">${q.items.join('\n')}</textarea>`;
+                    if (q.left) html += `<textarea rows="2" onchange="updateArray(${sIdx},${qIdx},'left',this.value)">${q.left.join('\n')}</textarea>`;
+                    if (q.right) html += `<textarea rows="2" onchange="updateArray(${sIdx},${qIdx},'right',this.value)">${q.right.join('\n')}</textarea>`;
+                    if (q.blanks) html += `<textarea rows="3" onchange="updateBlanks(${sIdx},${qIdx},this.value)">${Object.entries(q.blanks).map(e=>e.join(':')).join('\n')}</textarea>`;
+                    
+                    html += `<input type="text" placeholder="正解" value="${Array.isArray(q.correct)?q.correct.join(','):q.correct}" onchange="updateCorrect(${sIdx},${qIdx},this.value)">`;
+                    html += `<textarea rows="2" placeholder="解説" onchange="updateField(${sIdx},${qIdx},'note',this.value)">${q.note||''}</textarea>`;
+                    html += `<button onclick="deleteQuestion(${sIdx},${qIdx})" style="background:#c44;color:white">削除</button>`;
+                    html += `</div>`;
+                });
+                html += `</div>`;
+            });
+
+            container.innerHTML = html;
+            addDragAndDrop();
+            updatePreview();
+        }
+
+        function updateField(sIdx, qIdx, field, value) {
+            sections[sIdx].questions[qIdx][field] = value;
+            updatePreview();
+        }
+        function updateArray(sIdx, qIdx, field, value) {
+            sections[sIdx].questions[qIdx][field] = value.split('\n').filter(Boolean);
+            updatePreview();
+        }
+        function updateBlanks(sIdx, qIdx, value) {
+            const obj = {};
+            value.split('\n').forEach(line => {
+                const [k,v] = line.split(':');
+                if (k) obj[k.trim()] = (v||'').trim();
+            });
+            sections[sIdx].questions[qIdx].blanks = obj;
+            updatePreview();
+        }
+        function updateCorrect(sIdx, qIdx, value) {
+            const q = sections[sIdx].questions[qIdx];
+            if (q.type === 'single' || q.type === 'truefalse') q.correct = value;
+            else if (q.type === 'multiple') q.correct = value.split(',').map(v => parseInt(v.trim()));
+            else q.correct = value;
+            updatePreview();
+        }
+
+        function deleteQuestion(sIdx, qIdx) {
+            if (confirm('削除しますか？')) {
+                sections[sIdx].questions.splice(qIdx, 1);
+                renderAll();
+            }
+        }
+
+        function addDragAndDrop() {
+            document.querySelectorAll('[draggable="true"]').forEach(item => {
+                item.addEventListener('dragstart', e => {
+                    e.dataTransfer.setData('text/plain', JSON.stringify({
+                        type: item.dataset.type,
+                        sIdx: parseInt(item.dataset.index || item.dataset.sidx),
+                        qIdx: parseInt(item.dataset.qidx)
+                    }));
+                });
+                item.addEventListener('dragover', e => e.preventDefault());
+                item.addEventListener('drop', e => {
+                    e.preventDefault();
+                    const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+                    // 簡易移動
+                    renderAll(); // 再描画で対応
+                });
+            });
+        }
+
+        function generateFile() {
+            let out = `title: "${document.getElementById('title').value}"\n`;
+            out += `description: "${document.getElementById('description').value}"\n`;
+            out += `points_default: ${document.getElementById('pointsDefault').value}\n\n`;
+
+            sections.forEach(sec => {
+                out += `section: "${sec.title}"\n\n`;
+                sec.questions.forEach(q => {
+                    if (q.note) out += `// ${q.note}\n`;
+                    out += `{\n`;
+                    out += `  question: "${q.question}",\n`;
+                    out += `  type: "${q.type}",\n`;
+                    if (q.options) out += `  options: ${JSON.stringify(q.options)},\n`;
+                    if (q.correct !== undefined) out += `  correct: ${JSON.stringify(q.correct)},\n`;
+                    if (q.items) out += `  items: ${JSON.stringify(q.items)},\n`;
+                    if (q.left) out += `  left: ${JSON.stringify(q.left)}, right: ${JSON.stringify(q.right)},\n`;
+                    if (q.blanks) out += `  blanks: ${JSON.stringify(q.blanks)},\n`;
+                    out += `  points: ${q.points}\n`;
+                    out += `}\n\n`;
+                });
+            });
+
+            const blob = new Blob([out], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'myquiz.multiquiz';
+            a.click();
+        }
+
+        function copyToClipboard() {
+            const text = document.getElementById('previewCode').textContent;
+            navigator.clipboard.writeText(text).then(() => alert('クリップボードにコピーしました！'));
+        }
+
+        function updatePreview() {
+            let text = `title: "${document.getElementById('title').value}"\n`;
+            text += `description: "${document.getElementById('description').value}"\n`;
+            text += `points_default: ${document.getElementById('pointsDefault').value}\n\n`;
+
+            sections.forEach(sec => {
+                text += `section: "${sec.title}"\n\n`;
+                sec.questions.forEach(q => {
+                    text += `// ${q.type}問題\n`;
+                    text += `{\n  question: "${q.question}",\n  type: "${q.type}",\n  points: ${q.points}\n}\n\n`;
+                });
+            });
+
+            document.getElementById('previewCode').textContent = text;
+        }
+
+        window.onload = () => {
+            renderAll();
+        };
+    </script>
+</body>
+</html>
