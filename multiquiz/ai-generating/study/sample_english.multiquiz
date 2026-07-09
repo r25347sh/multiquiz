@@ -1,0 +1,449 @@
+// ========================================
+// タイトル・全体設定
+// ========================================
+title: "高校英語 総合クイズ - Vocabulary & Grammar Mastery"
+description: "高校レベルの英語力を強化するための総合クイズ。単語の意味理解、文法・語法の穴埋め、並び替えを中心に50問出題。基本的に各問題2点。性能重視で正確な理解を促す設計。"
+points_default: 2
+
+// ========================================
+// 変数定義（任意）
+// ========================================
+username = "学習者";
+year = 2026;
+
+// ========================================
+// 大問1: 単語意味選択問題（30問）
+// ========================================
+section: "大問1: 単語意味選択問題"
+
+// 1.
+{
+  question: "The word 'abundant' most nearly means:",
+  type: "single",
+  options: ["scarce", "plentiful", "expensive", "dangerous"],
+  correct: 1,
+  note: "abundant = 豊富な、plentifulと同義。"
+}
+
+// 2.
+{
+  question: "Choose the best meaning of 'persistent':",
+  type: "single",
+  options: ["temporary", "continuing firmly", "weak", "happy"],
+  correct: 1,
+  note: "persistent = 粘り強い、執拗な。"
+}
+
+// 3.
+{
+  question: "'Resilient' is closest in meaning to:",
+  type: "single",
+  options: ["fragile", "able to recover quickly", "rigid", "slow"],
+  correct: 1,
+  note: "resilient = 回復力のある、しなやかな。"
+}
+
+// 4.
+{
+  question: "The meaning of 'innovative' is:",
+  type: "single",
+  options: ["old-fashioned", "introducing new ideas", "boring", "traditional"],
+  correct: 1,
+  note: "innovative = 革新的な。"
+}
+
+// 5.
+{
+  question: "'Diligent' most nearly means:",
+  type: "single",
+  options: ["lazy", "hard-working", "careless", "slow"],
+  correct: 1,
+  note: "diligent = 勤勉な。"
+}
+
+// 6.
+{
+  question: "Choose the synonym for 'ambiguous':",
+  type: "single",
+  options: ["clear", "unclear", "certain", "simple"],
+  correct: 1,
+  note: "ambiguous = あいまいな。"
+}
+
+// 7.
+{
+  question: "'Eloquent' refers to someone who is:",
+  type: "single",
+  options: ["silent", "fluent and persuasive in speaking", "rude", "quiet"],
+  correct: 1,
+  note: "eloquent = 雄弁な。"
+}
+
+// 8.
+{
+  question: "The word 'inevitable' means:",
+  type: "single",
+  options: ["avoidable", "unavoidable", "possible", "unlikely"],
+  correct: 1,
+  note: "inevitable = 避けられない。"
+}
+
+// 9.
+{
+  question: "'Benevolent' is closest to:",
+  type: "single",
+  options: ["kind and generous", "cruel", "selfish", "angry"],
+  correct: 0,
+  note: "benevolent = 慈悲深い。"
+}
+
+// 10.
+{
+  question: "What does 'meticulous' mean?",
+  type: "single",
+  options: ["careless", "very careful about details", "fast", "loud"],
+  correct: 1,
+  note: "meticulous = 細心の注意を払う。"
+}
+
+// 11-30: 追加の単語意味問題（同様パターンで高校頻出語彙）
+{
+  question: "'Prosperous' most nearly means:",
+  type: "single",
+  options: ["poor", "wealthy and successful", "unhappy", "small"],
+  correct: 1,
+  note: "prosperous = 繁栄した。"
+}
+{
+  question: "Choose the best meaning of 'obstacle':",
+  type: "single",
+  options: ["help", "something that blocks progress", "easy task", "reward"],
+  correct: 1,
+  note: "obstacle = 障害。"
+}
+{
+  question: "'Sustainable' refers to something that can be:",
+  type: "single",
+  options: ["maintained over time", "quickly destroyed", "expensive", "temporary"],
+  correct: 0,
+  note: "sustainable = 持続可能な。"
+}
+{
+  question: "The word 'diverse' means:",
+  type: "single",
+  options: ["similar", "varied", "simple", "boring"],
+  correct: 1,
+  note: "diverse = 多様な。"
+}
+{
+  question: "'Compassion' is:",
+  type: "single",
+  options: ["anger", "sympathy and concern", "hatred", "indifference"],
+  correct: 1,
+  note: "compassion = 同情。"
+}
+{
+  question: "What does 'formidable' mean?",
+  type: "single",
+  options: ["weak", "impressively strong or powerful", "easy", "small"],
+  correct: 1,
+  note: "formidable = 強力な、恐るべき。"
+}
+{
+  question: "'Integrity' most nearly means:",
+  type: "single",
+  options: ["dishonesty", "moral uprightness", "wealth", "fame"],
+  correct: 1,
+  note: "integrity = 誠実さ。"
+}
+{
+  question: "Choose the synonym for 'hypothesis':",
+  type: "single",
+  options: ["fact", "proposed explanation", "conclusion", "question"],
+  correct: 1,
+  note: "hypothesis = 仮説。"
+}
+{
+  question: "'Vulnerable' means:",
+  type: "single",
+  options: ["strong", "easily harmed", "protected", "powerful"],
+  correct: 1,
+  note: "vulnerable = 脆弱な。"
+}
+{
+  question: "The meaning of 'ubiquitous' is:",
+  type: "single",
+  options: ["rare", "present everywhere", "hidden", "temporary"],
+  correct: 1,
+  note: "ubiquitous = 遍在する。"
+}
+{
+  question: "'Empathy' is closest to:",
+  type: "single",
+  options: ["indifference", "ability to understand others' feelings", "jealousy", "pride"],
+  correct: 1,
+  note: "empathy = 共感。"
+}
+{
+  question: "Choose the best meaning of 'deteriorate':",
+  type: "single",
+  options: ["improve", "become worse", "stay the same", "grow"],
+  correct: 1,
+  note: "deteriorate = 悪化する。"
+}
+{
+  question: "'Optimistic' refers to:",
+  type: "single",
+  options: ["pessimistic", "hopeful and confident", "realistic", "neutral"],
+  correct: 1,
+  note: "optimistic = 楽観的な。"
+}
+{
+  question: "What does 'profound' mean?",
+  type: "single",
+  options: ["shallow", "very deep or intense", "simple", "superficial"],
+  correct: 1,
+  note: "profound = 深遠な。"
+}
+{
+  question: "'Collaborate' means:",
+  type: "single",
+  options: ["compete", "work together", "argue", "ignore"],
+  correct: 1,
+  note: "collaborate = 協力する。"
+}
+{
+  question: "The word 'inefficient' is:",
+  type: "single",
+  options: ["effective", "not achieving maximum productivity", "fast", "organized"],
+  correct: 1,
+  note: "inefficient = 非効率な。"
+}
+{
+  question: "'Resemble' most nearly means:",
+  type: "single",
+  options: ["differ from", "look like", "hate", "avoid"],
+  correct: 1,
+  note: "resemble = ～に似ている。"
+}
+{
+  question: "Choose the synonym for 'threshold':",
+  type: "single",
+  options: ["end", "beginning point", "middle", "peak"],
+  correct: 1,
+  note: "threshold = 閾値、始まり。"
+}
+{
+  question: "'Arbitrary' means:",
+  type: "single",
+  options: ["logical", "based on random choice", "fair", "planned"],
+  correct: 1,
+  note: "arbitrary = 恣意的な。"
+}
+{
+  question: "What does 'mitigate' mean?",
+  type: "single",
+  options: ["worsen", "make less severe", "ignore", "increase"],
+  correct: 1,
+  note: "mitigate = 緩和する。"
+}
+
+// ========================================
+// 大問2: 文中穴埋め問題（10問）
+// ========================================
+section: "大問2: 文中穴埋め問題"
+
+// 31.
+{
+  question: "The scientist conducted an experiment to _____ the effects of climate change. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "investigate"
+  },
+  note: "investigate = 調査する。"
+}
+
+// 32.
+{
+  question: "Despite the difficulties, she remained _____ and achieved her goal. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "determined"
+  },
+  note: "determined = 決意した。"
+}
+
+// 33.
+{
+  question: "The government is trying to _____ pollution in big cities. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "reduce"
+  },
+  note: "reduce = 減らす。"
+}
+
+// 34.
+{
+  question: "He has a _____ knowledge of world history. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "profound"
+  },
+  note: "profound = 深い。"
+}
+
+// 35.
+{
+  question: "Teamwork is essential for _____ success in this project. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "achieving"
+  },
+  note: "achieving = 達成する。"
+}
+
+// 36.
+{
+  question: "The new technology has _____ many aspects of our daily lives. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "transformed"
+  },
+  note: "transformed = 変革した。"
+}
+
+// 37.
+{
+  question: "Students should be encouraged to think _____ and creatively. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "critically"
+  },
+  note: "critically = 批判的に。"
+}
+
+// 38.
+{
+  question: "The company aims to _____ sustainable development. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "promote"
+  },
+  note: "promote = 促進する。"
+}
+
+// 39.
+{
+  question: "Her _____ attitude helped her overcome many challenges. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "positive"
+  },
+  note: "positive = 肯定的な。"
+}
+
+// 40.
+{
+  question: "It is important to _____ between right and wrong. [[1]]",
+  type: "fill",
+  blanks: {
+    "1": "distinguish"
+  },
+  note: "distinguish = 区別する。"
+}
+
+// ========================================
+// 大問3: 並び替え問題（10問）
+// ========================================
+section: "大問3: 英文並び替え問題"
+
+// 41.
+{
+  question: "以下の語句を正しい順序に並び替えて自然な英文にしてください。",
+  type: "sort",
+  items: ["the environment", "protecting", "is crucial", "for future generations"],
+  correct: ["protecting", "the environment", "is crucial", "for future generations"],
+  note: "Protecting the environment is crucial for future generations."
+}
+
+// 42.
+{
+  question: "以下の語句を正しい順序に並び替えてください。",
+  type: "sort",
+  items: ["she", "hard", "studied", "and", "passed", "the exam"],
+  correct: ["she", "studied", "hard", "and", "passed", "the exam"],
+  note: "She studied hard and passed the exam."
+}
+
+// 43.
+{
+  question: "正しい英文の語順に並び替えてください。",
+  type: "sort",
+  items: ["technology", "has", "changed", "the way", "we", "communicate"],
+  correct: ["technology", "has", "changed", "the way", "we", "communicate"],
+  note: "Technology has changed the way we communicate."
+}
+
+// 44.
+{
+  question: "以下の語句を正しい順序に並び替えてください。",
+  type: "sort",
+  items: ["a healthy lifestyle", "maintaining", "leads to", "longer life"],
+  correct: ["maintaining", "a healthy lifestyle", "leads to", "longer life"],
+  note: "Maintaining a healthy lifestyle leads to longer life."
+}
+
+// 45.
+{
+  question: "自然な英文になるように並び替えてください。",
+  type: "sort",
+  items: ["the book", "I", "read", "yesterday", "was", "interesting"],
+  correct: ["the book", "I", "read", "yesterday", "was", "interesting"],
+  note: "The book I read yesterday was interesting."
+}
+
+// 46.
+{
+  question: "以下の語句を正しい順序に並び替えてください。",
+  type: "sort",
+  items: ["global warming", "is", "one of", "the biggest challenges", "facing humanity"],
+  correct: ["global warming", "is", "one of", "the biggest challenges", "facing humanity"],
+  note: "Global warming is one of the biggest challenges facing humanity."
+}
+
+// 47.
+{
+  question: "正しい語順に並び替えてください。",
+  type: "sort",
+  items: ["he", "decided", "to", "pursue", "his dream"],
+  correct: ["he", "decided", "to", "pursue", "his dream"],
+  note: "He decided to pursue his dream."
+}
+
+// 48.
+{
+  question: "以下の語句を並び替えてください。",
+  type: "sort",
+  items: ["education", "plays", "an important role", "in", "personal development"],
+  correct: ["education", "plays", "an important role", "in", "personal development"],
+  note: "Education plays an important role in personal development."
+}
+
+// 49.
+{
+  question: "自然な英文に並び替えてください。",
+  type: "sort",
+  items: ["the team", "worked", "together", "and", "achieved", "great results"],
+  correct: ["the team", "worked", "together", "and", "achieved", "great results"],
+  note: "The team worked together and achieved great results."
+}
+
+// 50.
+{
+  question: "正しい順序に並び替えてください。",
+  type: "sort",
+  items: ["innovation", "drives", "economic growth", "in", "modern society"],
+  correct: ["innovation", "drives", "economic growth", "in", "modern society"],
+  note: "Innovation drives economic growth in modern society."
+}
