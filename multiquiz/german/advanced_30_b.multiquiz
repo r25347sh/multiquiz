@@ -1,0 +1,283 @@
+title: "ドイツ語 上級 単語 30問 (B)"
+description: "論証・哲学・言語学 別セット（独→日）"
+points_default: 4
+shuffle_questions: true
+shuffle_options: true
+
+// ドイツ語単語クイズ — 30問
+
+section: "第1部（1–10）"
+
+{
+  question: "「die Differenzierung」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "両義性", "討論する", "差異化"],
+  correct: 3,
+  points: 4,
+  note: "die Differenzierung = 差異化"
+}
+
+{
+  question: "「diskutieren」の意味は？",
+  type: "single",
+  options: ["差異化", "両義性", "討論する", "根拠づけ"],
+  correct: 2,
+  points: 4,
+  note: "diskutieren = 討論する"
+}
+
+{
+  question: "「die Begründung」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "差異化", "両義性", "討論する"],
+  correct: 0,
+  points: 4,
+  note: "die Begründung = 根拠づけ"
+}
+
+{
+  question: "「die Ambivalenz」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "両義性", "差異化", "討論する"],
+  correct: 1,
+  points: 4,
+  note: "die Ambivalenz = 両義性"
+}
+
+{
+  question: "「die Methodologie」の意味は？",
+  type: "single",
+  options: ["方法論", "討論する", "根拠づけ", "差異化"],
+  correct: 0,
+  points: 4,
+  note: "die Methodologie = 方法論"
+}
+
+{
+  question: "「der Archaismus」の意味は？",
+  type: "single",
+  options: ["古語", "差異化", "討論する", "根拠づけ"],
+  correct: 0,
+  points: 4,
+  note: "der Archaismus = 古語"
+}
+
+{
+  question: "「die Ontologie」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "討論する", "差異化", "存在論"],
+  correct: 3,
+  points: 4,
+  note: "die Ontologie = 存在論"
+}
+
+{
+  question: "「der Neologismus」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "差異化", "討論する", "新語"],
+  correct: 3,
+  points: 4,
+  note: "der Neologismus = 新語"
+}
+
+{
+  question: "「spekulieren」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "思索する", "討論する", "差異化"],
+  correct: 1,
+  points: 4,
+  note: "spekulieren = 思索する"
+}
+
+{
+  question: "「die Spezifizierung」の意味は？",
+  type: "single",
+  options: ["具体化", "討論する", "根拠づけ", "差異化"],
+  correct: 0,
+  points: 4,
+  note: "die Spezifizierung = 具体化"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「reflektieren」の意味は？",
+  type: "single",
+  options: ["差異化", "討論する", "省察する", "根拠づけ"],
+  correct: 2,
+  points: 4,
+  note: "reflektieren = 省察する"
+}
+
+{
+  question: "「die Morphologie」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "形態論", "討論する", "差異化"],
+  correct: 1,
+  points: 4,
+  note: "die Morphologie = 形態論"
+}
+
+{
+  question: "「die Kritik」の意味は？",
+  type: "single",
+  options: ["批判", "討論する", "根拠づけ", "差異化"],
+  correct: 0,
+  points: 4,
+  note: "die Kritik = 批判"
+}
+
+{
+  question: "「kontemplieren」の意味は？",
+  type: "single",
+  options: ["観想する", "差異化", "討論する", "根拠づけ"],
+  correct: 0,
+  points: 4,
+  note: "kontemplieren = 観想する"
+}
+
+{
+  question: "「die Nuance」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "ニュアンス", "差異化", "討論する"],
+  correct: 1,
+  points: 4,
+  note: "die Nuance = ニュアンス"
+}
+
+{
+  question: "「die Epistemologie」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "認識論", "討論する", "差異化"],
+  correct: 1,
+  points: 4,
+  note: "die Epistemologie = 認識論"
+}
+
+{
+  question: "「die These」の意味は？",
+  type: "single",
+  options: ["討論する", "差異化", "根拠づけ", "テーゼ"],
+  correct: 3,
+  points: 4,
+  note: "die These = テーゼ"
+}
+
+{
+  question: "「falsifizieren」の意味は？",
+  type: "single",
+  options: ["差異化", "討論する", "根拠づけ", "反証する"],
+  correct: 3,
+  points: 4,
+  note: "falsifizieren = 反証する"
+}
+
+{
+  question: "「elaborieren」の意味は？",
+  type: "single",
+  options: ["討論する", "差異化", "精緻化する", "根拠づけ"],
+  correct: 2,
+  points: 4,
+  note: "elaborieren = 精緻化する"
+}
+
+{
+  question: "「die Hermeneutik」の意味は？",
+  type: "single",
+  options: ["討論する", "解釈学", "根拠づけ", "差異化"],
+  correct: 1,
+  points: 4,
+  note: "die Hermeneutik = 解釈学"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「erörtern」の意味は？",
+  type: "single",
+  options: ["討論する", "差異化", "論じる", "根拠づけ"],
+  correct: 2,
+  points: 4,
+  note: "erörtern = 論じる"
+}
+
+{
+  question: "「die Abhandlung」の意味は？",
+  type: "single",
+  options: ["論文・論述", "差異化", "討論する", "根拠づけ"],
+  correct: 0,
+  points: 4,
+  note: "die Abhandlung = 論文・論述"
+}
+
+{
+  question: "「die Fachsprache」の意味は？",
+  type: "single",
+  options: ["差異化", "根拠づけ", "専門言語", "討論する"],
+  correct: 2,
+  points: 4,
+  note: "die Fachsprache = 専門言語"
+}
+
+{
+  question: "「verallgemeinern」の意味は？",
+  type: "single",
+  options: ["一般化する", "根拠づけ", "差異化", "討論する"],
+  correct: 0,
+  points: 4,
+  note: "verallgemeinern = 一般化する"
+}
+
+{
+  question: "「die Abduktion」の意味は？",
+  type: "single",
+  options: ["仮説推論", "差異化", "討論する", "根拠づけ"],
+  correct: 0,
+  points: 4,
+  note: "die Abduktion = 仮説推論"
+}
+
+{
+  question: "「die Rhetorik」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "修辞学", "討論する", "差異化"],
+  correct: 1,
+  points: 4,
+  note: "die Rhetorik = 修辞学"
+}
+
+{
+  question: "「die Auseinandersetzung führen」の意味は？",
+  type: "single",
+  options: ["議論を行う", "根拠づけ", "差異化", "討論する"],
+  correct: 0,
+  points: 4,
+  note: "die Auseinandersetzung führen = 議論を行う"
+}
+
+{
+  question: "「konkretisieren」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "差異化", "討論する", "具体化する"],
+  correct: 3,
+  points: 4,
+  note: "konkretisieren = 具体化する"
+}
+
+{
+  question: "「präsupponieren」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "差異化", "前提する", "討論する"],
+  correct: 2,
+  points: 4,
+  note: "präsupponieren = 前提する"
+}
+
+{
+  question: "「die Erörterung」の意味は？",
+  type: "single",
+  options: ["根拠づけ", "差異化", "論考", "討論する"],
+  correct: 2,
+  points: 4,
+  note: "die Erörterung = 論考"
+}
