@@ -1,1 +1,283 @@
-PLACEHOLDER_A
+title: "ドイツ語 超初級 単語 30問 (A)"
+description: "挨拶・基本名詞・数字・色・基本動詞など最基礎の語彙"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+// ドイツ語単語クイズ — 30問
+
+section: "第1部（1–10）"
+
+{
+  question: "「今」をドイツ語で言うと？",
+  type: "single",
+  options: ["jetzt", "eins", "sieben", "lesen"],
+  correct: 0,
+  points: 2,
+  note: "時"
+}
+
+{
+  question: "「7」をドイツ語で言うと？",
+  type: "single",
+  options: ["kalt", "wann", "sieben", "lesen"],
+  correct: 2,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「9」をドイツ語で言うと？",
+  type: "single",
+  options: ["Auf Wiedersehen", "lesen", "neun", "eins"],
+  correct: 2,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「1」をドイツ語で言うと？",
+  type: "single",
+  options: ["sieben", "neun", "eins", "lesen"],
+  correct: 2,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「読む」をドイツ語で言うと？",
+  type: "single",
+  options: ["Auf Wiedersehen", "wann", "arbeiten", "lesen"],
+  correct: 3,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「いつ」をドイツ語で言うと？",
+  type: "single",
+  options: ["wann", "jetzt", "eins", "kalt"],
+  correct: 0,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「働く」をドイツ語で言うと？",
+  type: "single",
+  options: ["eins", "kalt", "jetzt", "arbeiten"],
+  correct: 3,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「寒い／冷たい」をドイツ語で言うと？",
+  type: "single",
+  options: ["lesen", "neun", "kalt", "sieben"],
+  correct: 2,
+  points: 2,
+  note: "形容詞"
+}
+
+{
+  question: "「さようなら」をドイツ語で言うと？",
+  type: "single",
+  options: ["arbeiten", "eins", "Auf Wiedersehen", "wann"],
+  correct: 2,
+  points: 2,
+  note: "挨拶"
+}
+
+{
+  question: "「はい」をドイツ語で言うと？",
+  type: "single",
+  options: ["wann", "Ja", "lesen", "sieben"],
+  correct: 1,
+  points: 2,
+  note: "基本"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「どうもありがとう」をドイツ語で言うと？",
+  type: "single",
+  options: ["wann", "arbeiten", "sieben", "Danke schön"],
+  correct: 3,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「姉妹」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schwester", "sieben", "kalt", "arbeiten"],
+  correct: 0,
+  points: 2,
+  note: "家族"
+}
+
+{
+  question: "「本」をドイツ語で言うと？",
+  type: "single",
+  options: ["wann", "lesen", "Buch", "eins"],
+  correct: 2,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「学校」をドイツ語で言うと？",
+  type: "single",
+  options: ["jetzt", "arbeiten", "Schule", "lesen"],
+  correct: 2,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「あそこ」をドイツ語で言うと？",
+  type: "single",
+  options: ["arbeiten", "dort", "jetzt", "lesen"],
+  correct: 1,
+  points: 2,
+  note: "場所"
+}
+
+{
+  question: "「大きい」をドイツ語で言うと？",
+  type: "single",
+  options: ["arbeiten", "groß", "sieben", "jetzt"],
+  correct: 1,
+  points: 2,
+  note: "形容詞"
+}
+
+{
+  question: "「遊ぶ」をドイツ語で言うと？",
+  type: "single",
+  options: ["lesen", "eins", "spielen", "kalt"],
+  correct: 2,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「パン」をドイツ語で言うと？",
+  type: "single",
+  options: ["neun", "eins", "Brot", "sieben"],
+  correct: 2,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「こんにちは」をドイツ語で言うと？",
+  type: "single",
+  options: ["eins", "sieben", "Hallo", "kalt"],
+  correct: 2,
+  points: 2,
+  note: "挨拶"
+}
+
+{
+  question: "「白い」をドイツ語で言うと？",
+  type: "single",
+  options: ["neun", "weiß", "eins", "sieben"],
+  correct: 1,
+  points: 2,
+  note: "色"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「ありがとう」をドイツ語で言うと？",
+  type: "single",
+  options: ["kalt", "Danke", "neun", "eins"],
+  correct: 1,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「8」をドイツ語で言うと？",
+  type: "single",
+  options: ["sieben", "acht", "neun", "kalt"],
+  correct: 1,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「私」をドイツ語で言うと？",
+  type: "single",
+  options: ["kalt", "eins", "neun", "Ich"],
+  correct: 3,
+  points: 2,
+  note: "代名詞"
+}
+
+{
+  question: "「何」をドイツ語で言うと？",
+  type: "single",
+  options: ["arbeiten", "eins", "neun", "was"],
+  correct: 3,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「どうぞ／お願い」をドイツ語で言うと？",
+  type: "single",
+  options: ["eins", "arbeiten", "kalt", "Bitte"],
+  correct: 3,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「話す」をドイツ語で言うと？",
+  type: "single",
+  options: ["sprechen", "lesen", "jetzt", "arbeiten"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「生徒（男性）」をドイツ語で言うと？",
+  type: "single",
+  options: ["arbeiten", "neun", "Schüler", "wann"],
+  correct: 2,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「10」をドイツ語で言うと？",
+  type: "single",
+  options: ["jetzt", "zehn", "arbeiten", "neun"],
+  correct: 1,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「昨日」をドイツ語で言うと？",
+  type: "single",
+  options: ["neun", "gestern", "kalt", "wann"],
+  correct: 1,
+  points: 2,
+  note: "時"
+}
+
+{
+  question: "「あなた（親称）」をドイツ語で言うと？",
+  type: "single",
+  options: ["Du", "lesen", "arbeiten", "jetzt"],
+  correct: 0,
+  points: 2,
+  note: "代名詞"
+}
