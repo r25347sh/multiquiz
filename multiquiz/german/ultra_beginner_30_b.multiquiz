@@ -1,1 +1,281 @@
-PLACEHOLDER_B
+title: "ドイツ語 超初級 単語 30問 (B)"
+description: "最基礎語彙"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "第1部（1–10）"
+
+{
+  question: "「どうぞ」をドイツ語で言うと？",
+  type: "single",
+  options: ["Mutter", "hören", "wie", "Bitte"],
+  correct: 3,
+  points: 2,
+  note: "Bitte = どうぞ"
+}
+
+{
+  question: "「白い」をドイツ語で言うと？",
+  type: "single",
+  options: ["blau", "eins", "hören", "weiß"],
+  correct: 3,
+  points: 2,
+  note: "weiß = 白い"
+}
+
+{
+  question: "「行く」をドイツ語で言うと？",
+  type: "single",
+  options: ["Gute Nacht", "gehen", "schreiben", "Tschüss"],
+  correct: 1,
+  points: 2,
+  note: "gehen = 行く"
+}
+
+{
+  question: "「どこ」をドイツ語で言うと？",
+  type: "single",
+  options: ["wo", "Auto", "Gute Nacht", "Schwester"],
+  correct: 0,
+  points: 2,
+  note: "wo = どこ"
+}
+
+{
+  question: "「緑」をドイツ語で言うと？",
+  type: "single",
+  options: ["Du", "Tisch", "wer", "grün"],
+  correct: 3,
+  points: 2,
+  note: "grün = 緑"
+}
+
+{
+  question: "「こんにちは」をドイツ語で言うと？",
+  type: "single",
+  options: ["schreiben", "Gute Nacht", "Mutter", "Guten Tag"],
+  correct: 3,
+  points: 2,
+  note: "Guten Tag = こんにちは"
+}
+
+{
+  question: "「母」をドイツ語で言うと？",
+  type: "single",
+  options: ["Mutter", "wie", "gestern", "Tisch"],
+  correct: 0,
+  points: 2,
+  note: "Mutter = 母"
+}
+
+{
+  question: "「彼」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tisch", "Er", "wie", "grün"],
+  correct: 1,
+  points: 2,
+  note: "Er = 彼"
+}
+
+{
+  question: "「テーブル」をドイツ語で言うと？",
+  type: "single",
+  options: ["gehen", "schreiben", "Tisch", "Wasser"],
+  correct: 2,
+  points: 2,
+  note: "Tisch = テーブル"
+}
+
+{
+  question: "「大きい」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schule", "groß", "Gute Nacht", "Bitte"],
+  correct: 1,
+  points: 2,
+  note: "groß = 大きい"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「じゃあね」をドイツ語で言うと？",
+  type: "single",
+  options: ["rot", "Er", "sechs", "Tschüss"],
+  correct: 3,
+  points: 2,
+  note: "Tschüss = じゃあね"
+}
+
+{
+  question: "「食べる」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "grün", "Danke", "blau"],
+  correct: 0,
+  points: 2,
+  note: "essen = 食べる"
+}
+
+{
+  question: "「赤い」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "grün", "rot", "weiß"],
+  correct: 2,
+  points: 2,
+  note: "rot = 赤い"
+}
+
+{
+  question: "「学校」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schule", "wo", "Er", "eins"],
+  correct: 0,
+  points: 2,
+  note: "Schule = 学校"
+}
+
+{
+  question: "「6」をドイツ語で言うと？",
+  type: "single",
+  options: ["hören", "Schwester", "sechs", "drei"],
+  correct: 2,
+  points: 2,
+  note: "sechs = 6"
+}
+
+{
+  question: "「昨日」をドイツ語で言うと？",
+  type: "single",
+  options: ["schreiben", "gestern", "Er", "Tisch"],
+  correct: 1,
+  points: 2,
+  note: "gestern = 昨日"
+}
+
+{
+  question: "「青い」をドイツ語で言うと？",
+  type: "single",
+  options: ["blau", "Du", "Danke", "hören"],
+  correct: 0,
+  points: 2,
+  note: "blau = 青い"
+}
+
+{
+  question: "「ありがとう」をドイツ語で言うと？",
+  type: "single",
+  options: ["sechs", "Danke", "groß", "Er"],
+  correct: 1,
+  points: 2,
+  note: "Danke = ありがとう"
+}
+
+{
+  question: "「どう」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tschüss", "wie", "Bitte", "wo"],
+  correct: 1,
+  points: 2,
+  note: "wie = どう"
+}
+
+{
+  question: "「聞く」をドイツ語で言うと？",
+  type: "single",
+  options: ["hören", "Tisch", "drei", "Bitte"],
+  correct: 0,
+  points: 2,
+  note: "hören = 聞く"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「誰」をドイツ語で言うと？",
+  type: "single",
+  options: ["Er", "gut", "wer", "sechs"],
+  correct: 2,
+  points: 2,
+  note: "wer = 誰"
+}
+
+{
+  question: "「良い」をドイツ語で言うと？",
+  type: "single",
+  options: ["gut", "rot", "wer", "Schwester"],
+  correct: 0,
+  points: 2,
+  note: "gut = 良い"
+}
+
+{
+  question: "「1」をドイツ語で言うと？",
+  type: "single",
+  options: ["wie", "eins", "wo", "schreiben"],
+  correct: 1,
+  points: 2,
+  note: "eins = 1"
+}
+
+{
+  question: "「水」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "sechs", "Danke", "Wasser"],
+  correct: 3,
+  points: 2,
+  note: "Wasser = 水"
+}
+
+{
+  question: "「車」をドイツ語で言うと？",
+  type: "single",
+  options: ["Auto", "Danke", "gestern", "Du"],
+  correct: 0,
+  points: 2,
+  note: "Auto = 車"
+}
+
+{
+  question: "「3」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "Gute Nacht", "eins", "wer"],
+  correct: 0,
+  points: 2,
+  note: "drei = 3"
+}
+
+{
+  question: "「書く」をドイツ語で言うと？",
+  type: "single",
+  options: ["grün", "wo", "Schwester", "schreiben"],
+  correct: 3,
+  points: 2,
+  note: "schreiben = 書く"
+}
+
+{
+  question: "「あなた」をドイツ語で言うと？",
+  type: "single",
+  options: ["Gute Nacht", "essen", "Du", "groß"],
+  correct: 2,
+  points: 2,
+  note: "Du = あなた"
+}
+
+{
+  question: "「姉妹」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schwester", "Bitte", "wer", "blau"],
+  correct: 0,
+  points: 2,
+  note: "Schwester = 姉妹"
+}
+
+{
+  question: "「おやすみ」をドイツ語で言うと？",
+  type: "single",
+  options: ["Gute Nacht", "hören", "Bitte", "Auto"],
+  correct: 0,
+  points: 2,
+  note: "Gute Nacht = おやすみ"
+}
