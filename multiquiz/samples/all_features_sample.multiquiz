@@ -1,0 +1,112 @@
+title: "MultiQuiz 全機能サンプル"
+description: "現在のscannerがサポートするすべての記法・機能を網羅したデモクイズ"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+// ========== 変数定義 ==========
+username = "学習者"
+lang = "ドイツ語"
+level = "デモ"
+
+// ========== セクション1: 基本・変数 ==========
+section: "1. 変数と基本設定"
+
+{
+  question: "{{username}} さん、このクイズの言語は {{lang}} です。了解？",
+  type: "truefalse",
+  correct: true,
+  points: 1,
+  note: "変数 {{username}} と {{lang}} が展開されます"
+}
+
+{
+  question: "デフォルト配点は何点？（数字のみ）",
+  type: "input",
+  correct: "2",
+  points: 2,
+  note: "points_default: 2"
+}
+
+// ========== セクション2: 選択問題 ==========
+section: "2. 単一・複数選択"
+
+{
+  question: "「ありがとう」のドイツ語は？",
+  type: "single",
+  options: ["Bitte", "Danke", "Hallo", "Tschüss"],
+  correct: 1,
+  points: 2,
+  note: "Danke = ありがとう"
+}
+
+{
+  question: "次のうち挨拶として使えるものは？（複数選択）",
+  type: "multiple",
+  options: ["Hallo", "Wasser", "Guten Tag", "Brot"],
+  correct: [0, 2],
+  points: 3,
+  note: "Hallo と Guten Tag"
+}
+
+// ========== セクション3: 記述・穴埋め ==========
+section: "3. 記述と穴埋め"
+
+{
+  question: "「水」をドイツ語で書け。",
+  type: "input",
+  correct: "Wasser",
+  points: 2,
+  note: "Wasser"
+}
+
+{
+  question: "ドイツ語で「私は [[1]] です」は Ich bin [[1]]. 空欄に『学生』を入れよ（Student）。",
+  type: "fill",
+  blanks: { "1": "Student" },
+  points: 3,
+  note: "Ich bin Student."
+}
+
+// ========== セクション4: 並べ替え・マッチング ==========
+section: "4. 並べ替えとマッチング"
+
+{
+  question: "数字を小さい順に並べよ。",
+  type: "sort",
+  items: ["drei", "eins", "zwei"],
+  correct: ["eins", "zwei", "drei"],
+  points: 3,
+  note: "eins=1, zwei=2, drei=3"
+}
+
+{
+  question: "ドイツ語と日本語を線で結べ。",
+  type: "matching",
+  left: ["Hund", "Katze", "Vogel"],
+  right: ["鳥", "犬", "猫"],
+  correct: [1, 2, 0],
+  points: 4,
+  note: "Hund=犬, Katze=猫, Vogel=鳥"
+}
+
+// ========== セクション5: シャッフル上書き ==========
+section: "5. 問題単位のshuffle制御" shuffle: false
+
+{
+  question: "このセクションは shuffle: false なので順番固定。1+1は？",
+  type: "single",
+  options: ["1", "2", "3", "4"],
+  correct: 1,
+  points: 1,
+  shuffle_options: false,
+  note: "選択肢も固定"
+}
+
+{
+  question: "{{level}} レベル完了。変数展開の確認。",
+  type: "truefalse",
+  correct: true,
+  points: 1,
+  note: "level 変数 = デモ"
+}
