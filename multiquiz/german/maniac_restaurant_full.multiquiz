@@ -1,0 +1,189 @@
+title: "ドイツ語 マニアック（restaurant）全問"
+description: "場面別フル: restaurant"
+points_default: 3
+shuffle_questions: true
+shuffle_options: true
+
+section: "第1部（1–10）"
+
+{
+  question: "「前菜」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Speisekarte", "die Vorspeise", "zum Mitnehmen", "würzig"],
+  correct: 1,
+  points: 3,
+  note: "die Vorspeise = 前菜"
+}
+
+{
+  question: "「ベジタリアン」をドイツ語で言うと？",
+  type: "single",
+  options: ["salzig", "vegetarisch", "die Nachspeise", "bestellen"],
+  correct: 1,
+  points: 3,
+  note: "vegetarisch = ベジタリアン"
+}
+
+{
+  question: "「メニュー」をドイツ語で言うと？",
+  type: "single",
+  options: ["scharf", "vegetarisch", "die Rechnung bitte", "die Speisekarte"],
+  correct: 3,
+  points: 3,
+  note: "die Speisekarte = メニュー"
+}
+
+{
+  question: "「ウェイター」をドイツ語で言うと？",
+  type: "single",
+  options: ["scharf", "der Kellner", "empfehlen", "die Nachspeise"],
+  correct: 1,
+  points: 3,
+  note: "der Kellner = ウェイター"
+}
+
+{
+  question: "「甘い」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Hauptspeise", "die Rechnung bitte", "die Nachspeise", "süß"],
+  correct: 3,
+  points: 3,
+  note: "süß = 甘い"
+}
+
+{
+  question: "「持ち帰り」をドイツ語で言うと？",
+  type: "single",
+  options: ["zum Mitnehmen", "die Hauptspeise", "empfehlen", "bestellen"],
+  correct: 0,
+  points: 3,
+  note: "zum Mitnehmen = 持ち帰り"
+}
+
+{
+  question: "「注文する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Hauptspeise", "schmecken", "bitter", "bestellen"],
+  correct: 3,
+  points: 3,
+  note: "bestellen = 注文する"
+}
+
+{
+  question: "「苦い」をドイツ語で言うと？",
+  type: "single",
+  options: ["bitter", "sauer", "die Rechnung bitte", "scharf"],
+  correct: 0,
+  points: 3,
+  note: "bitter = 苦い"
+}
+
+{
+  question: "「チップ」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Trinkgeld", "lecker", "die Hauptspeise", "bitter"],
+  correct: 0,
+  points: 3,
+  note: "das Trinkgeld = チップ"
+}
+
+{
+  question: "「酸っぱい」をドイツ語で言うと？",
+  type: "single",
+  options: ["zum Mitnehmen", "sauer", "die Speisekarte", "die Hauptspeise"],
+  correct: 1,
+  points: 3,
+  note: "sauer = 酸っぱい"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「塩辛い」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Vorspeise", "bestellen", "salzig", "sauer"],
+  correct: 2,
+  points: 3,
+  note: "salzig = 塩辛い"
+}
+
+{
+  question: "「味がする」をドイツ語で言うと？",
+  type: "single",
+  options: ["schmecken", "lecker", "die Vorspeise", "die Nachspeise"],
+  correct: 0,
+  points: 3,
+  note: "schmecken = 味がする"
+}
+
+{
+  question: "「デザート」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Speisekarte", "die Nachspeise", "empfehlen", "bestellen"],
+  correct: 1,
+  points: 3,
+  note: "die Nachspeise = デザート"
+}
+
+{
+  question: "「メイン」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Trinkgeld", "die Hauptspeise", "würzig", "empfehlen"],
+  correct: 1,
+  points: 3,
+  note: "die Hauptspeise = メイン"
+}
+
+{
+  question: "「スパイシー」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Trinkgeld", "die Nachspeise", "würzig", "bestellen"],
+  correct: 2,
+  points: 3,
+  note: "würzig = スパイシー"
+}
+
+{
+  question: "「辛い」をドイツ語で言うと？",
+  type: "single",
+  options: ["bestellen", "salzig", "süß", "scharf"],
+  correct: 3,
+  points: 3,
+  note: "scharf = 辛い"
+}
+
+{
+  question: "「お勘定を」をドイツ語で言うと？",
+  type: "single",
+  options: ["lecker", "bitter", "die Rechnung bitte", "die Speisekarte"],
+  correct: 2,
+  points: 3,
+  note: "die Rechnung bitte = お勘定を"
+}
+
+{
+  question: "「アレルギーの」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Trinkgeld", "allergisch", "scharf", "bitter"],
+  correct: 1,
+  points: 3,
+  note: "allergisch = アレルギーの"
+}
+
+{
+  question: "「美味しい」をドイツ語で言うと？",
+  type: "single",
+  options: ["lecker", "das Trinkgeld", "zum Mitnehmen", "allergisch"],
+  correct: 0,
+  points: 3,
+  note: "lecker = 美味しい"
+}
+
+{
+  question: "「勧める」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Nachspeise", "schmecken", "die Rechnung bitte", "empfehlen"],
+  correct: 3,
+  points: 3,
+  note: "empfehlen = 勧める"
+}

@@ -1,0 +1,281 @@
+title: "ドイツ語 初級 単語 30問 (#5)"
+description: "初級語彙"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "第1部（1–10）"
+
+{
+  question: "「男性」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Mann", "die Frau", "das Kind", "der Tag"],
+  correct: 0,
+  points: 2,
+  note: "der Mann = 男性"
+}
+
+{
+  question: "「女性」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Frau", "der Mann", "das Kind", "die Nacht"],
+  correct: 0,
+  points: 2,
+  note: "die Frau = 女性"
+}
+
+{
+  question: "「駅」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Bahnhof", "der Flughafen", "die Straße", "die Stadt"],
+  correct: 0,
+  points: 2,
+  note: "der Bahnhof = 駅"
+}
+
+{
+  question: "「空港」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Flughafen", "der Bahnhof", "das Hotel", "die Stadt"],
+  correct: 0,
+  points: 2,
+  note: "der Flughafen = 空港"
+}
+
+{
+  question: "「お金"をドイツ語で言うと？",
+  type: "single",
+  options: ["das Geld", "der Preis", "die Zeit", "die Uhr"],
+  correct: 0,
+  points: 2,
+  note: "das Geld = お金"
+}
+
+{
+  question: "「犬」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Hund", "die Katze", "der Baum", "die Blume"],
+  correct: 0,
+  points: 2,
+  note: "der Hund = 犬"
+}
+
+{
+  question: "「猫」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Katze", "der Hund", "der Baum", "die Blume"],
+  correct: 0,
+  points: 2,
+  note: "die Katze = 猫"
+}
+
+{
+  question: "「寒い」をドイツ語で言うと？",
+  type: "single",
+  options: ["kalt", "warm", "schön", "neu"],
+  correct: 0,
+  points: 2,
+  note: "kalt = 寒い"
+}
+
+{
+  question: "「暖かい」をドイツ語で言うと？",
+  type: "single",
+  options: ["warm", "kalt", "schön", "alt"],
+  correct: 0,
+  points: 2,
+  note: "warm = 暖かい"
+}
+
+{
+  question: "「持つ」をドイツ語で言うと？",
+  type: "single",
+  options: ["haben", "sein", "machen", "geben"],
+  correct: 0,
+  points: 2,
+  note: "haben = 持つ"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「買う」をドイツ語で言うと？",
+  type: "single",
+  options: ["kaufen", "suchen", "finden", "nehmen"],
+  correct: 0,
+  points: 2,
+  note: "kaufen = 買う"
+}
+
+{
+  question: "「助ける」をドイツ語で言うと？",
+  type: "single",
+  options: ["helfen", "fragen", "antworten", "verstehen"],
+  correct: 0,
+  points: 2,
+  note: "helfen = 助ける"
+}
+
+{
+  question: "「できる」をドイツ語で言うと？",
+  type: "single",
+  options: ["können", "müssen", "wollen", "mögen"],
+  correct: 0,
+  points: 2,
+  note: "können = できる"
+}
+
+{
+  question: "「欲する」をドイツ語で言うと？",
+  type: "single",
+  options: ["wollen", "können", "müssen", "sollen"],
+  correct: 0,
+  points: 2,
+  note: "wollen = 欲する"
+}
+
+{
+  question: "「コーヒー」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Kaffee", "der Tee", "das Bier", "der Wein"],
+  correct: 0,
+  points: 2,
+  note: "der Kaffee = コーヒー"
+}
+
+{
+  question: "「お茶」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Tee", "der Kaffee", "das Bier", "der Wein"],
+  correct: 0,
+  points: 2,
+  note: "der Tee = お茶"
+}
+
+{
+  question: "「雨」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Regen", "der Schnee", "die Sonne", "der Mond"],
+  correct: 0,
+  points: 2,
+  note: "der Regen = 雨"
+}
+
+{
+  question: "「雪」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Schnee", "der Regen", "die Sonne", "der Mond"],
+  correct: 0,
+  points: 2,
+  note: "der Schnee = 雪"
+}
+
+{
+  question: "「速い」をドイツ語で言うと？",
+  type: "single",
+  options: ["schnell", "langsam", "teuer", "billig"],
+  correct: 0,
+  points: 2,
+  note: "schnell = 速い"
+}
+
+{
+  question: "「遅い」をドイツ語で言うと？",
+  type: "single",
+  options: ["langsam", "schnell", "teuer", "billig"],
+  correct: 0,
+  points: 2,
+  note: "langsam = 遅い"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「高い」をドイツ語で言うと？",
+  type: "single",
+  options: ["teuer", "billig", "schnell", "langsam"],
+  correct: 0,
+  points: 2,
+  note: "teuer = 高い"
+}
+
+{
+  question: "「安い」をドイツ語で言うと？",
+  type: "single",
+  options: ["billig", "teuer", "schnell", "langsam"],
+  correct: 0,
+  points: 2,
+  note: "billig = 安い"
+}
+
+{
+  question: "「理解する」をドイツ語で言うと？",
+  type: "single",
+  options: ["verstehen", "wissen", "denken", "helfen"],
+  correct: 0,
+  points: 2,
+  note: "verstehen = 理解する"
+}
+
+{
+  question: "「知る」をドイツ語で言うと？",
+  type: "single",
+  options: ["wissen", "verstehen", "denken", "fragen"],
+  correct: 0,
+  points: 2,
+  note: "wissen = 知る"
+}
+
+{
+  question: "「朝食」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Frühstück", "das Mittagessen", "das Abendessen", "der Kaffee"],
+  correct: 0,
+  points: 2,
+  note: "das Frühstück = 朝食"
+}
+
+{
+  question: "「昼食」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Mittagessen", "das Frühstück", "das Abendessen", "der Tee"],
+  correct: 0,
+  points: 2,
+  note: "das Mittagessen = 昼食"
+}
+
+{
+  question: "「週」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Woche", "der Monat", "das Jahr", "der Tag"],
+  correct: 0,
+  points: 2,
+  note: "die Woche = 週"
+}
+
+{
+  question: "「年」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Jahr", "die Woche", "der Monat", "der Tag"],
+  correct: 0,
+  points: 2,
+  note: "das Jahr = 年"
+}
+
+{
+  question: "「しなければならない」をドイツ語で言うと？",
+  type: "single",
+  options: ["müssen", "können", "wollen", "dürfen"],
+  correct: 0,
+  points: 2,
+  note: "müssen = しなければならない"
+}
+
+{
+  question: "「してもよい」をドイツ語で言うと？",
+  type: "single",
+  options: ["dürfen", "müssen", "sollen", "können"],
+  correct: 0,
+  points: 2,
+  note: "dürfen = してもよい"
+}
