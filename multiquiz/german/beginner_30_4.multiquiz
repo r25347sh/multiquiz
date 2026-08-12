@@ -1,0 +1,283 @@
+title: "ドイツ語 初級 単語 30問 (#4)"
+description: "冠詞付き名詞・日常語・基本形容詞・助動詞など初級語彙"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+// ドイツ語単語クイズ — 30問
+
+section: "第1部（1–10）"
+
+{
+  question: "「今日」をドイツ語で言うと？",
+  type: "single",
+  options: ["heute", "neu", "das Abendessen", "der Hund"],
+  correct: 0,
+  points: 2,
+  note: "時"
+}
+
+{
+  question: "「3」をドイツ語で言うと？",
+  type: "single",
+  options: ["Buch", "drei", "die Stadt", "Tür"],
+  correct: 1,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「ドア」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Wein", "Tür", "der Hund", "Buch"],
+  correct: 1,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「都市」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "das Abendessen", "die Stadt", "Buch"],
+  correct: 2,
+  points: 2,
+  note: "die Stadt = 都市"
+}
+
+{
+  question: "「新しい」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Wein", "der Hund", "neu", "das Abendessen"],
+  correct: 2,
+  points: 2,
+  note: "neu = 新しい"
+}
+
+{
+  question: "「ワイン」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Wein", "das Abendessen", "heute", "drei"],
+  correct: 0,
+  points: 2,
+  note: "der Wein = ワイン"
+}
+
+{
+  question: "「本」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Wein", "neu", "Buch", "die Stadt"],
+  correct: 2,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「犬」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Stadt", "neu", "der Wein", "der Hund"],
+  correct: 3,
+  points: 2,
+  note: "der Hund = 犬"
+}
+
+{
+  question: "「夕食」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "der Hund", "das Abendessen", "Tür"],
+  correct: 2,
+  points: 2,
+  note: "das Abendessen = 夕食"
+}
+
+{
+  question: "「明日／朝」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "morgen", "Tür", "Buch"],
+  correct: 1,
+  points: 2,
+  note: "時"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「ビール」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Hund", "Tür", "das Bier", "drei"],
+  correct: 2,
+  points: 2,
+  note: "das Bier = ビール"
+}
+
+{
+  question: "「8」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "acht", "Tür", "der Hund"],
+  correct: 1,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「空港」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Stadt", "drei", "neu", "der Flughafen"],
+  correct: 3,
+  points: 2,
+  note: "der Flughafen = 空港"
+}
+
+{
+  question: "「いいえ」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Stadt", "drei", "heute", "Nein"],
+  correct: 3,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「答える」をドイツ語で言うと？",
+  type: "single",
+  options: ["antworten", "der Wein", "der Hund", "heute"],
+  correct: 0,
+  points: 2,
+  note: "antworten = 答える"
+}
+
+{
+  question: "「価格」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Preis", "der Hund", "die Stadt", "Tür"],
+  correct: 0,
+  points: 2,
+  note: "der Preis = 価格"
+}
+
+{
+  question: "「好む」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Wein", "drei", "Buch", "mögen"],
+  correct: 3,
+  points: 2,
+  note: "mögen = 好む"
+}
+
+{
+  question: "「食べる」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "die Stadt", "der Hund", "Buch"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「太陽」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tür", "der Hund", "die Sonne", "heute"],
+  correct: 2,
+  points: 2,
+  note: "die Sonne = 太陽"
+}
+
+{
+  question: "「1」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "Tür", "eins", "die Stadt"],
+  correct: 2,
+  points: 2,
+  note: "数"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「白い」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tür", "weiß", "die Stadt", "drei"],
+  correct: 1,
+  points: 2,
+  note: "色"
+}
+
+{
+  question: "「りんご」をドイツ語で言うと？",
+  type: "single",
+  options: ["heute", "der Wein", "neu", "Apfel"],
+  correct: 3,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「週」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Woche", "Buch", "neu", "der Wein"],
+  correct: 0,
+  points: 2,
+  note: "die Woche = 週"
+}
+
+{
+  question: "「国／田舎」をドイツ語で言うと？",
+  type: "single",
+  options: ["neu", "heute", "das Land", "die Stadt"],
+  correct: 2,
+  points: 2,
+  note: "das Land = 国／田舎"
+}
+
+{
+  question: "「どうぞ／お願い」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Stadt", "Buch", "der Hund", "Bitte"],
+  correct: 3,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「感じる」をドイツ語で言うと？",
+  type: "single",
+  options: ["neu", "der Wein", "Buch", "fühlen"],
+  correct: 3,
+  points: 2,
+  note: "fühlen = 感じる"
+}
+
+{
+  question: "「尋ねる」をドイツ語で言うと？",
+  type: "single",
+  options: ["fragen", "Tür", "drei", "der Wein"],
+  correct: 0,
+  points: 2,
+  note: "fragen = 尋ねる"
+}
+
+{
+  question: "「考える」をドイツ語で言うと？",
+  type: "single",
+  options: ["denken", "die Stadt", "Buch", "der Hund"],
+  correct: 0,
+  points: 2,
+  note: "denken = 考える"
+}
+
+{
+  question: "「支払う」をドイツ語で言うと？",
+  type: "single",
+  options: ["heute", "bezahlen", "Buch", "die Stadt"],
+  correct: 1,
+  points: 2,
+  note: "bezahlen = 支払う"
+}
+
+{
+  question: "「彼」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Wein", "neu", "Er", "der Hund"],
+  correct: 2,
+  points: 2,
+  note: "代名詞"
+}
