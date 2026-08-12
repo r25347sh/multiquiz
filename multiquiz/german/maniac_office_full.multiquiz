@@ -1,0 +1,189 @@
+title: "ドイツ語 マニアック（office）全問"
+description: "場面別フル: office"
+points_default: 3
+shuffle_questions: true
+shuffle_options: true
+
+section: "第1部（1–10）"
+
+{
+  question: "「同僚」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Präsentation", "einstellen", "der Urlaub", "der Kollege"],
+  correct: 3,
+  points: 3,
+  note: "der Kollege = 同僚"
+}
+
+{
+  question: "「プレゼン」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Protokoll", "der Vorgesetzte", "der Termin", "die Präsentation"],
+  correct: 3,
+  points: 3,
+  note: "die Präsentation = プレゼン"
+}
+
+{
+  question: "「議題」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Präsentation", "einstellen", "die Abteilung", "die Agenda"],
+  correct: 3,
+  points: 3,
+  note: "die Agenda = 議題"
+}
+
+{
+  question: "「調整する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gehaltserhöhung", "die Überstunde", "der Termin", "koordinieren"],
+  correct: 3,
+  points: 3,
+  note: "koordinieren = 調整する"
+}
+
+{
+  question: "「退職する」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Protokoll", "kündigen", "die Gehaltserhöhung", "die Agenda"],
+  correct: 1,
+  points: 3,
+  note: "kündigen = 退職する"
+}
+
+{
+  question: "「延期する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Frist", "verschieben", "einstellen", "die Gehaltserhöhung"],
+  correct: 1,
+  points: 3,
+  note: "verschieben = 延期する"
+}
+
+{
+  question: "「委任する」をドイツ語で言うと？",
+  type: "single",
+  options: ["delegieren", "der Vorgesetzte", "einhalten", "das Büro"],
+  correct: 0,
+  points: 3,
+  note: "delegieren = 委任する"
+}
+
+{
+  question: "「雇用する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gehaltserhöhung", "delegieren", "verschieben", "einstellen"],
+  correct: 3,
+  points: 3,
+  note: "einstellen = 雇用する"
+}
+
+{
+  question: "「会議」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Besprechung", "das Büro", "der Termin", "die Gehaltserhöhung"],
+  correct: 0,
+  points: 3,
+  note: "die Besprechung = 会議"
+}
+
+{
+  question: "「残業」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Überstunde", "einstellen", "die Besprechung", "der Urlaub"],
+  correct: 0,
+  points: 3,
+  note: "die Überstunde = 残業"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「締め切り」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Urlaub", "die Frist", "das Büro", "kündigen"],
+  correct: 1,
+  points: 3,
+  note: "die Frist = 締め切り"
+}
+
+{
+  question: "「守る」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Büro", "die Präsentation", "einhalten", "delegieren"],
+  correct: 2,
+  points: 3,
+  note: "einhalten = 守る"
+}
+
+{
+  question: "「議事録」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gehaltserhöhung", "das Protokoll", "der Bericht", "die Überstunde"],
+  correct: 1,
+  points: 3,
+  note: "das Protokoll = 議事録"
+}
+
+{
+  question: "「報告書」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Frist", "die Besprechung", "der Bericht", "die Abteilung"],
+  correct: 2,
+  points: 3,
+  note: "der Bericht = 報告書"
+}
+
+{
+  question: "「部署」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Abteilung", "einhalten", "kündigen", "verschieben"],
+  correct: 0,
+  points: 3,
+  note: "die Abteilung = 部署"
+}
+
+{
+  question: "「上司」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Vorgesetzte", "das Büro", "einhalten", "verschieben"],
+  correct: 0,
+  points: 3,
+  note: "der Vorgesetzte = 上司"
+}
+
+{
+  question: "「予定」をドイツ語で言うと？",
+  type: "single",
+  options: ["koordinieren", "kündigen", "das Büro", "der Termin"],
+  correct: 3,
+  points: 3,
+  note: "der Termin = 予定"
+}
+
+{
+  question: "「休暇」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Urlaub", "der Kollege", "der Vorgesetzte", "der Termin"],
+  correct: 0,
+  points: 3,
+  note: "der Urlaub = 休暇"
+}
+
+{
+  question: "「昇給」をドイツ語で言うと？",
+  type: "single",
+  options: ["einstellen", "die Gehaltserhöhung", "koordinieren", "verschieben"],
+  correct: 1,
+  points: 3,
+  note: "die Gehaltserhöhung = 昇給"
+}
+
+{
+  question: "「オフィス」をドイツ語で言うと？",
+  type: "single",
+  options: ["delegieren", "das Büro", "die Besprechung", "die Agenda"],
+  correct: 1,
+  points: 3,
+  note: "das Büro = オフィス"
+}
