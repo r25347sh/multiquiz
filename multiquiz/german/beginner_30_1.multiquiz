@@ -1,0 +1,283 @@
+title: "ドイツ語 初級 単語 30問 (#1)"
+description: "冠詞付き名詞・日常語・基本形容詞・助動詞など初級語彙"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+// ドイツ語単語クイズ — 30問
+
+section: "第1部（1–10）"
+
+{
+  question: "「悪い」をドイツ語で言うと？",
+  type: "single",
+  options: ["schlecht", "der Tag", "das Frühstück", "die Nacht"],
+  correct: 0,
+  points: 2,
+  note: "schlecht = 悪い"
+}
+
+{
+  question: "「夜」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Nacht", "der Tag", "schlecht", "das Frühstück"],
+  correct: 0,
+  points: 2,
+  note: "die Nacht = 夜"
+}
+
+{
+  question: "「日／昼間」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Tag", "die Nacht", "schlecht", "das Frühstück"],
+  correct: 0,
+  points: 2,
+  note: "der Tag = 日／昼間"
+}
+
+{
+  question: "「朝食」をドイツ語で言うと？",
+  type: "single",
+  options: ["das Frühstück", "der Tag", "die Nacht", "schlecht"],
+  correct: 0,
+  points: 2,
+  note: "das Frühstück = 朝食"
+}
+
+{
+  question: "「はい」をドイツ語で言うと？",
+  type: "single",
+  options: ["Ja", "Nein", "Bitte", "Danke"],
+  correct: 0,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「いいえ」をドイツ語で言うと？",
+  type: "single",
+  options: ["Nein", "Ja", "Bitte", "Danke"],
+  correct: 0,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「どうぞ／お願い」をドイツ語で言うと？",
+  type: "single",
+  options: ["Bitte", "Danke", "Ja", "Nein"],
+  correct: 0,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「ありがとう」をドイツ語で言うと？",
+  type: "single",
+  options: ["Danke", "Bitte", "Ja", "Nein"],
+  correct: 0,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "「水」をドイツ語で言うと？",
+  type: "single",
+  options: ["Wasser", "Brot", "Milch", "Apfel"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「パン」をドイツ語で言うと？",
+  type: "single",
+  options: ["Brot", "Wasser", "Milch", "Apfel"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「牛乳」をドイツ語で言うと？",
+  type: "single",
+  options: ["Milch", "Wasser", "Brot", "Apfel"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「りんご」をドイツ語で言うと？",
+  type: "single",
+  options: ["Apfel", "Milch", "Wasser", "Brot"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「家」をドイツ語で言うと？",
+  type: "single",
+  options: ["Haus", "Tisch", "Stuhl", "Buch"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「テーブル」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tisch", "Haus", "Stuhl", "Buch"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「椅子」をドイツ語で言うと？",
+  type: "single",
+  options: ["Stuhl", "Tisch", "Haus", "Buch"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「本」をドイツ語で言うと？",
+  type: "single",
+  options: ["Buch", "Stuhl", "Tisch", "Haus"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「1」をドイツ語で言うと？",
+  type: "single",
+  options: ["eins", "zwei", "drei", "vier"],
+  correct: 0,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「2」をドイツ語で言うと？",
+  type: "single",
+  options: ["zwei", "eins", "drei", "vier"],
+  correct: 0,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「3」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "eins", "zwei", "vier"],
+  correct: 0,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「4」をドイツ語で言うと？",
+  type: "single",
+  options: ["vier", "eins", "zwei", "drei"],
+  correct: 0,
+  points: 2,
+  note: "数"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「赤い」をドイツ語で言うと？",
+  type: "single",
+  options: ["rot", "blau", "grün", "gelb"],
+  correct: 0,
+  points: 2,
+  note: "色"
+}
+
+{
+  question: "「青い」をドイツ語で言うと？",
+  type: "single",
+  options: ["blau", "rot", "grün", "gelb"],
+  correct: 0,
+  points: 2,
+  note: "色"
+}
+
+{
+  question: "「緑の」をドイツ語で言うと？",
+  type: "single",
+  options: ["grün", "rot", "blau", "gelb"],
+  correct: 0,
+  points: 2,
+  note: "色"
+}
+
+{
+  question: "「黄色い」をドイツ語で言うと？",
+  type: "single",
+  options: ["gelb", "rot", "blau", "grün"],
+  correct: 0,
+  points: 2,
+  note: "色"
+}
+
+{
+  question: "「食べる」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "trinken", "gehen", "kommen"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「飲む」をドイツ語で言うと？",
+  type: "single",
+  options: ["trinken", "essen", "gehen", "kommen"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「行く」をドイツ語で言うと？",
+  type: "single",
+  options: ["gehen", "kommen", "essen", "trinken"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「来る」をドイツ語で言うと？",
+  type: "single",
+  options: ["kommen", "gehen", "essen", "trinken"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「今日」をドイツ語で言うと？",
+  type: "single",
+  options: ["heute", "morgen", "gestern", "jetzt"],
+  correct: 0,
+  points: 2,
+  note: "時"
+}
+
+{
+  question: "「昨日」をドイツ語で言うと？",
+  type: "single",
+  options: ["gestern", "heute", "morgen", "jetzt"],
+  correct: 0,
+  points: 2,
+  note: "時"
+}

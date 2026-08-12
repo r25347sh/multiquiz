@@ -1,0 +1,283 @@
+title: "ドイツ語 初級 単語 30問 (#3)"
+description: "冠詞付き名詞・日常語・基本形容詞・助動詞など初級語彙"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+// ドイツ語単語クイズ — 30問
+
+section: "第1部（1–10）"
+
+{
+  question: "「学校」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schule", "Lehrer", "Schüler", "Buch"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「先生（男性）」をドイツ語で言うと？",
+  type: "single",
+  options: ["Lehrer", "Schule", "Schüler", "Freund"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「生徒（男性）」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schüler", "Lehrer", "Schule", "Freund"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「友達（男性）」をドイツ語で言うと？",
+  type: "single",
+  options: ["Freund", "Schüler", "Lehrer", "Schule"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「母」をドイツ語で言うと？",
+  type: "single",
+  options: ["Mutter", "Vater", "Kind", "Bruder"],
+  correct: 0,
+  points: 2,
+  note: "家族"
+}
+
+{
+  question: "「父」をドイツ語で言うと？",
+  type: "single",
+  options: ["Vater", "Mutter", "Kind", "Schwester"],
+  correct: 0,
+  points: 2,
+  note: "家族"
+}
+
+{
+  question: "「子供」をドイツ語で言うと？",
+  type: "single",
+  options: ["Kind", "Vater", "Mutter", "Bruder"],
+  correct: 0,
+  points: 2,
+  note: "家族"
+}
+
+{
+  question: "「兄弟」をドイツ語で言うと？",
+  type: "single",
+  options: ["Bruder", "Schwester", "Kind", "Vater"],
+  correct: 0,
+  points: 2,
+  note: "家族"
+}
+
+{
+  question: "「姉妹」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schwester", "Bruder", "Kind", "Mutter"],
+  correct: 0,
+  points: 2,
+  note: "家族"
+}
+
+{
+  question: "「大きい」をドイツ語で言うと？",
+  type: "single",
+  options: ["groß", "klein", "gut", "schlecht"],
+  correct: 0,
+  points: 2,
+  note: "形容詞"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「小さい」をドイツ語で言うと？",
+  type: "single",
+  options: ["klein", "groß", "gut", "schlecht"],
+  correct: 0,
+  points: 2,
+  note: "形容詞"
+}
+
+{
+  question: "「良い」をドイツ語で言うと？",
+  type: "single",
+  options: ["gut", "schlecht", "groß", "klein"],
+  correct: 0,
+  points: 2,
+  note: "形容詞"
+}
+
+{
+  question: "「見る」をドイツ語で言うと？",
+  type: "single",
+  options: ["sehen", "hören", "sprechen", "lesen"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「聞く」をドイツ語で言うと？",
+  type: "single",
+  options: ["hören", "sehen", "sprechen", "lesen"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「話す」をドイツ語で言うと？",
+  type: "single",
+  options: ["sprechen", "sehen", "hören", "lesen"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「読む」をドイツ語で言うと？",
+  type: "single",
+  options: ["lesen", "schreiben", "sehen", "hören"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「書く」をドイツ語で言うと？",
+  type: "single",
+  options: ["schreiben", "lesen", "sehen", "hören"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「どこ」をドイツ語で言うと？",
+  type: "single",
+  options: ["wo", "was", "wer", "wie"],
+  correct: 0,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「何」をドイツ語で言うと？",
+  type: "single",
+  options: ["was", "wo", "wer", "wie"],
+  correct: 0,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「誰」をドイツ語で言うと？",
+  type: "single",
+  options: ["wer", "was", "wo", "wie"],
+  correct: 0,
+  points: 2,
+  note: "疑問詞"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「どのように」をドイツ語で言うと？",
+  type: "single",
+  options: ["wie", "wer", "was", "wo"],
+  correct: 0,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「いつ」をドイツ語で言うと？",
+  type: "single",
+  options: ["wann", "warum", "wie", "wo"],
+  correct: 0,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「なぜ」をドイツ語で言うと？",
+  type: "single",
+  options: ["warum", "wann", "wie", "wo"],
+  correct: 0,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「ここ」をドイツ語で言うと？",
+  type: "single",
+  options: ["hier", "dort", "wo", "was"],
+  correct: 0,
+  points: 2,
+  note: "場所"
+}
+
+{
+  question: "「あそこ」をドイツ語で言うと？",
+  type: "single",
+  options: ["dort", "hier", "wo", "was"],
+  correct: 0,
+  points: 2,
+  note: "場所"
+}
+
+{
+  question: "「今」をドイツ語で言うと？",
+  type: "single",
+  options: ["jetzt", "heute", "morgen", "gestern"],
+  correct: 0,
+  points: 2,
+  note: "時"
+}
+
+{
+  question: "「車」をドイツ語で言うと？",
+  type: "single",
+  options: ["Auto", "Bahn", "Bus", "Haus"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「電車」をドイツ語で言うと？",
+  type: "single",
+  options: ["Bahn", "Auto", "Bus", "Haus"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「ドア」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tür", "Fenster", "Haus", "Tisch"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「窓」をドイツ語で言うと？",
+  type: "single",
+  options: ["Fenster", "Tür", "Haus", "Tisch"],
+  correct: 0,
+  points: 2,
+  note: "名詞"
+}
