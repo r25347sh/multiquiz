@@ -1,0 +1,283 @@
+title: "ドイツ語 初級 単語 30問 (#2)"
+description: "冠詞付き名詞・日常語・基本形容詞・助動詞など初級語彙"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+// ドイツ語単語クイズ — 30問
+
+section: "第1部（1–10）"
+
+{
+  question: "「支払う」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Mann", "bezahlen", "nehmen", "die Frucht"],
+  correct: 1,
+  points: 2,
+  note: "bezahlen = 支払う"
+}
+
+{
+  question: "「男性」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Mann", "die Frucht", "der Abend", "nehmen"],
+  correct: 0,
+  points: 2,
+  note: "冠詞付き"
+}
+
+{
+  question: "「6」をドイツ語で言うと？",
+  type: "single",
+  options: ["sechs", "der Mann", "essen", "der Abend"],
+  correct: 0,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「夕方」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Abend", "essen", "kalt", "der Schnee"],
+  correct: 0,
+  points: 2,
+  note: "der Abend = 夕方"
+}
+
+{
+  question: "「果物」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Frucht", "der Mann", "sechs", "essen"],
+  correct: 0,
+  points: 2,
+  note: "die Frucht = 果物"
+}
+
+{
+  question: "「食べる」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "der Abend", "der Schnee", "nehmen"],
+  correct: 0,
+  points: 2,
+  note: "動詞"
+}
+
+{
+  question: "「寒い」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Mann", "die Frucht", "kalt", "der Abend"],
+  correct: 2,
+  points: 2,
+  note: "kalt = 寒い"
+}
+
+{
+  question: "「取る」をドイツ語で言うと？",
+  type: "single",
+  options: ["bezahlen", "nehmen", "kalt", "die Frucht"],
+  correct: 1,
+  points: 2,
+  note: "nehmen = 取る"
+}
+
+{
+  question: "「雪」をドイツ語で言うと？",
+  type: "single",
+  options: ["bezahlen", "der Abend", "der Schnee", "die Frucht"],
+  correct: 2,
+  points: 2,
+  note: "der Schnee = 雪"
+}
+
+{
+  question: "「価格」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Preis", "nehmen", "der Abend", "sechs"],
+  correct: 0,
+  points: 2,
+  note: "der Preis = 価格"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「猫」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Frucht", "die Katze", "der Mann", "der Abend"],
+  correct: 1,
+  points: 2,
+  note: "die Katze = 猫"
+}
+
+{
+  question: "「知っている」をドイツ語で言うと？",
+  type: "single",
+  options: ["wissen", "nehmen", "sechs", "essen"],
+  correct: 0,
+  points: 2,
+  note: "wissen = 知っている"
+}
+
+{
+  question: "「子供」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Mann", "Kind", "sechs", "nehmen"],
+  correct: 1,
+  points: 2,
+  note: "家族"
+}
+
+{
+  question: "「時間（1時間）」をドイツ語で言うと？",
+  type: "single",
+  options: ["bezahlen", "der Abend", "essen", "die Stunde"],
+  correct: 3,
+  points: 2,
+  note: "die Stunde = 時間（1時間）"
+}
+
+{
+  question: "「バス」をドイツ語で言うと？",
+  type: "single",
+  options: ["bezahlen", "essen", "der Abend", "Bus"],
+  correct: 3,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「必要とする」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Frucht", "nehmen", "brauchen", "kalt"],
+  correct: 2,
+  points: 2,
+  note: "brauchen = 必要とする"
+}
+
+{
+  question: "「分」をドイツ語で言うと？",
+  type: "single",
+  options: ["bezahlen", "die Minute", "essen", "die Frucht"],
+  correct: 1,
+  points: 2,
+  note: "die Minute = 分"
+}
+
+{
+  question: "「彼女／あなた（敬称）」をドイツ語で言うと？",
+  type: "single",
+  options: ["Sie", "sechs", "nehmen", "kalt"],
+  correct: 0,
+  points: 2,
+  note: "代名詞"
+}
+
+{
+  question: "「りんご」をドイツ語で言うと？",
+  type: "single",
+  options: ["bezahlen", "essen", "die Frucht", "Apfel"],
+  correct: 3,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「悪い」をドイツ語で言うと？",
+  type: "single",
+  options: ["schlecht", "bezahlen", "nehmen", "essen"],
+  correct: 0,
+  points: 2,
+  note: "形容詞"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「本」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "die Frucht", "Buch", "der Abend"],
+  correct: 2,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「5」をドイツ語で言うと？",
+  type: "single",
+  options: ["fünf", "kalt", "die Frucht", "sechs"],
+  correct: 0,
+  points: 2,
+  note: "数"
+}
+
+{
+  question: "「助ける」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Frucht", "kalt", "essen", "helfen"],
+  correct: 3,
+  points: 2,
+  note: "helfen = 助ける"
+}
+
+{
+  question: "「ワイン」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Wein", "nehmen", "bezahlen", "der Mann"],
+  correct: 0,
+  points: 2,
+  note: "der Wein = ワイン"
+}
+
+{
+  question: "「黒い」をドイツ語で言うと？",
+  type: "single",
+  options: ["kalt", "schwarz", "nehmen", "die Frucht"],
+  correct: 1,
+  points: 2,
+  note: "色"
+}
+
+{
+  question: "「なぜ」をドイツ語で言うと？",
+  type: "single",
+  options: ["bezahlen", "nehmen", "warum", "die Frucht"],
+  correct: 2,
+  points: 2,
+  note: "疑問詞"
+}
+
+{
+  question: "「明日／朝」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Mann", "morgen", "sechs", "kalt"],
+  correct: 1,
+  points: 2,
+  note: "時"
+}
+
+{
+  question: "「彼」をドイツ語で言うと？",
+  type: "single",
+  options: ["essen", "die Frucht", "Er", "nehmen"],
+  correct: 2,
+  points: 2,
+  note: "代名詞"
+}
+
+{
+  question: "「パン」をドイツ語で言うと？",
+  type: "single",
+  options: ["sechs", "der Abend", "Brot", "der Mann"],
+  correct: 2,
+  points: 2,
+  note: "名詞"
+}
+
+{
+  question: "「通り」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Abend", "bezahlen", "nehmen", "die Straße"],
+  correct: 3,
+  points: 2,
+  note: "die Straße = 通り"
+}
