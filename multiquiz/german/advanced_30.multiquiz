@@ -1,0 +1,281 @@
+title: "ドイツ語 上級 単語 30問"
+description: "論証・哲学・言語学寄りの高度な語彙"
+points_default: 4
+shuffle_questions: true
+shuffle_options: true
+
+section: "第1部（1–10）"
+
+{
+  question: "「詳細」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "falsifizieren", "die Verbesserung", "leugnen"],
+  correct: 0,
+  points: 4,
+  note: "die Einzelheit = 詳細"
+}
+
+{
+  question: "「否定する」をドイツ語で言うと？",
+  type: "single",
+  options: ["falsifizieren", "die Methodologie", "die Gelegenheit", "leugnen"],
+  correct: 3,
+  points: 4,
+  note: "leugnen = 否定する"
+}
+
+{
+  question: "「機会」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "die Methodologie", "die Gelegenheit", "leugnen"],
+  correct: 2,
+  points: 4,
+  note: "die Gelegenheit = 機会"
+}
+
+{
+  question: "「演繹」をドイツ語で言うと？",
+  type: "single",
+  options: ["spekulieren", "die Methodologie", "die Verbesserung", "die Deduktion"],
+  correct: 3,
+  points: 4,
+  note: "die Deduktion = 演繹"
+}
+
+{
+  question: "「方法論」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Deduktion", "die Verbesserung", "die Methodologie", "falsifizieren"],
+  correct: 2,
+  points: 4,
+  note: "die Methodologie = 方法論"
+}
+
+{
+  question: "「改善」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gelegenheit", "spekulieren", "behaupten", "die Verbesserung"],
+  correct: 3,
+  points: 4,
+  note: "die Verbesserung = 改善"
+}
+
+{
+  question: "「主張する」をドイツ語で言うと？",
+  type: "single",
+  options: ["behaupten", "die Verbesserung", "die Methodologie", "die Einzelheit"],
+  correct: 0,
+  points: 4,
+  note: "behaupten = 主張する"
+}
+
+{
+  question: "「反証する」をドイツ語で言うと？",
+  type: "single",
+  options: ["falsifizieren", "die Methodologie", "behaupten", "spekulieren"],
+  correct: 0,
+  points: 4,
+  note: "falsifizieren = 反証する"
+}
+
+{
+  question: "「思索する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "leugnen", "spekulieren", "die Gelegenheit"],
+  correct: 2,
+  points: 4,
+  note: "spekulieren = 思索する"
+}
+
+{
+  question: "「議論・対決」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "die Auseinandersetzung", "leugnen", "die Gelegenheit"],
+  correct: 1,
+  points: 4,
+  note: "die Auseinandersetzung = 議論・対決"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「言説・議論」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Diskurs", "die Einzelheit", "die Verbesserung", "die Deduktion"],
+  correct: 0,
+  points: 4,
+  note: "der Diskurs = 言説・議論"
+}
+
+{
+  question: "「アプローチ」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "falsifizieren", "der Ansatz", "die Deduktion"],
+  correct: 2,
+  points: 4,
+  note: "der Ansatz = アプローチ"
+}
+
+{
+  question: "「逆説」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Verbesserung", "die Paradoxie", "die Deduktion", "die Gelegenheit"],
+  correct: 1,
+  points: 4,
+  note: "die Paradoxie = 逆説"
+}
+
+{
+  question: "「区別する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "differenzieren", "die Gelegenheit", "falsifizieren"],
+  correct: 1,
+  points: 4,
+  note: "differenzieren = 区別する"
+}
+
+{
+  question: "「差異化」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Differenzierung", "die Verbesserung", "behaupten", "leugnen"],
+  correct: 0,
+  points: 4,
+  note: "die Differenzierung = 差異化"
+}
+
+{
+  question: "「悪化」をドイツ語で言うと？",
+  type: "single",
+  options: ["leugnen", "falsifizieren", "die Verschlechterung", "die Einzelheit"],
+  correct: 2,
+  points: 4,
+  note: "die Verschlechterung = 悪化"
+}
+
+{
+  question: "「品質」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "die Deduktion", "die Verbesserung", "die Qualität"],
+  correct: 3,
+  points: 4,
+  note: "die Qualität = 品質"
+}
+
+{
+  question: "「結果・帰結」をドイツ語で言うと？",
+  type: "single",
+  options: ["behaupten", "die Konsequenz", "die Einzelheit", "die Gelegenheit"],
+  correct: 1,
+  points: 4,
+  note: "die Konsequenz = 結果・帰結"
+}
+
+{
+  question: "「強調する」をドイツ語で言うと？",
+  type: "single",
+  options: ["behaupten", "die Einzelheit", "betonen", "die Verbesserung"],
+  correct: 2,
+  points: 4,
+  note: "betonen = 強調する"
+}
+
+{
+  question: "「妥当性を確認する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Deduktion", "validieren", "die Gelegenheit", "leugnen"],
+  correct: 1,
+  points: 4,
+  note: "validieren = 妥当性を確認する"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「証拠・明白さ」をドイツ語で言うと？",
+  type: "single",
+  options: ["falsifizieren", "behaupten", "die Verbesserung", "die Evidenz"],
+  correct: 3,
+  points: 4,
+  note: "die Evidenz = 証拠・明白さ"
+}
+
+{
+  question: "「修辞学」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gelegenheit", "die Deduktion", "die Einzelheit", "die Rhetorik"],
+  correct: 3,
+  points: 4,
+  note: "die Rhetorik = 修辞学"
+}
+
+{
+  question: "「緊急性」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Einzelheit", "leugnen", "die Deduktion", "die Dringlichkeit"],
+  correct: 3,
+  points: 4,
+  note: "die Dringlichkeit = 緊急性"
+}
+
+{
+  question: "「評価・称賛」をドイツ語で言うと？",
+  type: "single",
+  options: ["behaupten", "die Würdigung", "die Gelegenheit", "die Deduktion"],
+  correct: 1,
+  points: 4,
+  note: "die Würdigung = 評価・称賛"
+}
+
+{
+  question: "「プロセス」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Prozess", "falsifizieren", "die Gelegenheit", "behaupten"],
+  correct: 0,
+  points: 4,
+  note: "der Prozess = プロセス"
+}
+
+{
+  question: "「テーゼ」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gelegenheit", "die These", "behaupten", "die Methodologie"],
+  correct: 1,
+  points: 4,
+  note: "die These = テーゼ"
+}
+
+{
+  question: "「考慮する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gelegenheit", "die Methodologie", "die Verbesserung", "berücksichtigen"],
+  correct: 3,
+  points: 4,
+  note: "berücksichtigen = 考慮する"
+}
+
+{
+  question: "「予見する」をドイツ語で言うと？",
+  type: "single",
+  options: ["die Gelegenheit", "voraussehen", "die Deduktion", "leugnen"],
+  correct: 1,
+  points: 4,
+  note: "voraussehen = 予見する"
+}
+
+{
+  question: "「矛盾」をドイツ語で言うと？",
+  type: "single",
+  options: ["der Widerspruch", "behaupten", "die Methodologie", "die Deduktion"],
+  correct: 0,
+  points: 4,
+  note: "der Widerspruch = 矛盾"
+}
+
+{
+  question: "「評価する」をドイツ語で言うと？",
+  type: "single",
+  options: ["evaluieren", "die Einzelheit", "die Methodologie", "die Deduktion"],
+  correct: 0,
+  points: 4,
+  note: "evaluieren = 評価する"
+}
