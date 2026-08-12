@@ -1,0 +1,465 @@
+title: "ドイツ語 超初級 単語 50問 (B)"
+description: "最基礎語彙（拡大）"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "第1部（1–10）"
+
+{
+  question: "「6」をドイツ語で言うと？",
+  type: "single",
+  options: ["hier", "grün", "Stuhl", "sechs"],
+  correct: 3,
+  points: 2,
+  note: "sechs = 6"
+}
+
+{
+  question: "「食べる」をドイツ語で言うと？",
+  type: "single",
+  options: ["Brot", "Bitte", "Bus", "essen"],
+  correct: 3,
+  points: 2,
+  note: "essen = 食べる"
+}
+
+{
+  question: "「おやすみ」をドイツ語で言うと？",
+  type: "single",
+  options: ["Gute Nacht", "was", "essen", "Brot"],
+  correct: 0,
+  points: 2,
+  note: "Gute Nacht = おやすみ"
+}
+
+{
+  question: "「今日」をドイツ語で言うと？",
+  type: "single",
+  options: ["grün", "Wir", "hier", "heute"],
+  correct: 3,
+  points: 2,
+  note: "heute = 今日"
+}
+
+{
+  question: "「こんにちは」をドイツ語で言うと？",
+  type: "single",
+  options: ["sehen", "dort", "Guten Tag", "zwei"],
+  correct: 2,
+  points: 2,
+  note: "Guten Tag = こんにちは"
+}
+
+{
+  question: "「水」をドイツ語で言うと？",
+  type: "single",
+  options: ["Ich", "Wasser", "Bus", "drei"],
+  correct: 1,
+  points: 2,
+  note: "Wasser = 水"
+}
+
+{
+  question: "「ありがとう」をドイツ語で言うと？",
+  type: "single",
+  options: ["Buch", "Danke", "Wir", "Tisch"],
+  correct: 1,
+  points: 2,
+  note: "Danke = ありがとう"
+}
+
+{
+  question: "「車」をドイツ語で言うと？",
+  type: "single",
+  options: ["Auto", "Ich", "zehn", "Gute Nacht"],
+  correct: 0,
+  points: 2,
+  note: "Auto = 車"
+}
+
+{
+  question: "「こんにちは」をドイツ語で言うと？",
+  type: "single",
+  options: ["zwei", "sechs", "zehn", "Hallo"],
+  correct: 3,
+  points: 2,
+  note: "Hallo = こんにちは"
+}
+
+{
+  question: "「1」をドイツ語で言うと？",
+  type: "single",
+  options: ["gestern", "sechs", "eins", "Buch"],
+  correct: 2,
+  points: 2,
+  note: "eins = 1"
+}
+
+section: "第2部（11–20）"
+
+{
+  question: "「見る」をドイツ語で言うと？",
+  type: "single",
+  options: ["sehen", "Wir", "Auto", "acht"],
+  correct: 0,
+  points: 2,
+  note: "sehen = 見る"
+}
+
+{
+  question: "「2」をドイツ語で言うと？",
+  type: "single",
+  options: ["acht", "zwei", "Kind", "gelb"],
+  correct: 1,
+  points: 2,
+  note: "zwei = 2"
+}
+
+{
+  question: "「ここ」をドイツ語で言うと？",
+  type: "single",
+  options: ["Wir", "grün", "hier", "blau"],
+  correct: 2,
+  points: 2,
+  note: "hier = ここ"
+}
+
+{
+  question: "「椅子」をドイツ語で言うと？",
+  type: "single",
+  options: ["Stuhl", "Gute Nacht", "Bus", "Tisch"],
+  correct: 0,
+  points: 2,
+  note: "Stuhl = 椅子"
+}
+
+{
+  question: "「あなた」をドイツ語で言うと？",
+  type: "single",
+  options: ["Du", "zwei", "dort", "Stuhl"],
+  correct: 0,
+  points: 2,
+  note: "Du = あなた"
+}
+
+{
+  question: "「飲む」をドイツ語で言うと？",
+  type: "single",
+  options: ["weiß", "Bitte", "grün", "trinken"],
+  correct: 3,
+  points: 2,
+  note: "trinken = 飲む"
+}
+
+{
+  question: "「はい」をドイツ語で言うと？",
+  type: "single",
+  options: ["was", "Ja", "Stuhl", "eins"],
+  correct: 1,
+  points: 2,
+  note: "Ja = はい"
+}
+
+{
+  question: "「白い」をドイツ語で言うと？",
+  type: "single",
+  options: ["Bus", "weiß", "gestern", "eins"],
+  correct: 1,
+  points: 2,
+  note: "weiß = 白い"
+}
+
+{
+  question: "「昨日"をドイツ語で言うと？",
+  type: "single",
+  options: ["Du", "eins", "Apfel", "gestern"],
+  correct: 3,
+  points: 2,
+  note: "gestern = 昨日"
+}
+
+{
+  question: "「緑」をドイツ語で言うと？",
+  type: "single",
+  options: ["vier", "zehn", "grün", "sieben"],
+  correct: 2,
+  points: 2,
+  note: "grün = 緑"
+}
+
+section: "第3部（21–30）"
+
+{
+  question: "「10」をドイツ語で言うと？",
+  type: "single",
+  options: ["vier", "Wir", "zehn", "weiß"],
+  correct: 2,
+  points: 2,
+  note: "zehn = 10"
+}
+
+{
+  question: "「3」をドイツ語で言うと？",
+  type: "single",
+  options: ["drei", "weiß", "dort", "Milch"],
+  correct: 0,
+  points: 2,
+  note: "drei = 3"
+}
+
+{
+  question: "「7」をドイツ語で言うと？",
+  type: "single",
+  options: ["wie", "sieben", "Auto", "Apfel"],
+  correct: 1,
+  points: 2,
+  note: "sieben = 7"
+}
+
+{
+  question: "「パン」をドイツ語で言うと？",
+  type: "single",
+  options: ["Hallo", "Guten Tag", "Buch", "Brot"],
+  correct: 3,
+  points: 2,
+  note: "Brot = パン"
+}
+
+{
+  question: "「どうぞ」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tschüss", "Du", "Buch", "Bitte"],
+  correct: 3,
+  points: 2,
+  note: "Bitte = どうぞ"
+}
+
+{
+  question: "「バス」をドイツ語で言うと？",
+  type: "single",
+  options: ["Buch", "Bus", "Bitte", "Tisch"],
+  correct: 1,
+  points: 2,
+  note: "Bus = バス"
+}
+
+{
+  question: "「あそこ」をドイツ語で言うと？",
+  type: "single",
+  options: ["Guten Tag", "Vater", "Milch", "dort"],
+  correct: 3,
+  points: 2,
+  note: "dort = あそこ"
+}
+
+{
+  question: "「子供」をドイツ語で言うと？",
+  type: "single",
+  options: ["Kind", "Sie", "Schwester", "hier"],
+  correct: 0,
+  points: 2,
+  note: "Kind = 子供"
+}
+
+{
+  question: "「どう」をドイツ語で言うと？",
+  type: "single",
+  options: ["wie", "Gute Nacht", "vier", "Bitte"],
+  correct: 0,
+  points: 2,
+  note: "wie = どう"
+}
+
+{
+  question: "「8」をドイツ語で言うと？",
+  type: "single",
+  options: ["Sie", "acht", "sehen", "grün"],
+  correct: 1,
+  points: 2,
+  note: "acht = 8"
+}
+
+section: "第4部（31–40）"
+
+{
+  question: "「本」をドイツ語で言うと？",
+  type: "single",
+  options: ["Danke", "zwei", "Buch", "zehn"],
+  correct: 2,
+  points: 2,
+  note: "Buch = 本"
+}
+
+{
+  question: "「行く」をドイツ語で言うと？",
+  type: "single",
+  options: ["Stuhl", "gehen", "Wir", "gestern"],
+  correct: 1,
+  points: 2,
+  note: "gehen = 行く"
+}
+
+{
+  question: "「牛乳」をドイツ語で言うと？",
+  type: "single",
+  options: ["Gute Nacht", "trinken", "drei", "Milch"],
+  correct: 3,
+  points: 2,
+  note: "Milch = 牛乳"
+}
+
+{
+  question: "「テーブル」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tisch", "Auto", "Haus", "Buch"],
+  correct: 0,
+  points: 2,
+  note: "Tisch = テーブル"
+}
+
+{
+  question: "「家」をドイツ語で言うと？",
+  type: "single",
+  options: ["Haus", "Auto", "Buch", "Tisch"],
+  correct: 0,
+  points: 2,
+  note: "Haus = 家"
+}
+
+{
+  question: "「母」をドイツ語で言うと？",
+  type: "single",
+  options: ["Mutter", "Vater", "Kind", "Bruder"],
+  correct: 0,
+  points: 2,
+  note: "Mutter = 母"
+}
+
+{
+  question: "「父」をドイツ語で言うと？",
+  type: "single",
+  options: ["Vater", "Mutter", "Kind", "Schwester"],
+  correct: 0,
+  points: 2,
+  note: "Vater = 父"
+}
+
+{
+  question: "「姉妹」をドイツ語で言うと？",
+  type: "single",
+  options: ["Schwester", "Bruder", "Kind", "Mutter"],
+  correct: 0,
+  points: 2,
+  note: "Schwester = 姉妹"
+}
+
+{
+  question: "「青い」をドイツ語で言うと？",
+  type: "single",
+  options: ["blau", "rot", "grün", "gelb"],
+  correct: 0,
+  points: 2,
+  note: "blau = 青い"
+}
+
+{
+  question: "「黄色い」をドイツ語で言うと？",
+  type: "single",
+  options: ["gelb", "rot", "blau", "grün"],
+  correct: 0,
+  points: 2,
+  note: "gelb = 黄色い"
+}
+
+section: "第5部（41–50）"
+
+{
+  question: "「私」をドイツ語で言うと？",
+  type: "single",
+  options: ["Ich", "Du", "Er", "Wir"],
+  correct: 0,
+  points: 2,
+  note: "Ich = 私"
+}
+
+{
+  question: "「彼」をドイツ語で言うと？",
+  type: "single",
+  options: ["Er", "Ich", "Du", "Wir"],
+  correct: 0,
+  points: 2,
+  note: "Er = 彼"
+}
+
+{
+  question: "「私たち」をドイツ語で言うと？",
+  type: "single",
+  options: ["Wir", "Ich", "Du", "Er"],
+  correct: 0,
+  points: 2,
+  note: "Wir = 私たち"
+}
+
+{
+  question: "「4」をドイツ語で言うと？",
+  type: "single",
+  options: ["vier", "fünf", "sechs", "sieben"],
+  correct: 0,
+  points: 2,
+  note: "vier = 4"
+}
+
+{
+  question: "「5」をドイツ語で言うと？",
+  type: "single",
+  options: ["fünf", "vier", "sechs", "acht"],
+  correct: 0,
+  points: 2,
+  note: "fünf = 5"
+}
+
+{
+  question: "「9」をドイツ語で言うと？",
+  type: "single",
+  options: ["neun", "acht", "zehn", "sieben"],
+  correct: 0,
+  points: 2,
+  note: "neun = 9"
+}
+
+{
+  question: "「黒い」をドイツ語で言うと？",
+  type: "single",
+  options: ["schwarz", "weiß", "rot", "blau"],
+  correct: 0,
+  points: 2,
+  note: "schwarz = 黒い"
+}
+
+{
+  question: "「大きい」をドイツ語で言うと？",
+  type: "single",
+  options: ["groß", "klein", "gut", "schlecht"],
+  correct: 0,
+  points: 2,
+  note: "groß = 大きい"
+}
+
+{
+  question: "「小さい」をドイツ語で言うと？",
+  type: "single",
+  options: ["klein", "groß", "gut", "schlecht"],
+  correct: 0,
+  points: 2,
+  note: "klein = 小さい"
+}
+
+{
+  question: "「じゃあね」をドイツ語で言うと？",
+  type: "single",
+  options: ["Tschüss", "Hallo", "Bitte", "Danke"],
+  correct: 0,
+  points: 2,
+  note: "Tschüss = じゃあね"
+}
