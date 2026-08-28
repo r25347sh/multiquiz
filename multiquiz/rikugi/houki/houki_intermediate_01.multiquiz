@@ -1,0 +1,229 @@
+title: "一陸技 法規 中級 運用・手続き 25問 (#1)"
+description: "免許申請・再免許・監督・罰則など中級レベルの法規問題。"
+points_default: 3
+shuffle_questions: true
+shuffle_options: true
+
+section: "免許・申請関連"
+
+{
+  question: "無線局の免許申請時に必要な書類として一般的に含まれないものは？",
+  type: "single",
+  options: ["申請者の家族構成一覧", "無線設備の工事設計書", "周波数の希望", "空中線電力の希望"],
+  correct: 0,
+  points: 3,
+  note: "標準的な申請書類"
+}
+
+{
+  question: "包括免許の対象となる特定無線局の特徴は？",
+  type: "single",
+  options: ["同一の無線設備を多数開設する場合に適する", "1局のみ", "実験専用", "アマチュア専用"],
+  correct: 0,
+  points: 3,
+  note: "包括免許制度"
+}
+
+{
+  question: "免許の有効期間が満了した場合、再免許を受けないとどうなるか？",
+  type: "single",
+  options: ["無線局を開設・運用できなくなる", "自動的に延長される", "3か月の猶予がある", "罰則のみ"],
+  correct: 0,
+  points: 3,
+  note: "免許制度の基本"
+}
+
+{
+  question: "変更検査が必要となる場合の例は？",
+  type: "single",
+  options: ["無線設備の重要な変更をした場合", "操作者の変更のみ", "住所の変更のみ", "名前の変更のみ"],
+  correct: 0,
+  points: 3,
+  note: "電波法"
+}
+
+{
+  question: "「臨時の運用」に関する規定があるのは？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "災害時等"
+}
+
+section: "監督・検査"
+
+{
+  question: "総務大臣が無線局に対して行うことができる監督処分の例は？",
+  type: "multiple",
+  options: ["運用の停止", "免許の取消し", "周波数の変更命令", "すべて該当"],
+  correct: [0, 1, 2],
+  points: 4,
+  note: "監督権限"
+}
+
+{
+  question: "定期検査の対象となる無線局があるか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "一部の無線局で義務"
+}
+
+{
+  question: "検査を拒否した場合の結果は？",
+  type: "single",
+  options: ["罰則の対象となり得る", "何もない", "自動的に免許取消", "注意のみ"],
+  correct: 0,
+  points: 3,
+  note: "検査義務"
+}
+
+{
+  question: "「混信等の防止」のために総務大臣がとれる措置は？",
+  type: "single",
+  options: ["周波数の変更や運用制限の命令", "設備の無償提供", "操作資格の付与", "電波利用料の免除"],
+  correct: 0,
+  points: 3,
+  note: "電波法第56条等"
+}
+
+{
+  question: "主任無線従事者の役割は主に何か？",
+  type: "single",
+  options: ["無線設備の操作の監督", "免許申請のみ", "料金徴収", "アンテナ建設"],
+  correct: 0,
+  points: 3,
+  note: "電波法第39条"
+}
+
+section: "禁止行為・罰則"
+
+{
+  question: "無線設備をみだりに操作して他人の通信を妨害した場合、罰則の対象となるか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "電波法違反"
+}
+
+{
+  question: "通信の秘密を侵害した場合の罰則は電波法に規定されているか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "第59条関連"
+}
+
+{
+  question: "虚偽の事項を申告して免許を受けた場合の結果は？",
+  type: "single",
+  options: ["免許の取消し等の対象となり得る", "何もない", "自動延長", "注意のみ"],
+  correct: 0,
+  points: 3,
+  note: "不正行為"
+}
+
+{
+  question: "無資格で無線設備を操作した場合の罰則はあるか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "操作範囲の制限"
+}
+
+{
+  question: "「電波の質」に関する技術基準を守る義務があるのは誰か？",
+  type: "single",
+  options: ["無線局の免許人等", "無線従事者個人のみ", "メーカーのみ", "利用者"],
+  correct: 0,
+  points: 3,
+  note: "技術基準適合"
+}
+
+section: "その他重要事項"
+
+{
+  question: "周波数割当計画を定めるのは誰か？",
+  type: "single",
+  options: ["総務大臣", "内閣総理大臣", "国会", "地方自治体"],
+  correct: 0,
+  points: 3,
+  note: "電波法"
+}
+
+{
+  question: "「特定無線設備」の技術基準適合証明を受けた場合の利点は？",
+  type: "single",
+  options: ["一部の検査や手続きが簡略化される場合がある", "免許が完全に不要になる", "操作範囲が広がる", "有効期間が無期限"],
+  correct: 0,
+  points: 3,
+  note: "技適マーク"
+}
+
+{
+  question: "一陸技の操作範囲で「アマチュア無線局の操作を除く」と明記されている理由は？",
+  type: "single",
+  options: ["アマチュアは別資格体系のため", "技術が低いから", "電力が小さいから", "周波数制限のため"],
+  correct: 0,
+  points: 3,
+  note: "資格区分"
+}
+
+{
+  question: "無線局の「廃止」の届出が必要な場合があるか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "手続き規定"
+}
+
+{
+  question: "「識別信号」を発射しないで通信を行うことは原則許されるか？",
+  type: "truefalse",
+  correct: false,
+  points: 2,
+  note: "識別義務"
+}
+
+{
+  question: "災害時等の臨時の措置に関する規定があるか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "電波法に柔軟性あり"
+}
+
+{
+  question: "電波利用料の額は何によって決まるか？",
+  type: "single",
+  options: ["周波数や空中線電力等の要素", "操作者の資格のみ", "開設年数のみ", "固定額"],
+  correct: 0,
+  points: 3,
+  note: "電波利用料制度"
+}
+
+{
+  question: "「基幹放送局」で一陸技が技術操作できる範囲は？",
+  type: "single",
+  options: ["原則すべての技術操作（アマチュア除く）", "電力制限あり", "周波数制限あり", "操作不可"],
+  correct: 0,
+  points: 3,
+  note: "一陸技の最高位"
+}
+
+{
+  question: "免許状の記載事項に誤りがあった場合、訂正の手続きが必要か？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "正確性の維持"
+}
+
+{
+  question: "無線従事者の免許の「有効期間」はあるか？",
+  type: "single",
+  options: ["原則無期限（ただし取消し事由あり）", "5年", "10年", "3年"],
+  correct: 0,
+  points: 3,
+  note: "無線従事者免許は終身制が基本"
+}

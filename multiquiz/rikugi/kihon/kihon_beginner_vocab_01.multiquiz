@@ -1,0 +1,281 @@
+title: "一陸技 無線工学の基礎 初級 用語・基本 30問 (#1)"
+description: "電気物理・回路・半導体の基本用語中心の初級問題。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "電気物理・基本量"
+
+{
+  question: "電流の単位は何か？",
+  type: "single",
+  options: ["アンペア (A)", "ボルト (V)", "オーム (Ω)", "ワット (W)"],
+  correct: 0,
+  points: 2,
+  note: "SI単位"
+}
+
+{
+  question: "電圧の単位は何か？",
+  type: "single",
+  options: ["ボルト (V)", "アンペア (A)", "オーム (Ω)", "ファラド (F)"],
+  correct: 0,
+  points: 2,
+  note: "電位差"
+}
+
+{
+  question: "抵抗の単位は何か？",
+  type: "single",
+  options: ["オーム (Ω)", "ヘンリー (H)", "ファラド (F)", "ジーメンス (S)"],
+  correct: 0,
+  points: 2,
+  note: "オームの法則"
+}
+
+{
+  question: "電力の単位は何か？",
+  type: "single",
+  options: ["ワット (W)", "ジュール (J)", "クーロン (C)", "テスラ (T)"],
+  correct: 0,
+  points: 2,
+  note: "P = VI"
+}
+
+{
+  question: "静電容量の単位は何か？",
+  type: "single",
+  options: ["ファラド (F)", "ヘンリー (H)", "オーム (Ω)", "ウェーバー (Wb)"],
+  correct: 0,
+  points: 2,
+  note: "コンデンサ"
+}
+
+{
+  question: "インダクタンスの単位は何か？",
+  type: "single",
+  options: ["ヘンリー (H)", "ファラド (F)", "テスラ (T)", "アンペア (A)"],
+  correct: 0,
+  points: 2,
+  note: "コイル"
+}
+
+{
+  question: "オームの法則を正しく表した式は？",
+  type: "single",
+  options: ["V = IR", "P = IR", "I = VR", "R = VI"],
+  correct: 0,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "電力 P を電流 I と抵抗 R で表すと？",
+  type: "single",
+  options: ["P = I²R", "P = IR", "P = I/R", "P = R/I"],
+  correct: 0,
+  points: 2,
+  note: "ジュールの法則関連"
+}
+
+{
+  question: "周波数の単位は何か？",
+  type: "single",
+  options: ["ヘルツ (Hz)", "ラジアン (rad)", "秒 (s)", "ウェーバ"],
+  correct: 0,
+  points: 2,
+  note: "周期の逆数"
+}
+
+{
+  question: "角周波数 ω と周波数 f の関係は？",
+  type: "single",
+  options: ["ω = 2πf", "ω = f/2π", "ω = πf", "ω = f"],
+  correct: 0,
+  points: 2,
+  note: "基本関係"
+}
+
+section: "回路・素子"
+
+{
+  question: "抵抗を直列に接続した場合の合成抵抗は？",
+  type: "single",
+  options: ["各抵抗の和", "各抵抗の逆数の和の逆数", "積", "差"],
+  correct: 0,
+  points: 2,
+  note: "直列"
+}
+
+{
+  question: "抵抗を並列に接続した場合の合成抵抗は？",
+  type: "single",
+  options: ["各抵抗の逆数の和の逆数", "各抵抗の和", "積", "平均"],
+  correct: 0,
+  points: 2,
+  note: "並列"
+}
+
+{
+  question: "コンデンサを直流回路に接続した定常状態で流れる電流は？",
+  type: "single",
+  options: ["0（開放とみなせる）", "最大", "一定の有限値", "無限大"],
+  correct: 0,
+  points: 2,
+  note: "直流遮断"
+}
+
+{
+  question: "コイルを直流回路に接続した定常状態でインピーダンスは？",
+  type: "single",
+  options: ["ほぼ0（短絡とみなせる）", "無限大", "Rのみ", "jωL"],
+  correct: 0,
+  points: 2,
+  note: "直流ではリアクタンス0"
+}
+
+{
+  question: "ダイオードの主な機能は？",
+  type: "single",
+  options: ["整流（一方向に電流を流す）", "増幅", "発振", "変調"],
+  correct: 0,
+  points: 2,
+  note: "半導体"
+}
+
+{
+  question: "トランジスタの主な機能の一つは？",
+  type: "single",
+  options: ["増幅またはスイッチング", "整流のみ", "発振のみ", "蓄電"],
+  correct: 0,
+  points: 2,
+  note: "能動素子"
+}
+
+{
+  question: "オペアンプの理想的な入力インピーダンスは？",
+  type: "single",
+  options: ["無限大", "0", "50Ω", "1kΩ"],
+  correct: 0,
+  points: 2,
+  note: "理想特性"
+}
+
+{
+  question: "共振回路でインピーダンスが最大になるのは？",
+  type: "single",
+  options: ["並列共振", "直列共振", "どちらも同じ", "共振しない"],
+  correct: 0,
+  points: 2,
+  note: "並列 vs 直列"
+}
+
+{
+  question: "Q値が高い回路の特徴は？",
+  type: "single",
+  options: ["選択度が高い（帯域が狭い）", "損失が大きい", "帯域が広い", "利得が低い"],
+  correct: 0,
+  points: 2,
+  note: "共振の鋭さ"
+}
+
+{
+  question: "インピーダンスの単位は？",
+  type: "single",
+  options: ["オーム (Ω)", "ジーメンス", "ファラド", "ヘンリー"],
+  correct: 0,
+  points: 2,
+  note: "複素数"
+}
+
+section: "測定・その他"
+
+{
+  question: "テスタ（マルチメータ）で電圧を測るときはどのように接続するか？",
+  type: "single",
+  options: ["回路に並列", "回路に直列", "どちらでもよい", "切断して直列"],
+  correct: 0,
+  points: 2,
+  note: "電圧測定"
+}
+
+{
+  question: "電流を測るときはどのように接続するか？",
+  type: "single",
+  options: ["回路に直列", "回路に並列", "どちらでもよい", "切断不要"],
+  correct: 0,
+  points: 2,
+  note: "電流測定"
+}
+
+{
+  question: "オシロスコープで主に観測するものは？",
+  type: "single",
+  options: ["電圧波形の時間変化", "電力のみ", "抵抗値", "温度"],
+  correct: 0,
+  points: 2,
+  note: "波形観測"
+}
+
+{
+  question: "スペクトラムアナライザで主に観測するものは？",
+  type: "single",
+  options: ["周波数スペクトル", "時間波形のみ", "直流電圧", "電流"],
+  correct: 0,
+  points: 2,
+  note: "周波数領域"
+}
+
+{
+  question: "デシベル (dB) で電力比を表す場合、10倍は何dBか？",
+  type: "single",
+  options: ["10 dB", "20 dB", "3 dB", "6 dB"],
+  correct: 0,
+  points: 2,
+  note: "10 log10 (P2/P1)"
+}
+
+{
+  question: "電圧比で2倍は約何dBか？",
+  type: "single",
+  options: ["6 dB", "3 dB", "10 dB", "20 dB"],
+  correct: 0,
+  points: 2,
+  note: "20 log10 (V2/V1) ≈ 6"
+}
+
+{
+  question: "半導体の「キャリア」とは主に何を指すか？",
+  type: "single",
+  options: ["電子と正孔", "イオンのみ", "光子", "フォノン"],
+  correct: 0,
+  points: 2,
+  note: "伝導"
+}
+
+{
+  question: "n型半導体の多数キャリアは？",
+  type: "single",
+  options: ["電子", "正孔", "両方同等", "イオン"],
+  correct: 0,
+  points: 2,
+  note: "ドナー不純物"
+}
+
+{
+  question: "p型半導体の多数キャリアは？",
+  type: "single",
+  options: ["正孔", "電子", "両方同等", "中性子"],
+  correct: 0,
+  points: 2,
+  note: "アクセプタ不純物"
+}
+
+{
+  question: "pn接合の順方向バイアスで起こることは？",
+  type: "single",
+  options: ["電流が流れやすくなる", "電流が流れにくくなる", "何も変わらない", "発振する"],
+  correct: 0,
+  points: 2,
+  note: "ダイオードの基本"
+}
