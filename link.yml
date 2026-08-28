@@ -12,3 +12,14 @@ sample_english : https://r25347sh.github.io/multiquiz/multiquiz/ai-generating/st
 multiquiz : https://r25347sh.github.io/multiquiz/multiquiz/it/multiquiz.multiquiz
 # multiquiz}
 # it}
+
+# 一陸技{
+# 法規{
+houki-beginner-vocab-01 : https://r25347sh.github.io/multiquiz/multiquiz/rikugi/houki/houki_beginner_vocab_01.multiquiz
+houki-intermediate-01 : https://r25347sh.github.io/multiquiz/multiquiz/rikugi/houki/houki_intermediate_01.multiquiz
+# 法規}
+# 無線工学の基礎{
+kihon-beginner-vocab-01 : https://r25347sh.github.io/multiquiz/multiquiz/rikugi/kihon/kihon_beginner_vocab_01.multiquiz
+kihon-calc-beginner-01 : https://r25347sh.github.io/multiquiz/multiquiz/rikugi/kihon/kihon_calc_beginner_01.multiquiz
+# 無線工学の基礎}
+# 一陸技}
