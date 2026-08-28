@@ -1,0 +1,278 @@
+title: "一陸技 法規 初級 用語・基本 30問 (#1)"
+description: "電波法の基本用語・定義・免許関連の初級レベル。単語中心。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "第1部 基本用語（1–10）"
+
+{
+  question: "電波法で「無線局」とは何を指すか？",
+  type: "single",
+  options: ["無線設備及び無線設備の操作を行う者の総体", "無線設備のみ", "操作者のみ", "アンテナのみ"],
+  correct: 0,
+  points: 2,
+  note: "電波法第2条第5号"
+}
+
+{
+  question: "「無線従事者」の定義として正しいものは？",
+  type: "single",
+  options: ["無線設備の操作又はその監督を行う者で総務大臣の免許を受けた者", "無線局の開設者", "通信の相手方", "測定器の操作者"],
+  correct: 0,
+  points: 2,
+  note: "電波法第2条第6号"
+}
+
+{
+  question: "第一級陸上無線技術士の操作範囲に含まれないものは？",
+  type: "single",
+  options: ["アマチュア無線局の操作", "すべての無線設備の技術操作（アマチュアを除く）", "第四級アマチュア無線技士の操作範囲", "基幹放送局の無線設備の技術操作"],
+  correct: 0,
+  points: 2,
+  note: "一陸技はアマチュア無線局の操作を除く"
+}
+
+{
+  question: "「空中線電力」とは何か？",
+  type: "single",
+  options: ["空中線に供給される電力", "送信機の出力電力", "受信機の入力電力", "電源の消費電力"],
+  correct: 0,
+  points: 2,
+  note: "電波法施行規則第2条第1項第4号"
+}
+
+{
+  question: "無線局の「免許」の有効期間は原則何年か？",
+  type: "single",
+  options: ["5年", "3年", "10年", "無期限"],
+  correct: 0,
+  points: 2,
+  note: "電波法第13条"
+}
+
+{
+  question: "「特定無線局」の定義に最も近いものは？",
+  type: "single",
+  options: ["総務省令で定める特定の無線局で包括免許の対象となるもの", "すべての移動局", "固定局のみ", "実験試験局"],
+  correct: 0,
+  points: 2,
+  note: "包括免許制度"
+}
+
+{
+  question: "電波の「発射」とは何を意味するか？",
+  type: "single",
+  options: ["無線設備から電波を出すこと", "受信すること", "増幅すること", "変調すること"],
+  correct: 0,
+  points: 2,
+  note: "基本定義"
+}
+
+{
+  question: "「混信」の定義として正しいものは？",
+  type: "single",
+  options: ["他の無線局の運用を妨害する電波の受信", "自分の送信の乱れ", "電源ノイズ", "アンテナの故障"],
+  correct: 0,
+  points: 2,
+  note: "電波法第2条第9号"
+}
+
+{
+  question: "無線局の開設には原則何が必要か？",
+  type: "single",
+  options: ["総務大臣の免許", "都道府県知事の許可", "市町村長の承認", "警察の届出"],
+  correct: 0,
+  points: 2,
+  note: "電波法第4条"
+}
+
+{
+  question: "「技術基準適合証明」を受けた無線設備を使う場合の特例は？",
+  type: "single",
+  options: ["一部の手続きが簡略化される場合がある", "免許が不要になる", "操作範囲が拡大する", "有効期間が無期限になる"],
+  correct: 0,
+  points: 2,
+  note: "特定無線設備"
+}
+
+section: "第2部 免許・操作（11–20）"
+
+{
+  question: "無線従事者の免許証を紛失した場合、まずすべきことは？",
+  type: "single",
+  options: ["再交付の申請をする", "すぐに操作をやめる", "警察に届けるだけ", "何もしなくてよい"],
+  correct: 0,
+  points: 2,
+  note: "再交付手続き"
+}
+
+{
+  question: "一陸技が監督できる操作は？",
+  type: "single",
+  options: ["無線設備の技術操作全般（アマチュア除く）", "通信操作のみ", "アマチュア無線のみ", "船舶局のみ"],
+  correct: 0,
+  points: 2,
+  note: "操作範囲の最高位級"
+}
+
+{
+  question: "「主任無線従事者」の選任が必要な場合があるのはどの規定か？",
+  type: "single",
+  options: ["電波法", "放送法", "電気通信事業法", "航空法"],
+  correct: 0,
+  points: 2,
+  note: "電波法第39条関連"
+}
+
+{
+  question: "無線局の「再免許」の申請期間は、有効期間満了前のいつからいつまでか？",
+  type: "single",
+  options: ["6か月前から3か月前まで", "1年前から", "満了後1か月以内", "いつでも"],
+  correct: 0,
+  points: 2,
+  note: "標準的な期間"
+}
+
+{
+  question: "「実験試験局」の目的は？",
+  type: "single",
+  options: ["科学又は技術の発達のための実験等", "商業通信", "放送", "アマチュア通信"],
+  correct: 0,
+  points: 2,
+  note: "電波法"
+}
+
+{
+  question: "周波数の割当てを行うのは誰か？",
+  type: "single",
+  options: ["総務大臣", "総理大臣", "経済産業大臣", "国土交通大臣"],
+  correct: 0,
+  points: 2,
+  note: "電波法第26条等"
+}
+
+{
+  question: "「無線設備」に含まれないものは？",
+  type: "single",
+  options: ["電源設備のみ（無線設備と分離されている場合）", "送信装置", "受信装置", "空中線系"],
+  correct: 0,
+  points: 2,
+  note: "定義に注意"
+}
+
+{
+  question: "一陸技の試験科目に「法規」が含まれる理由は？",
+  type: "single",
+  options: ["電波法及びこれに基づく命令の概要を知るため", "数学の基礎のため", "物理のみのため", "英語のため"],
+  correct: 0,
+  points: 2,
+  note: "科目構成"
+}
+
+{
+  question: "「業務用無線局」と「アマチュア無線局」の大きな違いは？",
+  type: "single",
+  options: ["目的と操作資格の制限", "周波数帯のみ", "電力のみ", "アンテナの高さのみ"],
+  correct: 0,
+  points: 2,
+  note: "基本的な区分"
+}
+
+{
+  question: "免許状に記載される事項として正しくないものは？",
+  type: "single",
+  options: ["操作者の氏名（通常は記載されない）", "周波数", "空中線電力", "無線局の種別"],
+  correct: 0,
+  points: 2,
+  note: "免許状の内容"
+}
+
+section: "第3部 運用・禁止事項（21–30）"
+
+{
+  question: "無免許で無線局を開設した場合の罰則の対象となるか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "電波法違反"
+}
+
+{
+  question: "秘密の漏えいを禁止しているのは電波法のどの趣旨か？",
+  type: "single",
+  options: ["通信の秘密の保護", "周波数の効率利用", "技術基準の維持", "免許制度の維持"],
+  correct: 0,
+  points: 2,
+  note: "電波法第59条等"
+}
+
+{
+  question: "「虚偽の通信」を行った場合、罰則の対象となるか？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "禁止行為"
+}
+
+{
+  question: "無線局の運用を停止させることができる権限を持つのは？",
+  type: "single",
+  options: ["総務大臣", "警察署長", "消防署長", "市長"],
+  correct: 0,
+  points: 2,
+  note: "電波法に基づく監督"
+}
+
+{
+  question: "「識別信号」とは何か？",
+  type: "single",
+  options: ["無線局を識別するための信号", "周波数の種類", "電力の大きさ", "変調方式"],
+  correct: 0,
+  points: 2,
+  note: "コールサイン等"
+}
+
+{
+  question: "一陸技が操作できる基幹放送局の無線設備に制限はあるか？",
+  type: "single",
+  options: ["技術操作については制限なし（アマチュア除く）", "電力500W以下", "周波数制限あり", "操作不可"],
+  correct: 0,
+  points: 2,
+  note: "一陸技の範囲"
+}
+
+{
+  question: "「電波利用料」を納付する義務があるのは誰か？",
+  type: "single",
+  options: ["無線局の免許人等", "無線従事者個人", "メーカー", "利用者全員"],
+  correct: 0,
+  points: 2,
+  note: "電波利用料制度"
+}
+
+{
+  question: "試験電波を発射する場合の注意点は？",
+  type: "single",
+  options: ["必要最小限の時間・電力で行う", "自由に長時間発射してよい", "識別信号不要", "免許不要"],
+  correct: 0,
+  points: 2,
+  note: "運用上の注意"
+}
+
+{
+  question: "「特定周波数変更対策業務」に関連するのは？",
+  type: "single",
+  options: ["周波数の移行に伴う措置", "新規免許の発行", "罰則の強化", "アマチュアの拡大"],
+  correct: 0,
+  points: 2,
+  note: "電波法関連"
+}
+
+{
+  question: "無線従事者の免許が取り消される場合があるのは？",
+  type: "truefalse",
+  correct: true,
+  points: 2,
+  note: "電波法に規定あり"
+}
