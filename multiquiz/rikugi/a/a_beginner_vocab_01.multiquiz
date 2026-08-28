@@ -1,0 +1,238 @@
+title: "一陸技 無線工学A 初級 用語・設備 25問 (#1)"
+description: "無線設備の理論・構造・機能の基本用語中心。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "送信機・変調"
+
+{
+  question: "AM変調で搬送波の振幅を変化させる情報は何か？",
+  type: "single",
+  options: ["変調信号（音声など）", "周波数", "位相", "電力のみ"],
+  correct: 0,
+  points: 2,
+  note: "振幅変調"
+}
+
+{
+  question: "FM変調で変化させるのは何か？",
+  type: "single",
+  options: ["周波数", "振幅", "位相のみ", "電力"],
+  correct: 0,
+  points: 2,
+  note: "周波数変調"
+}
+
+{
+  question: "PM変調で変化させるのは何か？",
+  type: "single",
+  options: ["位相", "振幅", "周波数のみ", "電力"],
+  correct: 0,
+  points: 2,
+  note: "位相変調"
+}
+
+{
+  question: "SSBの主な利点の一つは？",
+  type: "single",
+  options: ["帯域幅が狭く電力効率が良い", "受信が簡単", "ノイズに強いだけ", "設備が安いだけ"],
+  correct: 0,
+  points: 2,
+  note: "抑圧搬送波単側波帯"
+}
+
+{
+  question: "送信機の最終段でよく使われるのは？",
+  type: "single",
+  options: ["電力増幅器", "発振器のみ", "ミキサのみ", "検波器"],
+  correct: 0,
+  points: 2,
+  note: "PA"
+}
+
+section: "受信機"
+
+{
+  question: "スーパーヘテロダイン受信機の特徴は？",
+  type: "single",
+  options: ["中間周波数に変換して増幅・検波する", "直接検波のみ", "再生受信のみ", "ストレートのみ"],
+  correct: 0,
+  points: 2,
+  note: "一般的な方式"
+}
+
+{
+  question: "中間周波数 (IF) を使う主な理由は？",
+  type: "single",
+  options: ["選択度と利得を得やすい固定周波数で処理するため", "電力を増やすため", "アンテナを小さくするため", "電池を節約するため"],
+  correct: 0,
+  points: 2,
+  note: "スーパーヘテロダインの利点"
+}
+
+{
+  question: "AGCの役割は？",
+  type: "single",
+  options: ["入力信号の強弱に応じて利得を自動調整する", "周波数を自動調整する", "位相を合わせる", "電力を測定する"],
+  correct: 0,
+  points: 2,
+  note: "Automatic Gain Control"
+}
+
+{
+  question: "検波器の役割は？",
+  type: "single",
+  options: ["変調波から元の信号を取り出す", "増幅する", "発振する", "フィルタするだけ"],
+  correct: 0,
+  points: 2,
+  note: "復調"
+}
+
+{
+  question: "Sメータが示すものは主に？",
+  type: "single",
+  options: ["受信信号の強度", "送信電力", "周波数偏差", "温度"],
+  correct: 0,
+  points: 2,
+  note: "信号強度"
+}
+
+section: "測定・保守"
+
+{
+  question: "送信機の出力電力を測る一般的な方法は？",
+  type: "single",
+  options: ["通過型電力計やダミーロード＋電力計", "電圧計のみ", "電流計のみ", "オシロのみ"],
+  correct: 0,
+  points: 2,
+  note: "RF電力測定"
+}
+
+{
+  question: "周波数カウンタの主な用途は？",
+  type: "single",
+  options: ["周波数の測定", "電力の測定", "歪みの測定", "温度の測定"],
+  correct: 0,
+  points: 2,
+  note: "基本"
+}
+
+{
+  question: "スペクトラムアナライザで確認できることは？",
+  type: "single",
+  options: ["高調波やスプリアスの有無", "時間波形のみ", "直流抵抗", "静電容量"],
+  correct: 0,
+  points: 2,
+  note: "周波数領域解析"
+}
+
+{
+  question: "ダミーロードの役割は？",
+  type: "single",
+  options: ["送信機の負荷として電波を熱に変換する", "アンテナを延長する", "利得を上げる", "受信を良くする"],
+  correct: 0,
+  points: 2,
+  note: "試験用負荷"
+}
+
+{
+  question: "VSWRが高い場合に起こりやすいことは？",
+  type: "single",
+  options: ["反射が多く効率が下がる・過負荷の恐れ", "利得が上がる", "ノイズが減る", "帯域が広がる"],
+  correct: 0,
+  points: 2,
+  note: "整合の重要性"
+}
+
+section: "その他"
+
+{
+  question: "PLLの主な用途は？",
+  type: "single",
+  options: ["周波数の安定化・合成", "電力増幅", "検波", "変調のみ"],
+  correct: 0,
+  points: 2,
+  note: "Phase Locked Loop"
+}
+
+{
+  question: "水晶発振子の特徴は？",
+  type: "single",
+  options: ["周波数安定度が高い", "可変範囲が広い", "安価で不安定", "電力が大きい"],
+  correct: 0,
+  points: 2,
+  note: "基準発振"
+}
+
+{
+  question: "ミキサの役割は？",
+  type: "single",
+  options: ["周波数変換", "増幅のみ", "検波のみ", "発振のみ"],
+  correct: 0,
+  points: 2,
+  note: "周波数変換"
+}
+
+{
+  question: "フィルタの主な役割は？",
+  type: "single",
+  options: ["不要な周波数成分を除去する", "電力を増やす", "位相を変えるだけ", "振幅を一定にする"],
+  correct: 0,
+  points: 2,
+  note: "選択"
+}
+
+{
+  question: "高調波とは何か？",
+  type: "single",
+  options: ["基本波の整数倍の周波数成分", "基本波より低い周波数", "ノイズのみ", "変調波"],
+  correct: 0,
+  points: 2,
+  note: "非線形による"
+}
+
+{
+  question: "スプリアス発射を抑える理由は？",
+  type: "single",
+  options: ["他の無線局への混信を防ぐため", "自分の利得を上げるため", "電力を増やすため", "電池を節約するため"],
+  correct: 0,
+  points: 2,
+  note: "電波の質"
+}
+
+{
+  question: "送信機の能率（効率）とは？",
+  type: "single",
+  options: ["出力電力 / 入力電力", "入力電力 / 出力電力", "電圧 / 電流", "周波数 / 電力"],
+  correct: 0,
+  points: 2,
+  note: "効率"
+}
+
+{
+  question: "リニアアンプの特徴は？",
+  type: "single",
+  options: ["入力に比例した出力を出す（歪みが少ない）", "飽和動作", "スイッチング動作", "発振動作"],
+  correct: 0,
+  points: 2,
+  note: "線形増幅"
+}
+
+{
+  question: "クラスC増幅の特徴は？",
+  type: "single",
+  options: ["効率が高いが歪みが大きい（CWやFM向け）", "線形で効率低い", "A級と同じ", "受信専用"],
+  correct: 0,
+  points: 2,
+  note: "動作級"
+}
+
+{
+  question: "無線設備の保守で重要なことは？",
+  type: "single",
+  options: ["定期的な点検と測定で性能を維持する", "触らない", "最大電力で常時運用", "改造を頻繁に行う"],
+  correct: 0,
+  points: 2,
+  note: "運用・保守"
+}
