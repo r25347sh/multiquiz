@@ -1,0 +1,799 @@
+// ========================================
+// システム英単語（シス単）5訂版 全範囲 MultiQuiz
+// Stage 1〜5 + 多義語を網羅的にカバー
+// ========================================
+title: "シスタン全範囲 MultiQuiz（5訂版対応）"
+description: "システム英単語5訂版の全Stage（Fundamental〜Final + 多義語）をカバーする総合クイズ。英→日・日→英の意味選択を中心に、頻出語を広範囲から出題。学習進度確認・総復習用。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+// ========================================
+// Stage 1 / Fundamental（基本語）
+// ========================================
+section: "Stage1 Fundamental（基本語 意味選択）"
+
+{
+  question: "follow の最も適切な意味は？",
+  type: "single",
+  options: ["続く・従う", "考える", "増加する", "予期する"],
+  correct: 0,
+  note: "follow = 続く・従う"
+}
+
+{
+  question: "consider の最も適切な意味は？",
+  type: "single",
+  options: ["考慮する", "発達する", "供給する", "許可する"],
+  correct: 0,
+  note: "consider = 考慮する・みなす"
+}
+
+{
+  question: "increase の意味は？",
+  type: "single",
+  options: ["増える・増加する", "減る", "残る", "着く"],
+  correct: 0,
+  note: "increase = 増える"
+}
+
+{
+  question: "expect の意味は？",
+  type: "single",
+  options: ["予期する・期待する", "決意する", "続ける", "含む"],
+  correct: 0,
+  note: "expect = 予期する"
+}
+
+{
+  question: "decide の意味は？",
+  type: "single",
+  options: ["決意する・決める", "悟る", "申し出る", "強制する"],
+  correct: 0,
+  note: "decide = 決意する"
+}
+
+{
+  question: "develop の意味は？",
+  type: "single",
+  options: ["発達する・開発する", "残る", "許可する", "供給する"],
+  correct: 0,
+  note: "develop = 発達する"
+}
+
+{
+  question: "provide の意味は？",
+  type: "single",
+  options: ["供給する・与える", "含む", "着く", "続ける"],
+  correct: 0,
+  note: "provide = 供給する"
+}
+
+{
+  question: "continue の意味は？",
+  type: "single",
+  options: ["続ける", "残る", "許可する", "悟る"],
+  correct: 0,
+  note: "continue = 続ける"
+}
+
+{
+  question: "include の意味は？",
+  type: "single",
+  options: ["含む", "残る", "着く", "強制する"],
+  correct: 0,
+  note: "include = 含む"
+}
+
+{
+  question: "remain の意味は？",
+  type: "single",
+  options: ["ままでいる・残る", "着く", "許可する", "申し出る"],
+  correct: 0,
+  note: "remain = ままでいる"
+}
+
+{
+  question: "reach の意味は？",
+  type: "single",
+  options: ["着く・達する", "許可する", "強制する", "悟る"],
+  correct: 0,
+  note: "reach = 着く・達する"
+}
+
+{
+  question: "allow の意味は？",
+  type: "single",
+  options: ["許可する", "強制する", "申し出る", "悟る"],
+  correct: 0,
+  note: "allow = 許可する"
+}
+
+{
+  question: "force の意味は？",
+  type: "single",
+  options: ["強制する", "申し出る", "悟る", "提供する"],
+  correct: 0,
+  note: "force = 強制する"
+}
+
+{
+  question: "offer の意味は？",
+  type: "single",
+  options: ["申し出る・提供する", "悟る", "残る", "含む"],
+  correct: 0,
+  note: "offer = 申し出る"
+}
+
+{
+  question: "realize の意味は？",
+  type: "single",
+  options: ["悟る・実現する", "残る", "含む", "続く"],
+  correct: 0,
+  note: "realize = 悟る・実現する"
+}
+
+{
+  question: "「考慮する」に最も近い英単語は？",
+  type: "single",
+  options: ["consider", "follow", "increase", "expect"],
+  correct: 0,
+  note: "consider = 考慮する"
+}
+
+{
+  question: "「増加する」に最も近い英単語は？",
+  type: "single",
+  options: ["increase", "decide", "develop", "provide"],
+  correct: 0,
+  note: "increase = 増加する"
+}
+
+{
+  question: "「予期する」に最も近い英単語は？",
+  type: "single",
+  options: ["expect", "continue", "include", "remain"],
+  correct: 0,
+  note: "expect = 予期する"
+}
+
+{
+  question: "「許可する」に最も近い英単語は？",
+  type: "single",
+  options: ["allow", "force", "offer", "realize"],
+  correct: 0,
+  note: "allow = 許可する"
+}
+
+{
+  question: "「悟る」に最も近い英単語は？",
+  type: "single",
+  options: ["realize", "reach", "remain", "include"],
+  correct: 0,
+  note: "realize = 悟る"
+}
+
+// ========================================
+// Stage 2 / Essential（重要語）
+// ========================================
+section: "Stage2 Essential（重要語 意味選択）"
+
+{
+  question: "require の意味は？",
+  type: "single",
+  options: ["必要とする・要求する", "心配する", "達する", "従う"],
+  correct: 0,
+  note: "require = 必要とする"
+}
+
+{
+  question: "suggest の意味は？",
+  type: "single",
+  options: ["提案する・示唆する", "従う", "増加する", "心配する"],
+  correct: 0,
+  note: "suggest = 提案する"
+}
+
+{
+  question: "wonder の意味は？",
+  type: "single",
+  options: ["〜か疑問に思う・驚く", "心配する", "従う", "要求する"],
+  correct: 0,
+  note: "wonder = 疑問に思う"
+}
+
+{
+  question: "worry の意味は？",
+  type: "single",
+  options: ["心配する", "提案する", "要求する", "驚く"],
+  correct: 0,
+  note: "worry = 心配する"
+}
+
+{
+  question: "abundant の意味は？",
+  type: "single",
+  options: ["豊富な", "乏しい", "危険な", "高価な"],
+  correct: 0,
+  note: "abundant = 豊富な"
+}
+
+{
+  question: "persistent の意味は？",
+  type: "single",
+  options: ["粘り強い・執拗な", "一時的な", "弱い", "幸せな"],
+  correct: 0,
+  note: "persistent = 粘り強い"
+}
+
+{
+  question: "resilient の意味は？",
+  type: "single",
+  options: ["回復力のある・しなやかな", "壊れやすい", "硬い", "遅い"],
+  correct: 0,
+  note: "resilient = 回復力のある"
+}
+
+{
+  question: "innovative の意味は？",
+  type: "single",
+  options: ["革新的な", "古風な", "退屈な", "伝統的な"],
+  correct: 0,
+  note: "innovative = 革新的な"
+}
+
+{
+  question: "diligent の意味は？",
+  type: "single",
+  options: ["勤勉な", "怠惰な", "不注意な", "遅い"],
+  correct: 0,
+  note: "diligent = 勤勉な"
+}
+
+{
+  question: "ambiguous の意味は？",
+  type: "single",
+  options: ["あいまいな", "明確な", "確かな", "単純な"],
+  correct: 0,
+  note: "ambiguous = あいまいな"
+}
+
+{
+  question: "eloquent の意味は？",
+  type: "single",
+  options: ["雄弁な", "無言の", "失礼な", "静かな"],
+  correct: 0,
+  note: "eloquent = 雄弁な"
+}
+
+{
+  question: "inevitable の意味は？",
+  type: "single",
+  options: ["避けられない", "避けられる", "可能な", "ありそうにない"],
+  correct: 0,
+  note: "inevitable = 避けられない"
+}
+
+{
+  question: "benevolent の意味は？",
+  type: "single",
+  options: ["慈悲深い・親切な", "残酷な", "利己的な", "怒っている"],
+  correct: 0,
+  note: "benevolent = 慈悲深い"
+}
+
+{
+  question: "meticulous の意味は？",
+  type: "single",
+  options: ["細心の注意を払う", "不注意な", "速い", "騒がしい"],
+  correct: 0,
+  note: "meticulous = 細心の注意を払う"
+}
+
+{
+  question: "prosperous の意味は？",
+  type: "single",
+  options: ["繁栄した・裕福な", "貧しい", "不幸な", "小さい"],
+  correct: 0,
+  note: "prosperous = 繁栄した"
+}
+
+{
+  question: "「必要とする」に最も近い英単語は？",
+  type: "single",
+  options: ["require", "suggest", "wonder", "worry"],
+  correct: 0,
+  note: "require = 必要とする"
+}
+
+{
+  question: "「提案する」に最も近い英単語は？",
+  type: "single",
+  options: ["suggest", "require", "wonder", "worry"],
+  correct: 0,
+  note: "suggest = 提案する"
+}
+
+{
+  question: "「粘り強い」に最も近い英単語は？",
+  type: "single",
+  options: ["persistent", "abundant", "resilient", "innovative"],
+  correct: 0,
+  note: "persistent = 粘り強い"
+}
+
+{
+  question: "「革新的な」に最も近い英単語は？",
+  type: "single",
+  options: ["innovative", "diligent", "ambiguous", "eloquent"],
+  correct: 0,
+  note: "innovative = 革新的な"
+}
+
+{
+  question: "「避けられない」に最も近い英単語は？",
+  type: "single",
+  options: ["inevitable", "benevolent", "meticulous", "prosperous"],
+  correct: 0,
+  note: "inevitable = 避けられない"
+}
+
+// ========================================
+// Stage 3 / Advanced（発展語）
+// ========================================
+section: "Stage3 Advanced（発展語 意味選択）"
+
+{
+  question: "obstacle の意味は？",
+  type: "single",
+  options: ["障害・妨げ", "助け", "簡単な作業", "報酬"],
+  correct: 0,
+  note: "obstacle = 障害"
+}
+
+{
+  question: "sustainable の意味は？",
+  type: "single",
+  options: ["持続可能な", "すぐに破壊される", "高価な", "一時的な"],
+  correct: 0,
+  note: "sustainable = 持続可能な"
+}
+
+{
+  question: "diverse の意味は？",
+  type: "single",
+  options: ["多様な", "似ている", "単純な", "退屈な"],
+  correct: 0,
+  note: "diverse = 多様な"
+}
+
+{
+  question: "compassion の意味は？",
+  type: "single",
+  options: ["同情・思いやり", "怒り", "憎しみ", "無関心"],
+  correct: 0,
+  note: "compassion = 同情"
+}
+
+{
+  question: "formidable の意味は？",
+  type: "single",
+  options: ["強力な・恐るべき", "弱い", "簡単", "小さい"],
+  correct: 0,
+  note: "formidable = 強力な"
+}
+
+{
+  question: "integrity の意味は？",
+  type: "single",
+  options: ["誠実さ・完全性", "不誠実", "富", "名声"],
+  correct: 0,
+  note: "integrity = 誠実さ"
+}
+
+{
+  question: "hypothesis の意味は？",
+  type: "single",
+  options: ["仮説", "事実", "結論", "質問"],
+  correct: 0,
+  note: "hypothesis = 仮説"
+}
+
+{
+  question: "vulnerable の意味は？",
+  type: "single",
+  options: ["脆弱な・傷つきやすい", "強い", "保護された", "強力な"],
+  correct: 0,
+  note: "vulnerable = 脆弱な"
+}
+
+{
+  question: "ubiquitous の意味は？",
+  type: "single",
+  options: ["遍在する・どこにでもある", "珍しい", "隠れた", "一時的な"],
+  correct: 0,
+  note: "ubiquitous = 遍在する"
+}
+
+{
+  question: "empathy の意味は？",
+  type: "single",
+  options: ["共感", "無関心", "嫉妬", "プライド"],
+  correct: 0,
+  note: "empathy = 共感"
+}
+
+{
+  question: "deteriorate の意味は？",
+  type: "single",
+  options: ["悪化する", "改善する", "同じまま", "成長する"],
+  correct: 0,
+  note: "deteriorate = 悪化する"
+}
+
+{
+  question: "optimistic の意味は？",
+  type: "single",
+  options: ["楽観的な", "悲観的な", "現実的な", "中立的な"],
+  correct: 0,
+  note: "optimistic = 楽観的な"
+}
+
+{
+  question: "profound の意味は？",
+  type: "single",
+  options: ["深遠な・深い", "浅い", "単純な", "表面的な"],
+  correct: 0,
+  note: "profound = 深遠な"
+}
+
+{
+  question: "collaborate の意味は？",
+  type: "single",
+  options: ["協力する", "競争する", "議論する", "無視する"],
+  correct: 0,
+  note: "collaborate = 協力する"
+}
+
+{
+  question: "inefficient の意味は？",
+  type: "single",
+  options: ["非効率な", "効果的な", "速い", "組織的な"],
+  correct: 0,
+  note: "inefficient = 非効率な"
+}
+
+{
+  question: "「障害」に最も近い英単語は？",
+  type: "single",
+  options: ["obstacle", "sustainable", "diverse", "compassion"],
+  correct: 0,
+  note: "obstacle = 障害"
+}
+
+{
+  question: "「持続可能な」に最も近い英単語は？",
+  type: "single",
+  options: ["sustainable", "formidable", "integrity", "hypothesis"],
+  correct: 0,
+  note: "sustainable = 持続可能な"
+}
+
+{
+  question: "「仮説」に最も近い英単語は？",
+  type: "single",
+  options: ["hypothesis", "vulnerable", "ubiquitous", "empathy"],
+  correct: 0,
+  note: "hypothesis = 仮説"
+}
+
+{
+  question: "「悪化する」に最も近い英単語は？",
+  type: "single",
+  options: ["deteriorate", "optimistic", "profound", "collaborate"],
+  correct: 0,
+  note: "deteriorate = 悪化する"
+}
+
+{
+  question: "「協力する」に最も近い英単語は？",
+  type: "single",
+  options: ["collaborate", "inefficient", "resemble", "threshold"],
+  correct: 0,
+  note: "collaborate = 協力する"
+}
+
+// ========================================
+// Stage 4 / Final（最終語）
+// ========================================
+section: "Stage4 Final（最終語 意味選択）"
+
+{
+  question: "resemble の意味は？",
+  type: "single",
+  options: ["〜に似ている", "異なる", "憎む", "避ける"],
+  correct: 0,
+  note: "resemble = 似ている"
+}
+
+{
+  question: "threshold の意味は？",
+  type: "single",
+  options: ["閾値・始まりの地点", "終わり", "中間", "頂点"],
+  correct: 0,
+  note: "threshold = 閾値"
+}
+
+{
+  question: "arbitrary の意味は？",
+  type: "single",
+  options: ["恣意的な・任意の", "論理的な", "公平な", "計画的な"],
+  correct: 0,
+  note: "arbitrary = 恣意的な"
+}
+
+{
+  question: "mitigate の意味は？",
+  type: "single",
+  options: ["緩和する・軽減する", "悪化させる", "無視する", "増加させる"],
+  correct: 0,
+  note: "mitigate = 緩和する"
+}
+
+{
+  question: "investigate の意味は？",
+  type: "single",
+  options: ["調査する", "決定する", "減らす", "促進する"],
+  correct: 0,
+  note: "investigate = 調査する"
+}
+
+{
+  question: "determined の意味は？",
+  type: "single",
+  options: ["決意した・断固とした", "弱い", "曖昧な", "一時的な"],
+  correct: 0,
+  note: "determined = 決意した"
+}
+
+{
+  question: "reduce の意味は？",
+  type: "single",
+  options: ["減らす・削減する", "増やす", "維持する", "変える"],
+  correct: 0,
+  note: "reduce = 減らす"
+}
+
+{
+  question: "transform の意味は？",
+  type: "single",
+  options: ["変革する・変形する", "維持する", "破壊する", "無視する"],
+  correct: 0,
+  note: "transform = 変革する"
+}
+
+{
+  question: "critically の意味は？",
+  type: "single",
+  options: ["批判的に・重大に", "楽観的に", "無関心に", "軽く"],
+  correct: 0,
+  note: "critically = 批判的に"
+}
+
+{
+  question: "promote の意味は？",
+  type: "single",
+  options: ["促進する・昇進させる", "妨げる", "減らす", "無視する"],
+  correct: 0,
+  note: "promote = 促進する"
+}
+
+{
+  question: "distinguish の意味は？",
+  type: "single",
+  options: ["区別する", "混ぜる", "無視する", "比較しない"],
+  correct: 0,
+  note: "distinguish = 区別する"
+}
+
+{
+  question: "「似ている」に最も近い英単語は？",
+  type: "single",
+  options: ["resemble", "threshold", "arbitrary", "mitigate"],
+  correct: 0,
+  note: "resemble = 似ている"
+}
+
+{
+  question: "「緩和する」に最も近い英単語は？",
+  type: "single",
+  options: ["mitigate", "investigate", "determined", "reduce"],
+  correct: 0,
+  note: "mitigate = 緩和する"
+}
+
+{
+  question: "「調査する」に最も近い英単語は？",
+  type: "single",
+  options: ["investigate", "transform", "critically", "promote"],
+  correct: 0,
+  note: "investigate = 調査する"
+}
+
+{
+  question: "「区別する」に最も近い英単語は？",
+  type: "single",
+  options: ["distinguish", "promote", "reduce", "transform"],
+  correct: 0,
+  note: "distinguish = 区別する"
+}
+
+// ========================================
+// Stage 5 / 多義語（Polysemy）
+// ========================================
+section: "Stage5 多義語（主要な意味を問う）"
+
+{
+  question: "run の多義のうち、最も基本的な意味の一つは？",
+  type: "single",
+  options: ["走る・運営する・流れる", "食べる", "考える", "寝る"],
+  correct: 0,
+  note: "run = 走る / 運営する / 流れる など多義"
+}
+
+{
+  question: "set の多義のうち、適切なものは？",
+  type: "single",
+  options: ["置く・設定する・一揃い", "走る", "増える", "許可する"],
+  correct: 0,
+  note: "set = 置く / 設定する / 一揃い"
+}
+
+{
+  question: "get の多義のうち、適切なものは？",
+  type: "single",
+  options: ["得る・なる・到着する", "残る", "含む", "強制する"],
+  correct: 0,
+  note: "get = 得る / なる / 到着する"
+}
+
+{
+  question: "make の多義のうち、適切なものは？",
+  type: "single",
+  options: ["作る・〜を〜にする・稼ぐ", "従う", "予期する", "許可する"],
+  correct: 0,
+  note: "make = 作る / 〜を〜にする"
+}
+
+{
+  question: "take の多義のうち、適切なものは？",
+  type: "single",
+  options: ["取る・かかる・受け入れる", "与える", "残る", "悟る"],
+  correct: 0,
+  note: "take = 取る / 時間がかかる / 受け入れる"
+}
+
+{
+  question: "put の多義のうち、適切なものは？",
+  type: "single",
+  options: ["置く・表現する・提案する", "走る", "増える", "含む"],
+  correct: 0,
+  note: "put = 置く / 表現する"
+}
+
+{
+  question: "keep の多義のうち、適切なものは？",
+  type: "single",
+  options: ["保つ・続ける・守る", "捨てる", "増やす", "減らす"],
+  correct: 0,
+  note: "keep = 保つ / 続ける"
+}
+
+{
+  question: "turn の多義のうち、適切なものは？",
+  type: "single",
+  options: ["回る・変わる・順番", "止まる", "考える", "寝る"],
+  correct: 0,
+  note: "turn = 回る / 変わる / 順番"
+}
+
+{
+  question: "draw の多義のうち、適切なものは？",
+  type: "single",
+  options: ["描く・引く・引き付ける", "押す", "投げる", "蹴る"],
+  correct: 0,
+  note: "draw = 描く / 引く"
+}
+
+{
+  question: "charge の多義のうち、適切なものは？",
+  type: "single",
+  options: ["料金を請求する・充電する・担当する", "支払う", "休む", "逃げる"],
+  correct: 0,
+  note: "charge = 請求する / 充電する / 担当する"
+}
+
+// ========================================
+// 総合確認（日→英 / 英→日ミックス）
+// ========================================
+section: "総合確認（全Stage横断）"
+
+{
+  question: "「豊富な」に最も近い英単語は？",
+  type: "single",
+  options: ["abundant", "scarce", "persistent", "fragile"],
+  correct: 0,
+  note: "abundant = 豊富な"
+}
+
+{
+  question: "「勤勉な」に最も近い英単語は？",
+  type: "single",
+  options: ["diligent", "lazy", "ambiguous", "eloquent"],
+  correct: 0,
+  note: "diligent = 勤勉な"
+}
+
+{
+  question: "「雄弁な」に最も近い英単語は？",
+  type: "single",
+  options: ["eloquent", "silent", "inevitable", "benevolent"],
+  correct: 0,
+  note: "eloquent = 雄弁な"
+}
+
+{
+  question: "「細心の注意を払う」に最も近い英単語は？",
+  type: "single",
+  options: ["meticulous", "careless", "prosperous", "obstacle"],
+  correct: 0,
+  note: "meticulous = 細心の注意を払う"
+}
+
+{
+  question: "「多様な」に最も近い英単語は？",
+  type: "single",
+  options: ["diverse", "similar", "sustainable", "formidable"],
+  correct: 0,
+  note: "diverse = 多様な"
+}
+
+{
+  question: "「誠実さ」に最も近い英単語は？",
+  type: "single",
+  options: ["integrity", "dishonesty", "vulnerable", "ubiquitous"],
+  correct: 0,
+  note: "integrity = 誠実さ"
+}
+
+{
+  question: "「遍在する」に最も近い英単語は？",
+  type: "single",
+  options: ["ubiquitous", "rare", "empathy", "deteriorate"],
+  correct: 0,
+  note: "ubiquitous = 遍在する"
+}
+
+{
+  question: "「深遠な」に最も近い英単語は？",
+  type: "single",
+  options: ["profound", "shallow", "optimistic", "collaborate"],
+  correct: 0,
+  note: "profound = 深遠な"
+}
+
+{
+  question: "「恣意的な」に最も近い英単語は？",
+  type: "single",
+  options: ["arbitrary", "logical", "mitigate", "investigate"],
+  correct: 0,
+  note: "arbitrary = 恣意的な"
+}
+
+{
+  question: "「決意した」に最も近い英単語は？",
+  type: "single",
+  options: ["determined", "weak", "reduce", "transform"],
+  correct: 0,
+  note: "determined = 決意した"
+}
