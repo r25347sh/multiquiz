@@ -1,1 +1,377 @@
-PLACEHOLDER
+// ========================================
+// 公共・倫理 【青年期の心理と自己形成】
+// 教科書 p.10-13 対応
+// ========================================
+title: "【青年期の心理と自己形成】"
+description: "公共的空間・青年期・発達課題・アイデンティティ・承認欲求・防衛機制など、青年期の心理と自己形成に関する総合問題。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 公共的空間と青年期の基本"
+
+{
+  question: "家庭などの私的な空間だけでなく、多様な生活背景や価値観をもつ他者との関わりにおいて形成される場を何というか。",
+  type: "single",
+  options: ["公共的な空間", "私的空間", "仮想空間", "閉鎖空間"],
+  correct: 0,
+  note: "公共的な空間"
+}
+
+{
+  question: "人生の特定の時期において、経験し、乗り越えなくてはならない課題を何というか。",
+  type: "single",
+  options: ["発達課題", "学習課題", "社会課題", "人生課題"],
+  correct: 0,
+  note: "発達課題"
+}
+
+{
+  question: "発達課題という概念を名づけたアメリカの教育学者は誰か。",
+  type: "single",
+  options: ["ハヴィガースト", "エリクソン", "レヴィン", "ルソー"],
+  correct: 0,
+  note: "ハヴィガースト"
+}
+
+{
+  question: "子供から大人への過渡期であり、人間関係が多様化・複雑化し心身ともに大きな変化に直面する時期を何というか。",
+  type: "single",
+  options: ["青年期", "幼児期", "老年期", "成人期"],
+  correct: 0,
+  note: "青年期"
+}
+
+{
+  question: "第二次性徴を迎え、親から心理的に独立していくことを何というか。",
+  type: "single",
+  options: ["心理的離乳", "身体的離乳", "社会的離乳", "経済的離乳"],
+  correct: 0,
+  note: "心理的離乳"
+}
+
+{
+  question: "ドイツの心理学者レヴィンが、青年期を生きる人間を呼んだ名称は何か。",
+  type: "single",
+  options: ["境界人（マージナルマン）", "完全人", "理想人", "平均人"],
+  correct: 0,
+  note: "境界人（マージナルマン）"
+}
+
+{
+  question: "フランスの哲学者ルソーが『エミール』において青年期を呼んだ名称は何か。",
+  type: "single",
+  options: ["第二の誕生", "第三の誕生", "精神の誕生", "社会の誕生"],
+  correct: 0,
+  note: "第二の誕生"
+}
+
+{
+  question: "「自分は誰なのか」という問いにさらされることを何の概念で説明するか。",
+  type: "single",
+  options: ["アイデンティティ（自我同一性）", "モラトリアム", "アパシー", "防衛機制"],
+  correct: 0,
+  note: "アイデンティティ"
+}
+
+{
+  question: "アイデンティティの概念を提唱した人物は誰か。",
+  type: "single",
+  options: ["エリクソン", "フロイト", "マズロー", "ハヴィガースト"],
+  correct: 0,
+  note: "エリクソン"
+}
+
+{
+  question: "社会が青年に対し社会的な責任や義務をある程度猶予している期間を何というか。",
+  type: "single",
+  options: ["モラトリアム", "アパシー", "アイデンティティの拡散", "傾聴"],
+  correct: 0,
+  note: "モラトリアム"
+}
+
+{
+  question: "無気力状態に陥り引きこもってしまう状態を何というか。",
+  type: "single",
+  options: ["アパシー", "モラトリアム", "境界人", "心理的離乳"],
+  correct: 0,
+  note: "アパシー"
+}
+
+{
+  question: "「自分が何者なのかわからない」という状態を何というか。",
+  type: "single",
+  options: ["アイデンティティの拡散", "アイデンティティの確立", "モラトリアム", "傾聴"],
+  correct: 0,
+  note: "アイデンティティの拡散"
+}
+
+{
+  question: "相手の語ろうとすることを感じ、受け入れる姿勢を何というか。",
+  type: "single",
+  options: ["傾聴", "対話", "共感", "承認"],
+  correct: 0,
+  note: "傾聴"
+}
+
+section: "2. 悩み・欲求・防衛機制"
+
+{
+  question: "人に認められたい欲求を何というか。",
+  type: "single",
+  options: ["承認欲求", "自己実現欲求", "生理的欲求", "安全欲求"],
+  correct: 0,
+  note: "承認欲求"
+}
+
+{
+  question: "青年期は学業、性、友人、家族、将来のことなど何が多い時期か。",
+  type: "single",
+  options: ["悩み", "喜び", "成功", "安定"],
+  correct: 0,
+  note: "悩み"
+}
+
+{
+  question: "悩みに向き合う際、自分一人で考え、何を重ねることも大切か。",
+  type: "single",
+  options: ["試行錯誤", "完璧主義", "回避", "無視"],
+  correct: 0,
+  note: "試行錯誤"
+}
+
+{
+  question: "オーストリアの精神医学者で、無意識の性の衝動を主張した人物は誰か。",
+  type: "single",
+  options: ["フロイト", "マズロー", "エリクソン", "ハヴィガースト"],
+  correct: 0,
+  note: "フロイト"
+}
+
+{
+  question: "フロイトが主張した無意識の性の衝動を何というか。",
+  type: "single",
+  options: ["リビドー", "エロス", "タナトス", "イド"],
+  correct: 0,
+  note: "リビドー"
+}
+
+{
+  question: "欲求が満たされないと緊張が高まった状態を何というか。",
+  type: "single",
+  options: ["欲求不満（フラストレーション）", "葛藤", "適応", "防衛機制"],
+  correct: 0,
+  note: "欲求不満（フラストレーション）"
+}
+
+{
+  question: "相反する欲求の板挟みになると生じるものを何というか。",
+  type: "single",
+  options: ["葛藤（コンフリクト）", "欲求不満", "防衛機制", "抑圧"],
+  correct: 0,
+  note: "葛藤（コンフリクト）"
+}
+
+{
+  question: "自分を守るために無意識に行われる心の働きを何というか。",
+  type: "single",
+  options: ["防衛機制", "合理的解決", "攻撃行動", "逃避"],
+  correct: 0,
+  note: "防衛機制"
+}
+
+{
+  question: "アメリカの心理学者で欲求を5つの階層に分けた人物は誰か。",
+  type: "single",
+  options: ["マズロー", "フロイト", "エリクソン", "レヴィン"],
+  correct: 0,
+  note: "マズロー"
+}
+
+{
+  question: "マズローの欲求階層説で、最上位に位置するとされる欲求は何か。",
+  type: "single",
+  options: ["自己実現の欲求", "承認の欲求", "安全の欲求", "生理的欲求"],
+  correct: 0,
+  note: "自己実現の欲求"
+}
+
+{
+  question: "次のうち青年期の特徴として正しいものをすべて選べ。",
+  type: "multiple",
+  options: ["人間関係の多様化・複雑化", "第二次性徴の到来", "親からの心理的独立", "社会的責任の完全な免除"],
+  correct: [0, 1, 2],
+  note: "社会的責任は完全免除ではなく、モラトリアムとしてある程度猶予される"
+}
+
+section: "3. 正誤問題"
+
+{
+  question: "公共的な空間とは、家庭などの私的な空間だけを指す。",
+  type: "truefalse",
+  correct: false,
+  note: "多様な他者との関わりにおいて形成される場が公共的な空間"
+}
+
+{
+  question: "ハヴィガーストはアメリカの教育学者である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "青年期は子供から大人への過渡期である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "心理的離乳とは、親から身体的に独立することである。",
+  type: "truefalse",
+  correct: false,
+  note: "心理的に独立すること"
+}
+
+{
+  question: "ルソーは青年期を「第二の誕生」とよび、教育による支援の重要性を説いた。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "モラトリアムとは、青年が社会的責任や義務を完全に負う期間である。",
+  type: "truefalse",
+  correct: false,
+  note: "ある程度猶予されている期間"
+}
+
+{
+  question: "アパシーとは、無気力状態に陥り引きこもってしまう場合を指す。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "傾聴の姿勢は、新たなアイデンティティの発見につながる。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "フロイトはドイツの精神医学者である。",
+  type: "truefalse",
+  correct: false,
+  note: "オーストリア"
+}
+
+{
+  question: "マズローの欲求階層で、下位の欲求が満たされると高位の欲求が呼び起こされる。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "アイデンティティはさまざまな課題を乗り越える経験とともに徐々につくり上げられる。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "4. 記述・穴埋め"
+
+{
+  question: "ハヴィガーストが名づけた課題の名称を答えよ。",
+  type: "input",
+  correct: "発達課題",
+  note: ""
+}
+
+{
+  question: "社会が青年に責任や義務を猶予している期間をカタカナで答えよ。",
+  type: "input",
+  correct: "モラトリアム",
+  note: ""
+}
+
+{
+  question: "無気力状態を表す用語をカタカナで答えよ。",
+  type: "input",
+  correct: "アパシー",
+  note: ""
+}
+
+{
+  question: "相手の話を感じ受け入れる姿勢を漢字2字で答えよ。",
+  type: "input",
+  correct: "傾聴",
+  note: ""
+}
+
+{
+  question: "人に認められたいという欲求を何というか。",
+  type: "input",
+  correct: "承認欲求",
+  note: "承認欲求"
+}
+
+{
+  question: "フロイトが主張した性の衝動の名称をカタカナで答えよ。",
+  type: "input",
+  correct: "リビドー",
+  note: ""
+}
+
+{
+  question: "欲求不満のとき、自分を守るために無意識に働く心の働きを何というか。",
+  type: "input",
+  correct: "防衛機制",
+  note: "防衛機制"
+}
+
+{
+  question: "欲求を5つの階層に分けたアメリカの心理学者は誰か（カタカナ）。",
+  type: "input",
+  correct: "マズロー",
+  note: "マズロー"
+}
+
+{
+  question: "レヴィンが青年期の人間を呼んだ名称を答えよ。",
+  type: "input",
+  correct: "境界人(マージナルマン)",
+  note: ""
+}
+
+{
+  question: "エリクソンが提唱した概念の名称を答えよ。",
+  type: "input",
+  correct: "アイデンティティ",
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。青年期は子供から大人への[[1]]である。",
+  type: "fill",
+  blanks: {"1": "過渡期"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。エリクソンは[[1]]の概念を提唱した。",
+  type: "fill",
+  blanks: {"1": "アイデンティティ"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。マズローの欲求階層の最上位は[[1]]の欲求である。",
+  type: "fill",
+  blanks: {"1": "自己実現"},
+  note: ""
+}
