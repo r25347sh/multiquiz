@@ -1,0 +1,135 @@
+// ========================================
+title: "労働者の権利と労働問題【総合】"
+description: "労働問題・労働法・雇用の総合確認。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "総合確認"
+
+{
+  question: "資本主義下の労働者は資本家に対してどのような立場か。",
+  type: "single",
+  options: ["弱い立場", "強い立場", "対等な立場", "支配する立場"],
+  correct: 0,
+  note: "弱い立場"
+}
+
+{
+  question: "機械打ち壊し運動を何というか。",
+  type: "single",
+  options: ["ラッダイト運動", "チャーチスト運動", "春闘", "労働組合運動"],
+  correct: 0,
+  note: "ラッダイト運動"
+}
+
+{
+  question: "参政権要求の運動を何というか。",
+  type: "single",
+  options: ["チャーチスト運動", "ラッダイト運動", "労働三権運動", "安保闘争"],
+  correct: 0,
+  note: "チャーチスト運動"
+}
+
+{
+  question: "1925年の弾圧法を何というか。",
+  type: "single",
+  options: ["治安維持法", "労働組合法", "労働基準法", "最低賃金法"],
+  correct: 0,
+  note: "治安維持法"
+}
+
+{
+  question: "1945年の組合活動保障法は何か。",
+  type: "single",
+  options: ["労働組合法", "労働関係調整法", "労働基準法", "最低賃金法"],
+  correct: 0,
+  note: "労働組合法"
+}
+
+{
+  question: "憲法第28条が保障する権利は何か。",
+  type: "single",
+  options: ["労働三権", "教育を受ける権利", "生存権", "営業の自由"],
+  correct: 0,
+  note: "労働三権"
+}
+
+{
+  question: "次のうち労働三権に含まれるものをすべて選べ。",
+  type: "multiple",
+  options: ["団結権", "団体交渉権", "団体行動権", "勤労権"],
+  correct: [0, 1, 2],
+  note: ""
+}
+
+{
+  question: "労働組合非加入を雇用条件にする契約を何というか。",
+  type: "single",
+  options: ["黄犬契約", "春闘", "労使協定", "裁量労働"],
+  correct: 0,
+  note: "黄犬契約"
+}
+
+{
+  question: "原則の1日労働時間は何時間か。",
+  type: "single",
+  options: ["8時間", "10時間", "6時間", "12時間"],
+  correct: 0,
+  note: "8時間"
+}
+
+{
+  question: "週の原則労働時間は何時間か。",
+  type: "input",
+  correct: "40",
+  note: ""
+}
+
+{
+  question: "仕事と生活のバランスを何というか。",
+  type: "single",
+  options: ["ワーク・ライフ・バランス", "過労死", "サービス残業", "年功序列"],
+  correct: 0,
+  note: "ワーク・ライフ・バランス"
+}
+
+{
+  question: "不払残業を何というか。",
+  type: "single",
+  options: ["サービス残業", "裁量労働", "春闘", "フレックスタイム"],
+  correct: 0,
+  note: "サービス残業"
+}
+
+{
+  question: "定年まで同じ会社に勤める慣行を何というか。",
+  type: "single",
+  options: ["終身雇用制", "成果主義", "年俸制", "非正規雇用"],
+  correct: 0,
+  note: "終身雇用制"
+}
+
+{
+  question: "勤続年数で賃金が決まる仕組みを何というか。",
+  type: "single",
+  options: ["年功序列型賃金", "成果主義", "最低賃金", "黄犬契約"],
+  correct: 0,
+  note: "年功序列型賃金"
+}
+
+{
+  question: "働いても貧困に近い状態を何というか。",
+  type: "single",
+  options: ["ワーキングプア", "過労死", "春闘", "年功序列"],
+  correct: 0,
+  note: "ワーキングプア"
+}
+
+{
+  question: "1986年施行の男女差別禁止法は何か。",
+  type: "single",
+  options: ["男女雇用機会均等法", "労働組合法", "最低賃金法", "治安維持法"],
+  correct: 0,
+  note: "男女雇用機会均等法"
+}
