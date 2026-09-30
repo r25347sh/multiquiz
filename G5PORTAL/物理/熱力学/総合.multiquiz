@@ -1,6 +1,6 @@
 // ========================================
 title: "熱力学【総合・計算編】"
-description: "温度・熱量計・第一法則・状態変化の総合計算。"
+description: "温度・熱量計・第一法則・状態変化の総合。解説付き。"
 points_default: 3
 shuffle_questions: false
 shuffle_options: true
@@ -11,42 +11,42 @@ section: "総合計算"
   question: "80 gの鉄（c=0.45 J/(g·K)）を15 K上げるのに必要な熱量[J]はいくらか。",
   type: "input",
   correct: "540",
-  note: ""
+  note: "【公式】Q = m c ΔT\n【計算】80 × 0.45 × 15 = 540 J"
 }
 
 {
   question: "熱容量70 J/Kの85℃の容器に15℃の水100 g（c=4.2）を入れた。平衡温度[℃]はいくらか。",
   type: "input",
   correct: "25",
-  note: "70(85−t)=420(t−15) → t=25"
+  note: "【熱量保存】70(85−t)=100×4.2×(t−15)\n5950−70t=420t−6300\n12250=490t → t=25℃\n【検算】容器70×60=4200、水420×10=4200で一致。"
 }
 
 {
   question: "氷300 g（融解熱330 J/g）を融かす熱量[J]はいくらか。",
   type: "input",
   correct: "99000",
-  note: ""
+  note: "【潜熱】温度変化なし。Q = m L = 300 × 330 = 99000 J"
 }
 
 {
   question: "気体に800 J与え300 Jの仕事をした。ΔU[J]はいくらか。",
   type: "input",
   correct: "500",
-  note: ""
+  note: "【第一法則】ΔU = Qin − W_した = 800 − 300 = 500 J"
 }
 
 {
   question: "熱効率0.25、Qin=1200 Jの機関の仕事[J]はいくらか。",
   type: "input",
   correct: "300",
-  note: ""
+  note: "【定義】W = η × Qin = 0.25 × 1200 = 300 J"
 }
 
 {
   question: "単原子分子 n=2.0 mol、T=300 K、R=8.3 のU[J]（有効数字2桁）はいくらか。",
   type: "input",
   correct: "7500",
-  note: ""
+  note: "【単原子】U=(3/2)nRT = 1.5×2×8.3×300 = 7470 ≒ 7500"
 }
 
 {
@@ -54,21 +54,21 @@ section: "総合計算"
   type: "single",
   options: ["5 n R T0", "3 n R T0", "2 n R T0", "(3/2)n R T0"],
   correct: 0,
-  note: ""
+  note: "ΔT=2T0\nΔU=(3/2)nR·2T0=3nRT0\nW=nR·2T0=2nRT0\nQ=ΔU+W=5nRT0"
 }
 
 {
   question: "A:3V0,2p0,T0 と B:2V0,p0,3T0 を連結した最終温度はT0の何倍か。",
   type: "input",
   correct: "1.2",
-  note: ""
+  note: "nA/nB=9。断熱・仕事なしで内部エネルギー保存:\n(nA+nB)T = nA T0 + 3 nB T0 → T=1.2 T0"
 }
 
 {
   question: "前問の最終圧力はp0の何倍か。",
   type: "input",
   correct: "1.6",
-  note: ""
+  note: "p·5V0=(nA+nB)RT より p=1.6 p0"
 }
 
 {
@@ -76,7 +76,7 @@ section: "総合計算"
   type: "single",
   options: ["Qin=W_した", "Qin=0", "W=0", "ΔU=Qin"],
   correct: 0,
-  note: ""
+  note: "理想気体の等温では ΔU=0 より Qin = W_した"
 }
 
 {
@@ -84,7 +84,7 @@ section: "総合計算"
   type: "single",
   options: ["(3/2)R", "(5/2)R", "R", "2R"],
   correct: 0,
-  note: ""
+  note: "定積で Qin=ΔU=(3/2)nRΔT → 1molあたり CV=(3/2)R"
 }
 
 {
@@ -92,14 +92,14 @@ section: "総合計算"
   type: "single",
   options: ["R", "(1/2)R", "(3/2)R", "0"],
   correct: 0,
-  note: ""
+  note: "マイヤーの関係: CP − CV = R"
 }
 
 {
   question: "P=2.0×10⁵ Pa、V=3.0×10⁻³ m³を等温でP=1.0×10⁵ Paにした。最終V[m³]はいくらか。",
   type: "input",
   correct: "0.006",
-  note: ""
+  note: "【ボイル】P1V1=P2V2 → V2=6.0×10⁻³ = 0.006"
 }
 
 {
@@ -107,5 +107,5 @@ section: "総合計算"
   type: "multiple",
   options: ["仕事W", "熱Q", "内部エネルギーU", "温度T"],
   correct: [0, 1],
-  note: ""
+  note: "WとQは経路に依存する過程量。UとTは状態だけで決まる状態量。"
 }
