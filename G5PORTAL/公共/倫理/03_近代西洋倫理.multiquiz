@@ -3,136 +3,91 @@
 // 教科書 p.30-31 対応（動機と結果・カント・功利主義）
 // ========================================
 title: "【近代西洋倫理】"
-description: "動機と結果の考え方。カントの義務論、ベンサム・ミルの功利主義など近代西洋倫理の総合問題。"
+description: "カントの義務論・定言命法、ベンサム・ミルの功利主義など近代西洋倫理の基本。"
 points_default: 2
 shuffle_questions: true
 shuffle_options: true
 
-section: "1. よい行いの判断基準"
+section: "1. 啓蒙と理性"
 
 {
-  question: "近代以降、道徳の根拠を何に置くようになったか。",
+  question: "18世紀に理性を重視した思想運動を何というか。",
   type: "single",
-  options: ["人間", "神", "自然", "国家"],
+  options: ["啓蒙思想（啓蒙運動）", "ロマン主義", "実存主義", "構造主義"],
   correct: 0,
-  note: "人間"
+  note: "啓蒙"
 }
 
 {
-  question: "ヨーロッパ大陸では人間の何を重視したか。",
+  question: "大陸合理論で重視された能力は何か。",
   type: "single",
-  options: ["理性", "経験", "感情", "直感"],
+  options: ["理性", "経験のみ", "感情のみ", "権威"],
   correct: 0,
   note: "理性"
 }
 
 {
-  question: "イギリスでは人間の何を重視したか。",
+  question: "イギリス経験論で重視されたものは何か。",
   type: "single",
-  options: ["経験", "理性", "信仰", "伝統"],
+  options: ["経験", "生得観念のみ", "神託", "慣習のみ"],
   correct: 0,
   note: "経験"
 }
 
-{
-  question: "行為の善悪を判断する際、動機（意図）を重視する立場と、結果を重視する立場がある。",
-  type: "truefalse",
-  correct: true,
-  note: ""
-}
-
-section: "2. カントの義務論"
+section: "2. カント"
 
 {
-  question: "カントは理性に基づく何に従うべきとしたか。",
+  question: "カントが重視したのは行為の結果ではなく何か。",
   type: "single",
-  options: ["道徳法則", "快楽原則", "最大幸福", "自然法則"],
-  correct: 0,
-  note: "道徳法則"
-}
-
-{
-  question: "カントの義務を重視する立場を何というか。",
-  type: "single",
-  options: ["義務論", "功利主義", "結果主義", "徳倫理"],
+  options: ["動機・義務", "幸福の量のみ", "社会契約のみ", "快楽の計算"],
   correct: 0,
   note: "義務論"
 }
 
 {
-  question: "「〜すべき」という無条件に命じるものを何というか。",
+  question: "カントの道徳哲学の中心概念の一つは何か。",
   type: "single",
-  options: ["定言命法", "仮言命法", "功利主義", "最大幸福"],
+  options: ["定言命法", "仮言命法のみ", "最大幸福", "イデア"],
   correct: 0,
   note: "定言命法"
 }
 
 {
-  question: "条件つきの「もし〜したいなら、〜せよ」という命令を何というか。",
-  type: "single",
-  options: ["仮言命法", "定言命法", "道徳法則", "人格"],
-  correct: 0,
-  note: "仮言命法"
-}
-
-{
-  question: "カントが理性ある存在を何としたか。",
-  type: "single",
-  options: ["人格", "手段", "道具", "客体"],
-  correct: 0,
-  note: "人格"
-}
-
-{
-  question: "カントによれば、人間は目的として扱われるべきであり、単なる手段として扱ってはならない。",
-  type: "truefalse",
-  correct: true,
-  note: "人格の尊重"
-}
-
-{
-  question: "カントはイギリス出身である。",
+  question: "定言命法は条件付きの命令である。",
   type: "truefalse",
   correct: false,
-  note: "ドイツ（プロイセン）"
+  note: "無条件の命令"
 }
 
 {
-  question: "定言命法は条件つきの命令である。",
-  type: "truefalse",
-  correct: false,
-  note: "無条件。仮言命法が条件つき"
-}
-
-{
-  question: "定言命法を漢字4字で答えよ。",
+  question: "カントが説いた、条件なしに従うべき道徳法則を何というか。",
   type: "input",
   correct: "定言命法",
-  note: ""
+  note: "定言命法"
 }
 
 {
-  question: "カントが理性ある存在を呼んだ名称を答えよ。",
-  type: "input",
-  correct: "人格",
-  note: ""
-}
-
-{
-  question: "カントの義務を重視する立場を漢字で答えよ。",
+  question: "カントのように、行為の結果ではなく義務・動機を重視する立場を何というか。",
   type: "input",
   correct: "義務論",
-  note: ""
+  note: "義務論"
 }
 
 {
-  question: "カントが従うべきとしたものを漢字4字で答えよ。",
+  question: "カントが、条件付きではなく絶対的に従うべきとしたものは何か。",
   type: "input",
   correct: "道徳法則",
+  note: "道徳法則"
+}
+
+{
+  question: "人格を手段としてのみ用いてはならない、という考えはカントに近い。",
+  type: "truefalse",
+  correct: true,
   note: ""
 }
 
-section: "3. 功利主義（ベンサム・ミル）"
+section: "3. 功利主義"
 
 {
   question: "ベンサムが築いた考えを何というか。",
@@ -151,57 +106,32 @@ section: "3. 功利主義（ベンサム・ミル）"
 }
 
 {
-  question: "功利主義では、行為の善悪を何によって判断するか。",
-  type: "single",
-  options: ["結果（幸福の量）", "動機の純粋さ", "義務の履行", "伝統の遵守"],
-  correct: 0,
-  note: "結果（功利＝幸福の増大）"
-}
-
-{
-  question: "ミルがより高いものとして重視した快を何と呼んだか。",
-  type: "single",
-  options: ["精神的快楽", "感覚的快楽", "一時的快楽", "物質的快楽"],
-  correct: 0,
-  note: "精神的快楽"
-}
-
-{
-  question: "ミルはベンサムの考え方を修正し、快楽の質を重視した。",
-  type: "truefalse",
-  correct: true,
-  note: "質的功利主義"
-}
-
-{
-  question: "ベンサムは快楽の量を計算して行為を判断しようとした。",
-  type: "truefalse",
-  correct: true,
-  note: "快楽計算"
-}
-
-{
-  question: "ベンサムの「最大多数の最大幸福」を答えよ。",
+  question: "ベンサムが功利主義の原理として掲げた標語は何か。",
   type: "input",
   correct: "最大多数の最大幸福",
   note: ""
 }
 
 {
-  question: "功利主義を漢字で答えよ。",
+  question: "行為の結果として生じる効用（幸福）を重視する立場を何というか。",
   type: "input",
   correct: "功利主義",
   note: ""
 }
 
 {
-  question: "ミルが重視した快楽を漢字で答えよ。",
+  question: "ミルが、量だけでなく質を重視して評価した快楽は何か。",
   type: "input",
   correct: "精神的快楽",
   note: ""
 }
 
-section: "4. 比較・総合"
+{
+  question: "ミルは快楽の質の違いを認めた。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
 
 {
   question: "次のうちカントに関連するものをすべて選べ。",
@@ -220,52 +150,15 @@ section: "4. 比較・総合"
 }
 
 {
-  question: "義務論と功利主義の違いとして正しいものをすべて選べ。",
-  type: "multiple",
-  options: ["義務論は動機・義務を重視する", "功利主義は結果・幸福を重視する", "義務論はカントが代表", "功利主義はベンサム・ミルが代表"],
-  correct: [0, 1, 2, 3],
-  note: "すべて正しい"
-}
-
-{
-  question: "次の空欄を埋めよ。カントは理性に基づく[[1]]に従うべきだとした。",
-  type: "fill",
-  blanks: {"1": "道徳法則"},
-  note: ""
-}
-
-{
-  question: "次の空欄を埋めよ。カントの無条件の命令を[[1]]という。",
-  type: "fill",
-  blanks: {"1": "定言命法"},
-  note: ""
-}
-
-{
-  question: "次の空欄を埋めよ。ベンサムは[[1]]の最大幸福を説いた。",
-  type: "fill",
-  blanks: {"1": "最大多数"},
-  note: ""
-}
-
-{
-  question: "「汝の意志の格率が、つねに同時に普遍的立法の原理として妥当しうるように行為せよ」と説いた人物は誰か。",
-  type: "single",
-  options: ["カント", "ベンサム", "ミル", "ロック"],
-  correct: 0,
-  note: "定言命法の定式の一つ"
-}
-
-{
-  question: "ヨーロッパ大陸で重視された人間の能力を漢字2字で答えよ。",
+  question: "大陸合理論で重視された、人間が生まれつき持つとされる能力は何か。",
   type: "input",
   correct: "理性",
-  note: ""
+  note: "理性"
 }
 
 {
-  question: "イギリスで重視されたものを漢字2字で答えよ。",
+  question: "イギリス経験論で、認識の源泉として重視されたものは何か。",
   type: "input",
   correct: "経験",
-  note: ""
+  note: "経験"
 }
