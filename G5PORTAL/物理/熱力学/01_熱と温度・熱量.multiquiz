@@ -1,149 +1,145 @@
 // ========================================
-title: "熱力学① 熱と温度・熱量"
-description: "温度・絶対温度・熱容量・比熱・熱量保存・熱平衡（物理基礎・熱力学①対応）"
-points_default: 2
-shuffle_questions: true
+title: "熱力学① 熱と温度・熱量【計算編】"
+description: "温度換算・比熱・熱量保存・熱量計・潜熱。プリ級の計算問題中心。"
+points_default: 3
+shuffle_questions: false
 shuffle_options: true
 
-section: "1. 温度と絶対温度"
+section: "1. 温度換算"
 
 {
-  question: "原子の振動の激しさ（熱運動）を表す量が温度である。",
-  type: "truefalse",
-  correct: true,
-  note: "温度は原子・分子の熱運動の激しさを表す"
-}
-
-{
-  question: "原子が完全に静止し、それ以上温度が下がらない理論上の下限を何というか。",
-  type: "single",
-  options: ["絶対零度", "氷点", "沸点", "臨界点"],
-  correct: 0,
-  note: "絶対零度（約−273℃）"
-}
-
-{
-  question: "絶対零度を0とした温度目盛りを何というか。",
-  type: "single",
-  options: ["絶対温度（ケルビン）", "セルシウス温度のみ", "華氏温度のみ", "相対温度"],
-  correct: 0,
-  note: "絶対温度 [K]"
-}
-
-{
-  question: "セルシウス温度 t[℃] と絶対温度 T[K] の関係として正しいものはどれか。",
-  type: "single",
-  options: ["T = 273 + t", "T = t − 273", "T = 100 + t", "T = t / 273"],
-  correct: 0,
-  note: "T[K] = 273 + t[℃]"
-}
-
-{
-  question: "0℃を絶対温度で表すとおよそ何Kか。",
+  question: "0℃を絶対温度[K]で表せ（整数）。",
   type: "input",
   correct: "273",
-  note: "273 K"
+  note: "T = t + 273 → 273 K"
 }
 
 {
-  question: "水の氷点を0℃、沸点を100℃として分割した温度目盛りを何というか。",
+  question: "400 Kをセルシウス温度[℃]で表せ（整数）。",
+  type: "input",
+  correct: "127",
+  note: "t = T − 273 = 127℃"
+}
+
+{
+  question: "27℃を絶対温度[K]で表せ（整数）。",
+  type: "input",
+  correct: "300",
+  note: "27 + 273 = 300 K"
+}
+
+{
+  question: "0 Kをセルシウス温度[℃]で表せ（負の整数）。",
+  type: "input",
+  correct: "-273",
+  note: "絶対零度 = −273℃"
+}
+
+section: "2. 熱量 Q = mcΔT"
+
+{
+  question: "質量80 gの鉄球の温度を15 K上昇させるのに必要な熱量Q[J]を求めよ。鉄の比熱を0.45 J/(g·K)とする。",
+  type: "input",
+  correct: "540",
+  note: "Q = mcΔT = 80 × 0.45 × 15 = 540 J"
+}
+
+{
+  question: "ある金属の塊5.0×10² gに3.8×10³ Jの熱を与えたら、温度が2.0 Kだけ上昇した。この金属の塊の熱容量C[J/K]を求めよ。",
+  type: "input",
+  correct: "1900",
+  note: "C = Q/ΔT = 3800/2.0 = 1900 J/K"
+}
+
+{
+  question: "前問の金属の比熱c[J/(g·K)]を求めよ（有効数字2桁）。",
+  type: "input",
+  correct: "3.8",
+  note: "c = C/m = 1900/500 = 3.8 J/(g·K)"
+}
+
+section: "3. 熱量の保存（容器＋水）"
+
+{
+  question: "熱容量70 J/K・温度85℃の容器に、15℃の水100 gを入れた。熱平衡温度をt[℃]とする。水の比熱は4.2 J/(g·K)。容器が失った熱量をtを含む式で表すとどれか。",
   type: "single",
-  options: ["セルシウス温度", "絶対温度", "ランキン温度", "プランク温度"],
+  options: ["70(85 − t)", "70(t − 85)", "100×4.2(85 − t)", "70 + (85 − t)"],
   correct: 0,
-  note: "セルシウス温度（℃）"
+  note: "C_容器(85 − t)"
 }
 
-section: "2. 熱容量・比熱・熱量"
-
 {
-  question: "熱容量 C と質量 m・比熱 c の関係はどれか。",
+  question: "前問で、水が得た熱量をtを含む式で表すとどれか。",
   type: "single",
-  options: ["C = m × c", "C = m / c", "C = m + c", "C = c / m"],
+  options: ["420(t − 15)", "420(15 − t)", "70(t − 15)", "100(t − 15)"],
   correct: 0,
-  note: "C = m c"
+  note: "100 × 4.2 × (t − 15) = 420(t − 15)"
 }
 
 {
-  question: "比熱の単位として適切なものはどれか。",
-  type: "single",
-  options: ["J/(g·K)", "J のみ", "K のみ", "g のみ"],
-  correct: 0,
-  note: "J/(g·K)"
+  question: "前問の熱量保存 70(85 − t) = 420(t − 15) を解いて、平衡温度t[℃]を求めよ（整数）。",
+  type: "input",
+  correct: "25",
+  note: "5950 − 70t = 420t − 6300 → 12250 = 490t → t = 25℃"
+}
+
+section: "4. 熱量計（混合）"
+
+{
+  question: "熱量計に水140 gを入れ、容器も水も27℃になった。ここに47℃の水40 gを追加すると全体が31℃になった。水の比熱を4.2 J/(g·K)として、容器の熱容量C[J/K]を求めよ（整数）。",
+  type: "input",
+  correct: "84",
+  note: "40×4.2×16 = (C+140×4.2)×4 → 2688 = 4C+2352 → C=84"
 }
 
 {
-  question: "物体が吸収する熱量 Qin と熱容量 C・温度変化 ΔT の関係はどれか。",
-  type: "single",
-  options: ["Qin = C × ΔT", "Qin = C / ΔT", "Qin = C + ΔT", "Qin = ΔT / C"],
-  correct: 0,
-  note: "Qin = C ΔT = m c ΔT"
+  question: "前問の熱量計（C=84 J/K）と水180 g（31℃）に、100℃の金属球150 gを入れたら全体40℃になった。金属球の比熱c[J/(g·K)]を有効数字2桁で求めよ。",
+  type: "input",
+  correct: "0.84",
+  note: "150c×60 = 84×9 + 180×4.2×9 = 7560 → c=0.84"
+}
+
+section: "5. 潜熱・加熱曲線"
+
+{
+  question: "融点にある氷300 gをすべて同温度の水にするために必要な熱量Q[J]を求めよ。氷の融解熱を3.3×10² J/gとする。",
+  type: "input",
+  correct: "99000",
+  note: "Q = 300 × 330 = 99000 J"
 }
 
 {
-  question: "質量 m、比熱 c の物体の温度を ΔT 上げるのに必要な熱量は何か。",
-  type: "single",
-  options: ["m c ΔT", "m + c + ΔT", "m / c × ΔT", "c / m × ΔT"],
-  correct: 0,
-  note: "Qin = m c ΔT"
+  question: "−40℃の氷100 gに毎秒420 Jで加熱し、0℃まで20秒かかった。氷の比熱c[J/(g·K)]を有効数字2桁で求めよ。",
+  type: "input",
+  correct: "2.1",
+  note: "Q=8400、ΔT=40、c=8400/(100×40)=2.1"
 }
 
 {
-  question: "熱量はエネルギーの一種であり、物体間で移動する熱運動のエネルギーの量を表す。",
-  type: "truefalse",
-  correct: true,
-  note: ""
+  question: "同じ加熱（420 J/s）で、0℃の氷100 gがすべて0℃の水になるのに80秒かかった。融解熱L[J/g]を有効数字2桁で求めよ。",
+  type: "input",
+  correct: "340",
+  note: "Q=420×80=33600、L=336 ≒ 340（2桁）"
 }
 
 {
-  question: "高温側から低温側へ熱が移動し、温度が等しくなって熱の移動がなくなった状態を何というか。",
-  type: "single",
-  options: ["熱平衡", "断熱", "定積", "絶対零度"],
-  correct: 0,
-  note: "熱平衡"
-}
-
-section: "3. 熱量の保存・計算"
-
-{
-  question: "容器と水の間だけで熱が移動する場合、容器が失った熱量と水が得た熱量は等しい（熱量の保存）。",
-  type: "truefalse",
-  correct: true,
-  note: ""
+  question: "0℃の水100 gが100℃まで上がるのに100秒（420 J/s）のとき、水の比熱[J/(g·K)]はいくらか（有効数字2桁）。",
+  type: "input",
+  correct: "4.2",
+  note: "Q=42000、c=4.2"
 }
 
 {
-  question: "融点にある氷を同温度の水にするために必要な熱は何に対応するか。",
-  type: "single",
-  options: ["融解熱", "比熱のみ", "熱容量のみ", "仕事"],
-  correct: 0,
-  note: "融解熱"
+  question: "100℃の水100 gがすべて水蒸気になるのに540秒（420 J/s）かかった。蒸発熱Lv[J/g]を有効数字2桁で求めよ。",
+  type: "input",
+  correct: "2300",
+  note: "Q=226800、Lv≒2.3×10³"
 }
 
 {
-  question: "100℃の水を同温度の水蒸気に変えるのに必要な熱を何というか。",
-  type: "single",
-  options: ["蒸発熱（気化熱）", "融解熱", "比熱", "熱容量"],
-  correct: 0,
-  note: "蒸発熱"
-}
-
-{
-  question: "次の空欄を埋めよ。絶対温度 T とセルシウス温度 t の関係は T = [[1]] + t である。",
-  type: "fill",
-  blanks: {"1": "273"},
-  note: ""
-}
-
-{
-  question: "次の空欄を埋めよ。熱容量 C = m × [[1]] である。",
-  type: "fill",
-  blanks: {"1": "c"},
-  note: "比熱 c"
-}
-
-{
-  question: "次の空欄を埋めよ。熱量 Qin = C × [[1]] である。",
-  type: "fill",
-  blanks: {"1": "ΔT"},
+  question: "次のうち正しいものをすべて選べ。",
+  type: "multiple",
+  options: ["潜熱の区間では温度一定のまま熱を吸収する", "融解・蒸発では Q = mL", "熱量計では熱量保存が近似的に成り立つ", "比熱の単位は常にJのみ"],
+  correct: [0, 1, 2],
   note: ""
 }

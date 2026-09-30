@@ -1,131 +1,139 @@
 // ========================================
-title: "熱力学② 気体の法則と分子運動"
-description: "ボイル・シャルル・ボイルシャルル・理想気体の状態方程式・分子運動（熱力学②対応）"
-points_default: 2
-shuffle_questions: true
+title: "熱力学② 気体の法則と第一法則【計算編】"
+description: "ボイル・シャルル・状態方程式・ΔU=Qin+W・熱機関・ピストン。プリ級。"
+points_default: 3
+shuffle_questions: false
 shuffle_options: true
 
-section: "1. 気体の法則"
+section: "1. 気体の法則（計算）"
 
 {
-  question: "温度一定のとき、理想気体の圧力と体積は反比例する。この法則を何というか。",
+  question: "温度一定で、圧力2.0×10⁵ Pa・体積3.0×10⁻³ m³の理想気体を、圧力1.0×10⁵ Paまで等温膨張させた。最終体積[m³]はいくらか（0.006のように答える）。",
+  type: "input",
+  correct: "0.006",
+  note: "P1V1=P2V2 → V2=6.0×10⁻³"
+}
+
+{
+  question: "圧力一定で、絶対温度300 K・体積2.0 Lの理想気体を400 Kまで加熱した。最終体積[L]はいくらか（有効数字2桁）。",
+  type: "input",
+  correct: "2.7",
+  note: "V2=2.0×(400/300)≒2.67≒2.7"
+}
+
+{
+  question: "P=2.0×10⁵ Pa、V=0.050 m³、T=300 K、R=8.3 J/(mol·K)の理想気体の物質量n[mol]はいくらか（有効数字2桁）。",
+  type: "input",
+  correct: "4.0",
+  note: "n=PV/(RT)=10000/2490≒4.0"
+}
+
+{
+  question: "等温で体積をVから2Vにした。圧力ははじめの何倍か。",
+  type: "input",
+  correct: "0.5",
+  note: "1/2倍"
+}
+
+section: "2. 熱力学第一法則の計算"
+
+{
+  question: "気体に800 Jの熱を与え、外部に300 Jの仕事をした。された仕事W_された[J]はいくらか（符号付き）。",
+  type: "input",
+  correct: "-300",
+  note: "された仕事 = −した仕事"
+}
+
+{
+  question: "前問で内部エネルギーの増加ΔU[J]はいくらか。ΔU=Qin+W_された。",
+  type: "input",
+  correct: "500",
+  note: "800−300=500"
+}
+
+{
+  question: "気体が外部に400 Jの仕事をし、内部エネルギーが200 J増加した。吸収熱Qin[J]はいくらか。",
+  type: "input",
+  correct: "600",
+  note: "200=Qin−400 → Qin=600"
+}
+
+{
+  question: "体積一定で気体に500 Jの熱を与えた。した仕事とΔUの正しい組はどれか。",
   type: "single",
-  options: ["ボイルの法則", "シャルルの法則", "アボガドロの法則", "フックの法則"],
+  options: ["仕事0、ΔU=500 J", "仕事500 J、ΔU=0", "仕事0、ΔU=0", "仕事250 J、ΔU=250 J"],
   correct: 0,
-  note: "ボイルの法則：P V = 一定（T一定）"
+  note: "定積 W=0"
 }
 
 {
-  question: "圧力一定のとき、理想気体の体積は絶対温度に比例する。この法則を何というか。",
+  question: "定圧で気体に600 Jの熱を与え、200 Jの仕事をした。ΔU[J]はいくらか。",
+  type: "input",
+  correct: "400",
+  note: "600−200=400"
+}
+
+{
+  question: "等温で気体に300 Jの熱を与えた（理想気体）。ΔUとした仕事の正しい組はどれか。",
   type: "single",
-  options: ["シャルルの法則", "ボイルの法則", "パスカルの原理", "アルキメデスの原理"],
+  options: ["ΔU=0、した仕事300 J", "ΔU=300、仕事0", "ΔU=0、仕事0", "ΔU=−300、仕事300 J"],
   correct: 0,
-  note: "シャルルの法則：V / T = 一定（P一定）"
+  note: "等温 ΔU=0、Qin=W_した"
 }
 
 {
-  question: "ボイルの法則とシャルルの法則をまとめた関係を何というか。",
+  question: "断熱で気体が外部に正の仕事をした。内部エネルギーはどうなるか。",
   type: "single",
-  options: ["ボイル・シャルルの法則", "オームの法則", "クーロンの法則", "ケプラーの法則"],
+  options: ["減少する", "増加する", "変わらない", "必ず0"],
   correct: 0,
-  note: "P V / T = 一定"
+  note: "Qin=0、ΔU=−W_した<0"
+}
+
+section: "3. 熱機関・ピストン"
+
+{
+  question: "熱効率0.25の熱機関に1200 Jの熱を与えた。した仕事W[J]はいくらか。",
+  type: "input",
+  correct: "300",
+  note: "W=0.25×1200=300"
 }
 
 {
-  question: "理想気体の状態方程式はどれか。",
+  question: "前問で放出熱量Q_out[J]はいくらか。",
+  type: "input",
+  correct: "900",
+  note: "1200−300=900"
+}
+
+{
+  question: "ピストン質量M、断面積S、大気圧P0、重力加速度g。鉛直に置いたとき内部圧力はどれか。",
   type: "single",
-  options: ["P V = n R T", "P + V = n R T", "P / V = n R T", "P V = n / R T"],
+  options: ["P0 + Mg/S", "P0 − Mg/S", "P0", "Mg/Sのみ"],
   correct: 0,
-  note: "PV = nRT"
+  note: "PS = P0S + Mg"
 }
 
 {
-  question: "気体定数を表す記号は通常どれか。",
+  question: "同じ装置を水平に置いたとき内部圧力はどれか。",
   type: "single",
-  options: ["R", "C", "k のみ", "G"],
+  options: ["P0", "P0 + Mg/S", "P0 − Mg/S", "0"],
   correct: 0,
-  note: "気体定数 R"
+  note: "重力は面に垂直でない"
+}
+
+section: "4. 連結容器"
+
+{
+  question: "容積2.0 Lと3.0 Lの容器が連結され、全体5.0 mol・同温の理想気体が入っている。2.0 L側の物質量[mol]はいくらか。",
+  type: "input",
+  correct: "2.0",
+  note: "n∝V → 5×2/5=2.0"
 }
 
 {
-  question: "物質量（モル数）を表す記号は通常どれか。",
-  type: "single",
-  options: ["n", "m のみ", "N のみ", "M"],
-  correct: 0,
-  note: "n [mol]"
-}
-
-{
-  question: "温度一定で体積を半分にすると、理想気体の圧力はどうなるか。",
-  type: "single",
-  options: ["2倍になる", "半分になる", "変わらない", "4倍になる"],
-  correct: 0,
-  note: "ボイルの法則より P ∝ 1/V"
-}
-
-{
-  question: "圧力一定で絶対温度を2倍にすると、体積はどうなるか。",
-  type: "single",
-  options: ["2倍になる", "半分になる", "変わらない", "4倍になる"],
-  correct: 0,
-  note: "シャルルの法則より V ∝ T"
-}
-
-section: "2. 分子運動"
-
-{
-  question: "気体の圧力は、分子が壁に衝突して与える力の時間平均に由来する。",
-  type: "truefalse",
-  correct: true,
-  note: ""
-}
-
-{
-  question: "絶対温度は、気体分子の平均運動エネルギーと比例関係にある。",
-  type: "truefalse",
-  correct: true,
-  note: ""
-}
-
-{
-  question: "理想気体では分子間力と分子の大きさを無視する。",
-  type: "truefalse",
-  correct: true,
-  note: ""
-}
-
-{
-  question: "次のうち理想気体の状態方程式に含まれる量をすべて選べ。",
+  question: "次のうち正しいものをすべて選べ。",
   type: "multiple",
-  options: ["圧力 P", "体積 V", "物質量 n", "絶対温度 T"],
-  correct: [0, 1, 2, 3],
-  note: "PV = nRT"
-}
-
-{
-  question: "次の空欄を埋めよ。理想気体の状態方程式は P V = n [[1]] T である。",
-  type: "fill",
-  blanks: {"1": "R"},
-  note: ""
-}
-
-{
-  question: "次の空欄を埋めよ。温度一定では P と V は[[1]]比例する。",
-  type: "fill",
-  blanks: {"1": "反"},
-  note: "反比例"
-}
-
-{
-  question: "ボイルの法則が成り立つ条件（一定に保つ量）は何か。",
-  type: "input",
-  correct: "温度",
-  note: "温度一定"
-}
-
-{
-  question: "シャルルの法則が成り立つ条件（一定に保つ量）は何か。",
-  type: "input",
-  correct: "圧力",
-  note: "圧力一定"
+  options: ["等温ではPV=一定", "定圧ではV/T=一定", "理想気体ではPV=nRT", "断熱では常にΔU=0"],
+  correct: [0, 1, 2],
+  note: "断熱でΔU=0とは限らない"
 }
