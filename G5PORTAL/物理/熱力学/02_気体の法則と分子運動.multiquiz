@@ -1,0 +1,131 @@
+// ========================================
+title: "熱力学② 気体の法則と分子運動"
+description: "ボイル・シャルル・ボイルシャルル・理想気体の状態方程式・分子運動（熱力学②対応）"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 気体の法則"
+
+{
+  question: "温度一定のとき、理想気体の圧力と体積は反比例する。この法則を何というか。",
+  type: "single",
+  options: ["ボイルの法則", "シャルルの法則", "アボガドロの法則", "フックの法則"],
+  correct: 0,
+  note: "ボイルの法則：P V = 一定（T一定）"
+}
+
+{
+  question: "圧力一定のとき、理想気体の体積は絶対温度に比例する。この法則を何というか。",
+  type: "single",
+  options: ["シャルルの法則", "ボイルの法則", "パスカルの原理", "アルキメデスの原理"],
+  correct: 0,
+  note: "シャルルの法則：V / T = 一定（P一定）"
+}
+
+{
+  question: "ボイルの法則とシャルルの法則をまとめた関係を何というか。",
+  type: "single",
+  options: ["ボイル・シャルルの法則", "オームの法則", "クーロンの法則", "ケプラーの法則"],
+  correct: 0,
+  note: "P V / T = 一定"
+}
+
+{
+  question: "理想気体の状態方程式はどれか。",
+  type: "single",
+  options: ["P V = n R T", "P + V = n R T", "P / V = n R T", "P V = n / R T"],
+  correct: 0,
+  note: "PV = nRT"
+}
+
+{
+  question: "気体定数を表す記号は通常どれか。",
+  type: "single",
+  options: ["R", "C", "k のみ", "G"],
+  correct: 0,
+  note: "気体定数 R"
+}
+
+{
+  question: "物質量（モル数）を表す記号は通常どれか。",
+  type: "single",
+  options: ["n", "m のみ", "N のみ", "M"],
+  correct: 0,
+  note: "n [mol]"
+}
+
+{
+  question: "温度一定で体積を半分にすると、理想気体の圧力はどうなるか。",
+  type: "single",
+  options: ["2倍になる", "半分になる", "変わらない", "4倍になる"],
+  correct: 0,
+  note: "ボイルの法則より P ∝ 1/V"
+}
+
+{
+  question: "圧力一定で絶対温度を2倍にすると、体積はどうなるか。",
+  type: "single",
+  options: ["2倍になる", "半分になる", "変わらない", "4倍になる"],
+  correct: 0,
+  note: "シャルルの法則より V ∝ T"
+}
+
+section: "2. 分子運動"
+
+{
+  question: "気体の圧力は、分子が壁に衝突して与える力の時間平均に由来する。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "絶対温度は、気体分子の平均運動エネルギーと比例関係にある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "理想気体では分子間力と分子の大きさを無視する。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "次のうち理想気体の状態方程式に含まれる量をすべて選べ。",
+  type: "multiple",
+  options: ["圧力 P", "体積 V", "物質量 n", "絶対温度 T"],
+  correct: [0, 1, 2, 3],
+  note: "PV = nRT"
+}
+
+{
+  question: "次の空欄を埋めよ。理想気体の状態方程式は P V = n [[1]] T である。",
+  type: "fill",
+  blanks: {"1": "R"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。温度一定では P と V は[[1]]比例する。",
+  type: "fill",
+  blanks: {"1": "反"},
+  note: "反比例"
+}
+
+{
+  question: "ボイルの法則が成り立つ条件（一定に保つ量）は何か。",
+  type: "input",
+  correct: "温度",
+  note: "温度一定"
+}
+
+{
+  question: "シャルルの法則が成り立つ条件（一定に保つ量）は何か。",
+  type: "input",
+  correct: "圧力",
+  note: "圧力一定"
+}

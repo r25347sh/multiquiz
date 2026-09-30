@@ -1,0 +1,149 @@
+// ========================================
+title: "熱力学① 熱と温度・熱量"
+description: "温度・絶対温度・熱容量・比熱・熱量保存・熱平衡（物理基礎・熱力学①対応）"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 温度と絶対温度"
+
+{
+  question: "原子の振動の激しさ（熱運動）を表す量が温度である。",
+  type: "truefalse",
+  correct: true,
+  note: "温度は原子・分子の熱運動の激しさを表す"
+}
+
+{
+  question: "原子が完全に静止し、それ以上温度が下がらない理論上の下限を何というか。",
+  type: "single",
+  options: ["絶対零度", "氷点", "沸点", "臨界点"],
+  correct: 0,
+  note: "絶対零度（約−273℃）"
+}
+
+{
+  question: "絶対零度を0とした温度目盛りを何というか。",
+  type: "single",
+  options: ["絶対温度（ケルビン）", "セルシウス温度のみ", "華氏温度のみ", "相対温度"],
+  correct: 0,
+  note: "絶対温度 [K]"
+}
+
+{
+  question: "セルシウス温度 t[℃] と絶対温度 T[K] の関係として正しいものはどれか。",
+  type: "single",
+  options: ["T = 273 + t", "T = t − 273", "T = 100 + t", "T = t / 273"],
+  correct: 0,
+  note: "T[K] = 273 + t[℃]"
+}
+
+{
+  question: "0℃を絶対温度で表すとおよそ何Kか。",
+  type: "input",
+  correct: "273",
+  note: "273 K"
+}
+
+{
+  question: "水の氷点を0℃、沸点を100℃として分割した温度目盛りを何というか。",
+  type: "single",
+  options: ["セルシウス温度", "絶対温度", "ランキン温度", "プランク温度"],
+  correct: 0,
+  note: "セルシウス温度（℃）"
+}
+
+section: "2. 熱容量・比熱・熱量"
+
+{
+  question: "熱容量 C と質量 m・比熱 c の関係はどれか。",
+  type: "single",
+  options: ["C = m × c", "C = m / c", "C = m + c", "C = c / m"],
+  correct: 0,
+  note: "C = m c"
+}
+
+{
+  question: "比熱の単位として適切なものはどれか。",
+  type: "single",
+  options: ["J/(g·K)", "J のみ", "K のみ", "g のみ"],
+  correct: 0,
+  note: "J/(g·K)"
+}
+
+{
+  question: "物体が吸収する熱量 Qin と熱容量 C・温度変化 ΔT の関係はどれか。",
+  type: "single",
+  options: ["Qin = C × ΔT", "Qin = C / ΔT", "Qin = C + ΔT", "Qin = ΔT / C"],
+  correct: 0,
+  note: "Qin = C ΔT = m c ΔT"
+}
+
+{
+  question: "質量 m、比熱 c の物体の温度を ΔT 上げるのに必要な熱量は何か。",
+  type: "single",
+  options: ["m c ΔT", "m + c + ΔT", "m / c × ΔT", "c / m × ΔT"],
+  correct: 0,
+  note: "Qin = m c ΔT"
+}
+
+{
+  question: "熱量はエネルギーの一種であり、物体間で移動する熱運動のエネルギーの量を表す。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "高温側から低温側へ熱が移動し、温度が等しくなって熱の移動がなくなった状態を何というか。",
+  type: "single",
+  options: ["熱平衡", "断熱", "定積", "絶対零度"],
+  correct: 0,
+  note: "熱平衡"
+}
+
+section: "3. 熱量の保存・計算"
+
+{
+  question: "容器と水の間だけで熱が移動する場合、容器が失った熱量と水が得た熱量は等しい（熱量の保存）。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "融点にある氷を同温度の水にするために必要な熱は何に対応するか。",
+  type: "single",
+  options: ["融解熱", "比熱のみ", "熱容量のみ", "仕事"],
+  correct: 0,
+  note: "融解熱"
+}
+
+{
+  question: "100℃の水を同温度の水蒸気に変えるのに必要な熱を何というか。",
+  type: "single",
+  options: ["蒸発熱（気化熱）", "融解熱", "比熱", "熱容量"],
+  correct: 0,
+  note: "蒸発熱"
+}
+
+{
+  question: "次の空欄を埋めよ。絶対温度 T とセルシウス温度 t の関係は T = [[1]] + t である。",
+  type: "fill",
+  blanks: {"1": "273"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。熱容量 C = m × [[1]] である。",
+  type: "fill",
+  blanks: {"1": "c"},
+  note: "比熱 c"
+}
+
+{
+  question: "次の空欄を埋めよ。熱量 Qin = C × [[1]] である。",
+  type: "fill",
+  blanks: {"1": "ΔT"},
+  note: ""
+}
