@@ -1,188 +1,164 @@
 // ========================================
-title: "熱力学③ 内部エネルギーと状態変化"
-description: "内部エネルギー・熱力学第一法則・定積/定圧/等温/断熱・モル比熱（熱力学③対応）"
-points_default: 2
-shuffle_questions: true
+title: "熱力学③ 内部エネルギーと状態変化【計算編】"
+description: "U=(3/2)nRT、定積・定圧、ピストン加熱、連結容器。プリ級。"
+points_default: 3
+shuffle_questions: false
 shuffle_options: true
 
-section: "1. 内部エネルギーと第一法則"
+section: "1. 内部エネルギー"
 
 {
-  question: "単原子分子理想気体の内部エネルギー U はどれか（気体定数 R）。",
-  type: "single",
-  options: ["U = (3/2) n R T", "U = n R T のみ", "U = (1/2) n R T", "U は T に無関係"],
-  correct: 0,
-  note: "単原子分子：U = (3/2) nRT"
+  question: "単原子分子理想気体 n=2.0 mol、T=300 K、R=8.3 J/(mol·K)の内部エネルギーU[J]を求めよ（有効数字2桁）。",
+  type: "input",
+  correct: "7500",
+  note: "(3/2)×2×8.3×300=7470≒7500"
 }
 
 {
-  question: "内部エネルギーは温度だけで決まり、理想気体では経路によらない（状態量である）。",
-  type: "truefalse",
-  correct: true,
+  question: "単原子分子理想気体の内部エネルギーを圧力p0・体積V0で表すとどれか。",
+  type: "single",
+  options: ["U=(3/2)p0 V0", "U=p0 V0", "U=(5/2)p0 V0", "U=(1/2)p0 V0"],
+  correct: 0,
+  note: "(3/2)nRT=(3/2)pV"
+}
+
+{
+  question: "単原子分子で温度がT0→3T0。はじめの内部エネルギーをU0とするとΔUはどれか。",
+  type: "single",
+  options: ["2 U0", "3 U0", "U0", "0"],
+  correct: 0,
+  note: "U∝T → ΔU=2U0"
+}
+
+section: "2. 定積・定圧・モル比熱"
+
+{
+  question: "単原子分子の定積モル比熱CVはどれか。",
+  type: "single",
+  options: ["(3/2)R", "(5/2)R", "R", "2R"],
+  correct: 0,
   note: ""
 }
 
 {
-  question: "熱力学第一法則として適切なものはどれか。",
+  question: "単原子分子の定圧モル比熱CPはどれか。",
   type: "single",
-  options: ["ΔU = Qin + Wされた", "ΔU = Qin × Wされた", "ΔU = 0 常に", "ΔU = Qin のみ常に"],
+  options: ["(5/2)R", "(3/2)R", "R", "(1/2)R"],
   correct: 0,
-  note: "ΔU = Qin + Wされた"
+  note: "CP=CV+R"
 }
 
 {
-  question: "気体が外部にした仕事を Wした とすると、Wされた = −Wした と書ける。",
-  type: "truefalse",
-  correct: true,
+  question: "定積で温度をT0からTへ。ΔUはどれか。",
+  type: "single",
+  options: ["(3/2)nR(T−T0)", "(5/2)nR(T−T0)", "nR(T−T0)", "0"],
+  correct: 0,
   note: ""
 }
 
-section: "2. 定積・定圧変化"
-
 {
-  question: "体積一定の変化を何というか。",
+  question: "定積加熱後の圧力は、初期圧力p0に対しどれか。",
   type: "single",
-  options: ["定積変化", "定圧変化", "等温変化", "断熱変化"],
+  options: ["p0(T/T0)", "p0(T0/T)", "p0", "p0(T/T0)²"],
   correct: 0,
-  note: "定積変化"
+  note: "V一定でp∝T"
 }
 
 {
-  question: "定積変化では気体がする仕事はいくらか。",
+  question: "定圧でT0→T、初期体積V0。した仕事はどれか。",
   type: "single",
-  options: ["0", "最大", "nRT", "PΔV のみ"],
+  options: ["p0 V0(T/T0−1)", "p0 V0", "0", "(3/2)p0 V0(T/T0−1)"],
   correct: 0,
-  note: "ΔV=0 より仕事0"
+  note: "W=pΔV=nRΔT"
 }
 
 {
-  question: "圧力一定の変化を何というか。",
+  question: "定圧でΔTだけ上げたときのQin（単原子）はどれか。",
   type: "single",
-  options: ["定圧変化", "定積変化", "等温変化", "断熱変化"],
+  options: ["(5/2)nRΔT", "(3/2)nRΔT", "nRΔT", "0"],
   correct: 0,
-  note: "定圧変化"
+  note: ""
 }
 
+section: "3. ピストンでT0→3T0（定圧近似）"
+
 {
-  question: "定圧変化で気体がする仕事はどれか。",
+  question: "単原子分子 n mol を定圧で T0→3T0。ΔUはどれか。",
   type: "single",
-  options: ["P ΔV", "P / ΔV", "P + ΔV", "ΔV / P"],
+  options: ["3 n R T0", "(3/2)n R T0", "(9/2)n R T0", "0"],
   correct: 0,
-  note: "Wした = P ΔV"
+  note: "ΔT=2T0、ΔU=(3/2)nR·2T0=3nRT0"
 }
 
 {
-  question: "単原子分子の定積モル比熱 CV はどれか。",
+  question: "前問で気体がした仕事はどれか。",
   type: "single",
-  options: ["(3/2) R", "(5/2) R", "R", "2R"],
+  options: ["2 n R T0", "3 n R T0", "n R T0", "0"],
   correct: 0,
-  note: "CV = (3/2) R"
+  note: "W=nRΔT=2nRT0"
 }
 
 {
-  question: "単原子分子の定圧モル比熱 CP はどれか。",
+  question: "前問で吸収熱Qはどれか。",
   type: "single",
-  options: ["(5/2) R", "(3/2) R", "R", "(1/2) R"],
+  options: ["5 n R T0", "3 n R T0", "2 n R T0", "(3/2)n R T0"],
   correct: 0,
-  note: "CP = (5/2) R"
+  note: "Q=ΔU+W=5nRT0"
+}
+
+section: "4. 連結容器（コック開放）"
+
+{
+  question: "容器A：体積3V0・圧力2p0・温度T0、容器B：体積2V0・圧力p0・温度3T0。nA/nBの値はいくらか（整数）。",
+  type: "input",
+  correct: "9",
+  note: "nA=6p0V0/(RT0)、nB=2p0V0/(3RT0)、比=9"
 }
 
 {
-  question: "CP − CV = R が成り立つ（理想気体）。",
-  type: "truefalse",
-  correct: true,
-  note: "マイヤーの関係"
+  question: "前問でコックを開き断熱的に平衡。最終温度TはT0の何倍か（小数）。単原子分子とし内部エネルギー保存。",
+  type: "input",
+  correct: "1.2",
+  note: "(nA+nB)T = nA T0 + 3 nB T0 → T=1.2 T0"
 }
 
-section: "3. 等温・断熱変化"
+{
+  question: "前問の最終圧力pはp0の何倍か（有効数字2桁）。全体積5V0。",
+  type: "input",
+  correct: "1.6",
+  note: "p·5V0 = (nA+nB)RT → p=1.6 p0"
+}
+
+section: "5. 過程の判別"
 
 {
-  question: "温度一定の変化を何というか。",
+  question: "P-V図の縦線（V一定）はどの過程か。",
   type: "single",
-  options: ["等温変化", "定積変化", "定圧変化", "断熱変化"],
+  options: ["定積", "定圧", "等温", "断熱"],
   correct: 0,
-  note: "等温変化"
+  note: ""
 }
 
 {
-  question: "理想気体の等温変化では ΔU はいくらか。",
+  question: "P-V図の横線（P一定）はどの過程か。",
   type: "single",
-  options: ["0", "最大", "nRT", "常に正"],
+  options: ["定圧", "定積", "等温", "断熱"],
   correct: 0,
-  note: "ΔT=0 より ΔU=0"
+  note: ""
 }
 
 {
-  question: "熱の出入りがない変化を何というか。",
+  question: "理想気体の等温膨張で正しいのはどれか。",
   type: "single",
-  options: ["断熱変化", "等温変化", "定圧変化", "定積変化"],
+  options: ["Qin = W_した", "Qin=0", "W_した=0", "ΔU>0"],
   correct: 0,
-  note: "断熱変化"
+  note: "ΔU=0"
 }
 
 {
-  question: "断熱変化では ΔU = Wされた が成り立つ。",
-  type: "truefalse",
-  correct: true,
-  note: "Qin=0"
-}
-
-{
-  question: "断熱膨張すると理想気体の温度はどうなるか。",
-  type: "single",
-  options: ["下がる", "上がる", "変わらない", "必ず絶対零度"],
-  correct: 0,
-  note: "温度低下"
-}
-
-{
-  question: "断熱圧縮すると理想気体の温度はどうなるか。",
-  type: "single",
-  options: ["上がる", "下がる", "変わらない", "0Kになる"],
-  correct: 0,
-  note: "温度上昇"
-}
-
-{
-  question: "P-V 図で等温線はどのような曲線か。",
-  type: "single",
-  options: ["反比例の曲線", "直線で傾き一定のみ", "水平線のみ", "垂直線のみ"],
-  correct: 0,
-  note: "P ∝ 1/V"
-}
-
-{
-  question: "次のうち状態量であるものをすべて選べ。",
+  question: "次のうち状態量をすべて選べ。",
   type: "multiple",
-  options: ["内部エネルギー U", "温度 T", "圧力 P", "経路に依存する仕事 W"],
+  options: ["内部エネルギーU", "温度T", "圧力P", "1サイクルの仕事"],
   correct: [0, 1, 2],
-  note: "仕事と熱は過程量"
-}
-
-{
-  question: "次の空欄を埋めよ。単原子分子の U = ([[1]]/2) n R T である。",
-  type: "fill",
-  blanks: {"1": "3"},
-  note: ""
-}
-
-{
-  question: "次の空欄を埋めよ。等温変化では ΔU = [[1]] である。",
-  type: "fill",
-  blanks: {"1": "0"},
-  note: ""
-}
-
-{
-  question: "定積モル比熱を表す記号は通常どれか。",
-  type: "input",
-  correct: "CV",
-  note: ""
-}
-
-{
-  question: "定圧モル比熱を表す記号は通常どれか。",
-  type: "input",
-  correct: "CP",
   note: ""
 }
