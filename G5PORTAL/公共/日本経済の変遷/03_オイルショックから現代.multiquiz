@@ -1,0 +1,198 @@
+// ========================================
+title: "日本経済の変遷③ オイルショックから現代"
+description: "ニクソン・ショック、オイルショック、プラザ合意、バブル、失われた20年、アベノミクス。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 高度成長の終わり"
+
+{
+  question: "1971年の金ドル交換停止のショックは何か。",
+  type: "single",
+  options: ["ニクソン・ショック", "オイルショック", "リーマンショック", "ドッジ・ライン"],
+  correct: 0,
+  note: "ニクソン・ショック"
+}
+
+{
+  question: "ニクソン・ショック後の円高例は1ドル＝何円か。",
+  type: "input",
+  correct: "308",
+  note: ""
+}
+
+{
+  question: "1973年の石油価格急騰を何というか。",
+  type: "single",
+  options: ["第一次オイルショック", "第二次オイルショック", "プラザ合意", "朝鮮特需"],
+  correct: 0,
+  note: "第一次オイルショック"
+}
+
+{
+  question: "不況と物価高の同時発生を何というか。",
+  type: "single",
+  options: ["スタグフレーション", "インフレーションのみ", "デフレーションのみ", "竹馬経済"],
+  correct: 0,
+  note: "スタグフレーション"
+}
+
+{
+  question: "1979年の石油危機を何というか。",
+  type: "single",
+  options: ["第二次オイルショック", "第一次オイルショック", "ニクソン・ショック", "リーマンショック"],
+  correct: 0,
+  note: "第二次オイルショック"
+}
+
+{
+  question: "日本が移行した産業の特徴は何か。",
+  type: "single",
+  options: ["軽薄短小", "重厚長大", "竹馬経済", "二重構造"],
+  correct: 0,
+  note: "軽薄短小"
+}
+
+{
+  question: "鉄鋼・石油化学などの産業を表す言葉は何か。",
+  type: "input",
+  correct: "重厚長大",
+  note: ""
+}
+
+section: "2. 貿易摩擦と円高"
+
+{
+  question: "米国の貿易赤字と財政赤字を何と呼ぶか。",
+  type: "single",
+  options: ["双子の赤字", "竹馬経済", "スタグフレーション", "デフレ・スパイラル"],
+  correct: 0,
+  note: "双子の赤字"
+}
+
+{
+  question: "1985年のドル安合意は何か。",
+  type: "single",
+  options: ["プラザ合意", "ルーブル合意", "ドッジ・ライン", "シャウプ勧告"],
+  correct: 0,
+  note: "プラザ合意"
+}
+
+{
+  question: "プラザ合意後の円高の代表値は1ドル＝何円か。",
+  type: "input",
+  correct: "120",
+  note: ""
+}
+
+{
+  question: "企業の海外進出による国内衰退の懸念を何というか。",
+  type: "single",
+  options: ["産業の空洞化", "傾斜生産", "農地改革", "財閥解体"],
+  correct: 0,
+  note: "産業の空洞化"
+}
+
+{
+  question: "米国から日本への要求は市場開放と何か。",
+  type: "single",
+  options: ["内需拡大", "輸出拡大のみ", "防衛費ゼロ", "農地改革"],
+  correct: 0,
+  note: "内需拡大"
+}
+
+section: "3. バブルと崩壊"
+
+{
+  question: "株価・地価が異常高騰した景気を何というか。",
+  type: "single",
+  options: ["バブル景気", "神武景気", "岩戸景気", "いざなぎ景気"],
+  correct: 0,
+  note: "バブル景気"
+}
+
+{
+  question: "バブル崩壊後の金融機関の問題債権を何というか。",
+  type: "single",
+  options: ["不良債権", "黄犬契約", "春闘", "減反"],
+  correct: 0,
+  note: "不良債権"
+}
+
+{
+  question: "融資を渋る現象を何というか。",
+  type: "input",
+  correct: "貸し渋り",
+  note: ""
+}
+
+{
+  question: "企業再構築・人員削減を指す語は何か。",
+  type: "input",
+  correct: "リストラクチャリング",
+  note: ""
+}
+
+{
+  question: "需要減退の悪循環を何というか。",
+  type: "single",
+  options: ["デフレ・スパイラル", "スタグフレーション", "インフレのみ", "高度成長"],
+  correct: 0,
+  note: "デフレ・スパイラル"
+}
+
+{
+  question: "長期停滞を指す表現は何か。",
+  type: "single",
+  options: ["失われた20年", "高度経済成長", "神武景気", "朝鮮特需"],
+  correct: 0,
+  note: "失われた20年"
+}
+
+section: "4. 近年の政策と構造"
+
+{
+  question: "小泉政権の方向性を表す言葉は何か。",
+  type: "single",
+  options: ["小さな政府", "大きな政府のみ", "傾斜生産", "竹馬経済"],
+  correct: 0,
+  note: "小さな政府"
+}
+
+{
+  question: "2008年の世界金融危機を何というか。",
+  type: "single",
+  options: ["リーマンショック", "ニクソン・ショック", "プラザ合意", "ドッジ・ライン"],
+  correct: 0,
+  note: "リーマンショック"
+}
+
+{
+  question: "第二次安倍政権の経済政策を何というか。",
+  type: "input",
+  correct: "アベノミクス",
+  note: ""
+}
+
+{
+  question: "第一次→第二次→第三次産業への移行法則は何か。",
+  type: "single",
+  options: ["ペティ・クラークの法則", "ドッジ・ライン", "プラザ合意", "黄犬契約"],
+  correct: 0,
+  note: "ペティ・クラークの法則"
+}
+
+{
+  question: "次の空欄を埋めよ。1985年の[[1]]合意で円高が進んだ。",
+  type: "fill",
+  blanks: {"1": "プラザ"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。不況と物価高の同時進行を[[1]]という。",
+  type: "fill",
+  blanks: {"1": "スタグフレーション"},
+  note: ""
+}
