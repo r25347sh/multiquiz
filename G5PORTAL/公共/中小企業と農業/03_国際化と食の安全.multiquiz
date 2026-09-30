@@ -1,154 +1,107 @@
 // ========================================
 title: "中小企業と農業③ 国際化と食の安全"
-description: "農産物自由化、和牛・デコポン、BSE、トレーサビリティ、地産地消、6次産業化など。"
+description: "農産物輸入自由化・食料自給・地産地消・食の安全。"
 points_default: 2
 shuffle_questions: true
 shuffle_options: true
 
-section: "1. 輸入自由化"
+section: "1. 国際化と農業"
 
 {
   question: "農産物の輸入自由化の背景となったのは何か。",
   type: "single",
-  options: ["日米貿易摩擦", "農地改革", "ドッジ・ライン", "春闘"],
+  options: ["日米貿易摩擦", "冷戦終結のみ", "EU加盟", "円安のみ"],
   correct: 0,
   note: "日米貿易摩擦"
 }
 
 {
-  question: "1991年頃、自由化が求められた代表的な農産物は何か。",
+  question: "1991年頃、自由化が求められた代表的な農産物をすべて選べ。",
   type: "multiple",
-  options: ["牛肉", "オレンジ", "石油のみ", "鉄鋼のみ"],
+  options: ["牛肉", "オレンジ", "石油", "鉄鋼"],
   correct: [0, 1],
-  note: "牛肉とオレンジ"
+  note: "牛肉・オレンジなど"
 }
 
 {
-  question: "ブランド化した和牛の取り組みがある。",
+  question: "WTO体制下で農産物貿易の自由化が進んだ。",
   type: "truefalse",
   correct: true,
   note: ""
 }
 
 {
-  question: "みかん農家がブランド化に成功した例は何か。",
-  type: "single",
-  options: ["デコポン", "ひとめぼれのみ", "白黒テレビ", "3C"],
-  correct: 0,
-  note: "デコポン"
-}
-
-{
-  question: "1999年、米の輸入は何による調整に移行したか。",
-  type: "single",
-  options: ["関税", "完全禁止", "無制限自由化のみ", "治安維持法"],
-  correct: 0,
-  note: "関税"
-}
-
-section: "2. 食の安全性"
-
-{
-  question: "1990年代後半に議論となった作物技術は何か。",
-  type: "single",
-  options: ["遺伝子組み換え作物", "傾斜生産", "財閥解体", "黄犬契約"],
-  correct: 0,
-  note: "遺伝子組み換え作物"
-}
-
-{
-  question: "牛海綿状脳症の略称を答えよ。",
-  type: "input",
-  correct: "BSE",
-  note: ""
-}
-
-{
-  question: "生産・流通の履歴を追える仕組みを何というか。",
-  type: "single",
-  options: ["トレーサビリティ", "減反", "春闘", "竹馬経済"],
-  correct: 0,
-  note: "トレーサビリティ"
-}
-
-{
-  question: "地元の農産物を地元で消費する運動を何というか。",
-  type: "input",
-  correct: "地産地消",
-  note: ""
-}
-
-{
-  question: "第一次〜第三次を組み合わせた農業展開を何というか。",
-  type: "single",
-  options: ["第6次産業化", "第1次産業化のみ", "重厚長大", "軽薄短小のみ"],
-  correct: 0,
-  note: "6次産業化"
-}
-
-{
-  question: "食料を安定確保することを何というか。",
-  type: "single",
-  options: ["食の安全保障", "産業の空洞化", "経済の二重構造", "サービス残業"],
-  correct: 0,
-  note: "食の安全保障"
-}
-
-{
-  question: "食品の廃棄を減らす取り組みを何というか。",
-  type: "single",
-  options: ["食品ロスの削減", "減反の強化のみ", "輸出禁止", "関税ゼロのみ"],
-  correct: 0,
-  note: "食品ロス削減"
-}
-
-section: "3. 確認問題"
-
-{
-  question: "大企業と中小企業の格差は経済の二重構造と呼ばれてきた。",
-  type: "truefalse",
-  correct: true,
-  note: ""
-}
-
-{
-  question: "不況時、下請け中小企業は発注減などで不安定になりやすい。",
-  type: "truefalse",
-  correct: true,
-  note: ""
-}
-
-{
-  question: "1999年の新農業基本法は自給率向上や企業参入など活性化の方向を示した。",
-  type: "truefalse",
-  correct: true,
-  note: ""
-}
-
-{
-  question: "1999年からコメの関税制限をすべて撤廃し外国産米が大量に売られるようになった、という説明は適当か。",
+  question: "日本の食料自給率（カロリーベース）は長期的に高い水準を維持している。",
   type: "truefalse",
   correct: false,
-  note: "関税による調整。無制限大量流通は適当でない"
+  note: "低水準が課題"
 }
 
 {
-  question: "次の空欄を埋めよ。生産から販売までつなぐ展開を第[[1]]次産業化という。",
-  type: "fill",
-  blanks: {"1": "6"},
+  question: "食料自給率の議論でよく用いられる表示は何か。",
+  type: "single",
+  options: ["カロリーベース", "株価ベース", "人口ベース", "面積のみ"],
+  correct: 0,
+  note: "カロリーベース"
+}
+
+section: "2. 食の安全と地産地消"
+
+{
+  question: "産地や生産方法の表示を義務づける制度の一例は何か。",
+  type: "single",
+  options: ["食品表示制度", "減反政策", "傾斜生産", "ドッジ・ライン"],
+  correct: 0,
+  note: "食品表示"
+}
+
+{
+  question: "BSEや残留農薬問題などを背景に、食の安全への関心が高まった。",
+  type: "truefalse",
+  correct: true,
   note: ""
 }
 
 {
-  question: "次の空欄を埋めよ。食の履歴を追う仕組みを[[1]]という。",
-  type: "fill",
-  blanks: {"1": "トレーサビリティ"},
-  note: ""
-}
-
-{
-  question: "地産地消を漢字で答えよ。",
+  question: "地域で生産した農産物をその地域で消費する取り組みを何というか。",
   type: "input",
   correct: "地産地消",
+  note: "地産地消"
+}
+
+{
+  question: "地産地消の効果として適切なものはどれか。",
+  type: "single",
+  options: ["輸送距離の短縮・地域農業の活性化", "輸入依存の最大化", "自給率の必ず100%化", "農業の消滅"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "有機農業や特別栽培など、環境負荷を抑える取り組みが広がっている。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "次のうち食の安全に関わるものをすべて選べ。",
+  type: "multiple",
+  options: ["食品表示", "トレーサビリティ", "残留農薬基準", "プラザ合意"],
+  correct: [0, 1, 2],
+  note: "プラザ合意は為替"
+}
+
+{
+  question: "次の空欄を埋めよ。地域生産・地域消費の取り組みを[[1]]という。",
+  type: "fill",
+  blanks: {"1": "地産地消"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。食料自給率はしばしば[[1]]ベースで示される。",
+  type: "fill",
+  blanks: {"1": "カロリー"},
   note: ""
 }
