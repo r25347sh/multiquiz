@@ -1,0 +1,131 @@
+title: "公共 倫理4 動機と結果の考え方"
+description: "教科書p.30-31 対応。カント・ベンサム・ミルの義務論・功利主義。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. よい行いの判断基準"
+
+{
+  question: "近代以降、道徳の根拠を何に置くようになったか。",
+  type: "single",
+  options: ["人間", "神", "自然", "国家"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "ヨーロッパ大陸では人間の何を重視したか。",
+  type: "single",
+  options: ["理性", "経験", "感情", "直感"],
+  correct: 0,
+  note: "①理性"
+}
+
+{
+  question: "イギリスでは人間の何を重視したか。",
+  type: "single",
+  options: ["経験", "理性", "信仰", "伝統"],
+  correct: 0,
+  note: "②経験"
+}
+
+{
+  question: "カントは理性に基づく何に従うべきとしたか。",
+  type: "single",
+  options: ["道徳法則", "快楽原則", "最大幸福", "自然法則"],
+  correct: 0,
+  note: "③道徳法則"
+}
+
+{
+  question: "カントの義務を重視する立場を何というか。",
+  type: "single",
+  options: ["義務論", "功利主義", "結果主義", "徳倫理"],
+  correct: 0,
+  note: "④義務論"
+}
+
+{
+  question: "「〜すべき」という無条件に命じるものを何というか。",
+  type: "single",
+  options: ["定言命法", "仮言命法", "功利主義", "最大幸福"],
+  correct: 0,
+  note: "定言命法"
+}
+
+{
+  question: "カントが理性ある存在を何としたか。",
+  type: "single",
+  options: ["人格", "手段", "道具", "客体"],
+  correct: 0,
+  note: "⑤人格"
+}
+
+{
+  question: "ベンサムが築いた考えを何というか。",
+  type: "single",
+  options: ["功利主義", "義務論", "徳倫理", "契約論"],
+  correct: 0,
+  note: "⑥功利主義"
+}
+
+{
+  question: "ベンサムが説いた考えを何というか。",
+  type: "single",
+  options: ["最大多数の最大幸福", "最小不幸", "平等幸福", "個別幸福"],
+  correct: 0,
+  note: "⑦"
+}
+
+{
+  question: "ミルがより高いものとして重視した快を何と呼んだか。",
+  type: "single",
+  options: ["精神的快楽", "感覚的快楽", "一時的快楽", "物質的快楽"],
+  correct: 0,
+  note: "⑨精神的快楽"
+}
+
+{
+  question: "定言命法を漢字4字で答えよ。",
+  type: "input",
+  correct: "定言命法",
+  note: ""
+}
+
+{
+  question: "カントが理性ある存在を呼んだ名称を答えよ。",
+  type: "input",
+  correct: "人格",
+  note: ""
+}
+
+{
+  question: "ベンサムの「最大多数の最大幸福」を答えよ。",
+  type: "input",
+  correct: "最大多数の最大幸福",
+  note: ""
+}
+
+section: "2. 正誤"
+
+{
+  question: "カントはイギリス出身である。",
+  type: "truefalse",
+  correct: false,
+  note: ""
+}
+
+{
+  question: "定言命法は条件つきの命令である。",
+  type: "truefalse",
+  correct: false,
+  note: "無条件。仮言命法が条件つき"
+}
+
+{
+  question: "ミルはベンサムの考え方を修正し質的な快を重視した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
