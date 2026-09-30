@@ -1,0 +1,136 @@
+title: "公共 倫理5 他者と共に生きる倫理"
+description: "教科書p.32-33 対応。啓蒙運動・アーレント・ハーバーマス・ロールズ・セン・ナチズム。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 公正な社会・啓蒙"
+
+{
+  question: "17世紀以降のヨーロッパで、理性に基づき人を教え導こうとする運動を何というか。",
+  type: "single",
+  options: ["啓蒙運動", "宗教改革", "産業革命", "フランス革命"],
+  correct: 0,
+  note: "①啓蒙運動"
+}
+
+{
+  question: "人は生まれながらに何であるという普遍的な価値観が生まれたか。",
+  type: "single",
+  options: ["平等", "不平等", "優秀", "劣等"],
+  correct: 0,
+  note: "②平等"
+}
+
+{
+  question: "ドイツ出身で『全体主義の起源』の著者は誰か。",
+  type: "single",
+  options: ["アーレント", "ハーバーマス", "ロールズ", "セン"],
+  correct: 0,
+  note: "アーレント"
+}
+
+{
+  question: "フランクフルト学派に属し、対話的理性を重視した人物は誰か。",
+  type: "single",
+  options: ["ハーバーマス", "アーレント", "ロールズ", "ホルクハイマー"],
+  correct: 0,
+  note: "ハーバーマス"
+}
+
+{
+  question: "『正義論』を著し、公正としての正義を示した人物は誰か。",
+  type: "single",
+  options: ["ロールズ", "アーレント", "ハーバーマス", "セン"],
+  correct: 0,
+  note: "ロールズ"
+}
+
+{
+  question: "潜在能力（ケイパビリティ）を広げ実質的平等を説いた人物は誰か。",
+  type: "single",
+  options: ["セン", "ロールズ", "アーレント", "ハーバーマス"],
+  correct: 0,
+  note: "セン"
+}
+
+{
+  question: "ドイツで誕生した過激な全体主義を何というか。",
+  type: "single",
+  options: ["ナチズム", "ファシズム", "共産主義", "資本主義"],
+  correct: 0,
+  note: "③ナチズム"
+}
+
+{
+  question: "特定の利益や目的のために使われる理性を何として批判したか。",
+  type: "single",
+  options: ["道具的理性", "対話的理性", "実践理性", "純粋理性"],
+  correct: 0,
+  note: "⑥道具的理性"
+}
+
+{
+  question: "啓蒙運動を漢字3字で答えよ。",
+  type: "input",
+  correct: "啓蒙運動",
+  note: ""
+}
+
+{
+  question: "人は生まれながらに何であるか。漢字2字で答えよ。",
+  type: "input",
+  correct: "平等",
+  note: ""
+}
+
+{
+  question: "ナチズムをカタカナで答えよ。",
+  type: "input",
+  correct: "ナチズム",
+  note: ""
+}
+
+{
+  question: "道具的理性を漢字で答えよ。",
+  type: "input",
+  correct: "道具的理性",
+  note: ""
+}
+
+{
+  question: "センが主張した概念を答えよ。",
+  type: "input",
+  correct: "潜在能力(ケイパビリティ)",
+  note: ""
+}
+
+section: "2. 正誤"
+
+{
+  question: "アーレントはアメリカ出身である。",
+  type: "truefalse",
+  correct: false,
+  note: "ドイツ出身"
+}
+
+{
+  question: "ロールズはインド出身である。",
+  type: "truefalse",
+  correct: false,
+  note: "アメリカ。センがインド"
+}
+
+{
+  question: "センはアジア初のノーベル経済学賞を受賞した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "ハーバーマスはフランクフルト学派に属する。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}

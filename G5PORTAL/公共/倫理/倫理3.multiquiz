@@ -1,0 +1,145 @@
+title: "公共 倫理3 幸福と正義の考え方"
+description: "教科書p.28-29 対応。幸福・ソクラテス・プラトン・アリストテレスなど。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 幸福とよりよく生きる"
+
+{
+  question: "よりよく生きるとは、幸せ（何）に生きるということか。",
+  type: "single",
+  options: ["幸福", "成功", "富", "名声"],
+  correct: 0,
+  note: "①幸福"
+}
+
+{
+  question: "個人の何が満たされることは幸福の一つであるか。",
+  type: "single",
+  options: ["欲望", "義務", "責任", "規範"],
+  correct: 0,
+  note: "②欲望"
+}
+
+{
+  question: "公共的な空間でよりよく生きるには、他人の幸福も考える必要がある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "「知らないものをその通り知らないと思う」ことが真の知につながるという考えを基礎にした人物は誰か。",
+  type: "single",
+  options: ["ソクラテス", "プラトン", "アリストテレス", "エピクロス"],
+  correct: 0,
+  note: "ソクラテス"
+}
+
+{
+  question: "ソクラテスが用いた真理の探究方法を何というか。",
+  type: "single",
+  options: ["問答法", "弁証法", "帰納法", "演繹法"],
+  correct: 0,
+  note: "⑤問答法"
+}
+
+{
+  question: "絶対的な美や善、真理を「イデア」と名づけた人物は誰か。",
+  type: "single",
+  options: ["プラトン", "ソクラテス", "アリストテレス", "ディオゲネス"],
+  correct: 0,
+  note: "プラトン"
+}
+
+{
+  question: "プラトンがイデアに憧れる気持ちを何とよんだか。",
+  type: "single",
+  options: ["エロス", "フィリア", "アガペー", "リビドー"],
+  correct: 0,
+  note: "⑦エロス"
+}
+
+{
+  question: "人間の生き方の最高目的は幸福であり、それが最高善だとした人物は誰か。",
+  type: "single",
+  options: ["アリストテレス", "プラトン", "ソクラテス", "エピクロス"],
+  correct: 0,
+  note: "アリストテレス"
+}
+
+{
+  question: "アリストテレスが信頼と親愛の情を何とよび、最も重要なものとしたか。",
+  type: "single",
+  options: ["友愛（フィリア）", "エロス", "アガペー", "正義"],
+  correct: 0,
+  note: "⑨友愛(フィリア)"
+}
+
+{
+  question: "二者択一に焦らず、他者と共に何を重ねることが重要か。",
+  type: "single",
+  options: ["対話", "競争", "沈黙", "批判"],
+  correct: 0,
+  note: "⑮対話"
+}
+
+{
+  question: "ソクラテスの「不知の自覚」を答えよ。",
+  type: "input",
+  correct: "不知の自覚(無知の知)",
+  note: ""
+}
+
+{
+  question: "プラトンが名づけた概念をカタカナで答えよ。",
+  type: "input",
+  correct: "イデア",
+  note: ""
+}
+
+{
+  question: "アリストテレスが最も重要とした情を答えよ。",
+  type: "input",
+  correct: "友愛(フィリア)",
+  note: ""
+}
+
+{
+  question: "時間を超えてつながる将来世代と何を形成するために世代間倫理が重要か。",
+  type: "single",
+  options: ["持続可能な社会", "競争社会", "格差社会", "閉鎖社会"],
+  correct: 0,
+  note: "⑯"
+}
+
+section: "2. 正誤"
+
+{
+  question: "ソクラテスはプラトンの弟子である。",
+  type: "truefalse",
+  correct: false,
+  note: ""
+}
+
+{
+  question: "アリストテレスはプラトンの弟子である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "イデア論はソクラテスの思想である。",
+  type: "truefalse",
+  correct: false,
+  note: ""
+}
+
+{
+  question: "最高善はアリストテレスの概念である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
