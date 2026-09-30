@@ -1,0 +1,270 @@
+// ========================================
+// 公共・倫理 【現代の正義と公共倫理】
+// 教科書 p.32-33 対応（他者と共に生きる倫理）
+// ========================================
+title: "【現代の正義と公共倫理】"
+description: "啓蒙運動・平等・アーレント・ハーバーマス・ロールズ・セン・ナチズムなど、現代の正義と公共倫理の総合問題。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 啓蒙と平等"
+
+{
+  question: "17世紀以降のヨーロッパで、理性に基づき人を教え導こうとする運動を何というか。",
+  type: "single",
+  options: ["啓蒙運動", "宗教改革", "産業革命", "フランス革命"],
+  correct: 0,
+  note: "啓蒙運動"
+}
+
+{
+  question: "人は生まれながらに何であるという普遍的な価値観が生まれたか。",
+  type: "single",
+  options: ["平等", "不平等", "優秀", "劣等"],
+  correct: 0,
+  note: "平等"
+}
+
+{
+  question: "啓蒙運動を漢字3字で答えよ。",
+  type: "input",
+  correct: "啓蒙運動",
+  note: ""
+}
+
+{
+  question: "人は生まれながらに何であるか。漢字2字で答えよ。",
+  type: "input",
+  correct: "平等",
+  note: ""
+}
+
+{
+  question: "啓蒙思想は理性の力を信じ、迷信や権威からの解放を目指した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "2. アーレント・ハーバーマス"
+
+{
+  question: "ドイツ出身で『全体主義の起源』の著者は誰か。",
+  type: "single",
+  options: ["アーレント", "ハーバーマス", "ロールズ", "セン"],
+  correct: 0,
+  note: "アーレント"
+}
+
+{
+  question: "アーレントはアメリカ出身である。",
+  type: "truefalse",
+  correct: false,
+  note: "ドイツ出身（後にアメリカへ）"
+}
+
+{
+  question: "フランクフルト学派に属し、対話的理性を重視した人物は誰か。",
+  type: "single",
+  options: ["ハーバーマス", "アーレント", "ロールズ", "ホルクハイマー"],
+  correct: 0,
+  note: "ハーバーマス"
+}
+
+{
+  question: "ハーバーマスはフランクフルト学派に属する。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "特定の利益や目的のために使われる理性を何として批判したか。",
+  type: "single",
+  options: ["道具的理性", "対話的理性", "実践理性", "純粋理性"],
+  correct: 0,
+  note: "道具的理性"
+}
+
+{
+  question: "道具的理性を漢字で答えよ。",
+  type: "input",
+  correct: "道具的理性",
+  note: ""
+}
+
+{
+  question: "ハーバーマスが重視した、他者との相互理解に向かう理性を何というか。",
+  type: "single",
+  options: ["対話的理性（コミュニケーション的理性）", "道具的理性", "感覚的理性", "権威的理性"],
+  correct: 0,
+  note: "対話的理性"
+}
+
+section: "3. ロールズ・セン"
+
+{
+  question: "『正義論』を著し、公正としての正義を示した人物は誰か。",
+  type: "single",
+  options: ["ロールズ", "アーレント", "ハーバーマス", "セン"],
+  correct: 0,
+  note: "ロールズ"
+}
+
+{
+  question: "ロールズはインド出身である。",
+  type: "truefalse",
+  correct: false,
+  note: "アメリカ。センがインド"
+}
+
+{
+  question: "ロールズが想定した、自分の社会的立場がわからない状態を何というか。",
+  type: "single",
+  options: ["無知のヴェール", "イデア", "定言命法", "モラトリアム"],
+  correct: 0,
+  note: "無知のヴェール"
+}
+
+{
+  question: "潜在能力（ケイパビリティ）を広げ実質的平等を説いた人物は誰か。",
+  type: "single",
+  options: ["セン", "ロールズ", "アーレント", "ハーバーマス"],
+  correct: 0,
+  note: "セン"
+}
+
+{
+  question: "センはアジア初のノーベル経済学賞を受賞した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "センが主張した概念を答えよ。",
+  type: "input",
+  correct: "潜在能力(ケイパビリティ)",
+  note: ""
+}
+
+{
+  question: "ロールズの主著のタイトルを漢字で答えよ。",
+  type: "input",
+  correct: "正義論",
+  note: ""
+}
+
+{
+  question: "ロールズが公正な社会を考えるために用いた思考実験の名称を答えよ。",
+  type: "input",
+  correct: "無知のヴェール",
+  note: ""
+}
+
+section: "4. 全体主義と公共"
+
+{
+  question: "ドイツで誕生した過激な全体主義を何というか。",
+  type: "single",
+  options: ["ナチズム", "ファシズム", "共産主義", "資本主義"],
+  correct: 0,
+  note: "ナチズム"
+}
+
+{
+  question: "ナチズムをカタカナで答えよ。",
+  type: "input",
+  correct: "ナチズム",
+  note: ""
+}
+
+{
+  question: "全体主義は個人の自由や多様性を抑圧し、国家や民族の統一を絶対視する。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "アーレントは全体主義の危険性を分析し、公共空間での行為の重要性を説いた。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "5. 総合・比較"
+
+{
+  question: "次のうちアーレントに関連するものをすべて選べ。",
+  type: "multiple",
+  options: ["全体主義の起源", "ドイツ出身", "公共空間", "ケイパビリティ"],
+  correct: [0, 1, 2],
+  note: "ケイパビリティはセン"
+}
+
+{
+  question: "次のうちロールズに関連するものをすべて選べ。",
+  type: "multiple",
+  options: ["正義論", "無知のヴェール", "公正としての正義", "道具的理性"],
+  correct: [0, 1, 2],
+  note: "道具的理性はハーバーマスらの批判概念"
+}
+
+{
+  question: "次のうちセンに関連するものをすべて選べ。",
+  type: "multiple",
+  options: ["潜在能力（ケイパビリティ）", "実質的平等", "インド出身", "ノーベル経済学賞"],
+  correct: [0, 1, 2, 3],
+  note: "すべて正しい"
+}
+
+{
+  question: "次の空欄を埋めよ。17世紀以降のヨーロッパで理性に基づき人を教え導こうとする運動を[[1]]という。",
+  type: "fill",
+  blanks: {"1": "啓蒙運動"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。ロールズは公正な分配を考えるため[[1]]という思考実験を用いた。",
+  type: "fill",
+  blanks: {"1": "無知のヴェール"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。センは[[1]]（ケイパビリティ）の拡大による実質的平等を説いた。",
+  type: "fill",
+  blanks: {"1": "潜在能力"},
+  note: ""
+}
+
+{
+  question: "『全体主義の起源』の著者をカタカナで答えよ。",
+  type: "input",
+  correct: "アーレント",
+  note: ""
+}
+
+{
+  question: "対話的理性を重視したフランクフルト学派の思想家をカタカナで答えよ。",
+  type: "input",
+  correct: "ハーバーマス",
+  note: ""
+}
+
+{
+  question: "『正義論』の著者をカタカナで答えよ。",
+  type: "input",
+  correct: "ロールズ",
+  note: ""
+}
+
+{
+  question: "ケイパビリティアプローチを提唱した人物をカタカナで答えよ。",
+  type: "input",
+  correct: "セン",
+  note: ""
+}
