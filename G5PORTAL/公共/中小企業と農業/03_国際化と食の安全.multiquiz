@@ -1,0 +1,154 @@
+// ========================================
+title: "中小企業と農業③ 国際化と食の安全"
+description: "農産物自由化、和牛・デコポン、BSE、トレーサビリティ、地産地消、6次産業化など。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 輸入自由化"
+
+{
+  question: "農産物の輸入自由化の背景となったのは何か。",
+  type: "single",
+  options: ["日米貿易摩擦", "農地改革", "ドッジ・ライン", "春闘"],
+  correct: 0,
+  note: "日米貿易摩擦"
+}
+
+{
+  question: "1991年頃、自由化が求められた代表的な農産物は何か。",
+  type: "multiple",
+  options: ["牛肉", "オレンジ", "石油のみ", "鉄鋼のみ"],
+  correct: [0, 1],
+  note: "牛肉とオレンジ"
+}
+
+{
+  question: "ブランド化した和牛の取り組みがある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "みかん農家がブランド化に成功した例は何か。",
+  type: "single",
+  options: ["デコポン", "ひとめぼれのみ", "白黒テレビ", "3C"],
+  correct: 0,
+  note: "デコポン"
+}
+
+{
+  question: "1999年、米の輸入は何による調整に移行したか。",
+  type: "single",
+  options: ["関税", "完全禁止", "無制限自由化のみ", "治安維持法"],
+  correct: 0,
+  note: "関税"
+}
+
+section: "2. 食の安全性"
+
+{
+  question: "1990年代後半に議論となった作物技術は何か。",
+  type: "single",
+  options: ["遺伝子組み換え作物", "傾斜生産", "財閥解体", "黄犬契約"],
+  correct: 0,
+  note: "遺伝子組み換え作物"
+}
+
+{
+  question: "牛海綿状脳症の略称を答えよ。",
+  type: "input",
+  correct: "BSE",
+  note: ""
+}
+
+{
+  question: "生産・流通の履歴を追える仕組みを何というか。",
+  type: "single",
+  options: ["トレーサビリティ", "減反", "春闘", "竹馬経済"],
+  correct: 0,
+  note: "トレーサビリティ"
+}
+
+{
+  question: "地元の農産物を地元で消費する運動を何というか。",
+  type: "input",
+  correct: "地産地消",
+  note: ""
+}
+
+{
+  question: "第一次〜第三次を組み合わせた農業展開を何というか。",
+  type: "single",
+  options: ["第6次産業化", "第1次産業化のみ", "重厚長大", "軽薄短小のみ"],
+  correct: 0,
+  note: "6次産業化"
+}
+
+{
+  question: "食料を安定確保することを何というか。",
+  type: "single",
+  options: ["食の安全保障", "産業の空洞化", "経済の二重構造", "サービス残業"],
+  correct: 0,
+  note: "食の安全保障"
+}
+
+{
+  question: "食品の廃棄を減らす取り組みを何というか。",
+  type: "single",
+  options: ["食品ロスの削減", "減反の強化のみ", "輸出禁止", "関税ゼロのみ"],
+  correct: 0,
+  note: "食品ロス削減"
+}
+
+section: "3. 確認問題"
+
+{
+  question: "大企業と中小企業の格差は経済の二重構造と呼ばれてきた。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "不況時、下請け中小企業は発注減などで不安定になりやすい。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "1999年の新農業基本法は自給率向上や企業参入など活性化の方向を示した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "1999年からコメの関税制限をすべて撤廃し外国産米が大量に売られるようになった、という説明は適当か。",
+  type: "truefalse",
+  correct: false,
+  note: "関税による調整。無制限大量流通は適当でない"
+}
+
+{
+  question: "次の空欄を埋めよ。生産から販売までつなぐ展開を第[[1]]次産業化という。",
+  type: "fill",
+  blanks: {"1": "6"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。食の履歴を追う仕組みを[[1]]という。",
+  type: "fill",
+  blanks: {"1": "トレーサビリティ"},
+  note: ""
+}
+
+{
+  question: "地産地消を漢字で答えよ。",
+  type: "input",
+  correct: "地産地消",
+  note: ""
+}
