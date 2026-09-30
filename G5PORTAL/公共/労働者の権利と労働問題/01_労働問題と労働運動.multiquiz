@@ -16,10 +16,11 @@ section: "1. 背景と資本主義"
 }
 
 {
-  question: "資本主義経済の「資本」を漢字で答えよ。",
-  type: "input",
-  correct: "資本",
-  note: ""
+  question: "資本主義経済において、生産手段を所有し労働者を雇用する側を何というか。",
+  type: "single",
+  options: ["資本家", "労働者", "小作人", "公務員"],
+  correct: 0,
+  note: "資本家"
 }
 
 {
