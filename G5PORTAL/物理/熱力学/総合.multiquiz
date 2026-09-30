@@ -1,0 +1,145 @@
+// ========================================
+title: "熱力学【総合】"
+description: "温度・熱量・気体法則・内部エネルギー・状態変化の総合確認。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "総合確認"
+
+{
+  question: "絶対温度 T とセルシウス温度 t の関係はどれか。",
+  type: "single",
+  options: ["T = 273 + t", "T = t − 273", "T = 100 t", "T = t / 273"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "熱容量 C と質量 m・比熱 c の関係はどれか。",
+  type: "single",
+  options: ["C = m c", "C = m / c", "C = m + c", "C = c − m"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "熱量 Qin = C ΔT が成り立つ。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "理想気体の状態方程式はどれか。",
+  type: "single",
+  options: ["PV = nRT", "P + V = nRT", "P/V = nRT", "PV = n/R T"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "温度一定で P と V が反比例する法則は何か。",
+  type: "single",
+  options: ["ボイルの法則", "シャルルの法則", "フックの法則", "オームの法則"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "圧力一定で V が T に比例する法則は何か。",
+  type: "single",
+  options: ["シャルルの法則", "ボイルの法則", "パスカルの原理", "クーロンの法則"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "単原子分子理想気体の内部エネルギーはどれか。",
+  type: "single",
+  options: ["(3/2) nRT", "nRT のみ", "常に0", "(1/2) nRT"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "熱力学第一法則 ΔU = Qin + Wされた が成り立つ。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "定積変化では仕事は0で、ΔU = Qin である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "単原子分子の定積モル比熱 CV はどれか。",
+  type: "single",
+  options: ["(3/2)R", "(5/2)R", "R", "2R"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "単原子分子の定圧モル比熱 CP はどれか。",
+  type: "single",
+  options: ["(5/2)R", "(3/2)R", "R", "(1/2)R"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "等温変化で理想気体の ΔU はいくらか。",
+  type: "single",
+  options: ["0", "最大", "nRT", "常に負"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "断熱変化では Qin = 0 である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "断熱膨張で温度はどうなるか。",
+  type: "single",
+  options: ["下がる", "上がる", "変わらない", "絶対零度になる"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "次のうち過程量（経路に依存）をすべて選べ。",
+  type: "multiple",
+  options: ["仕事 W", "熱 Q", "内部エネルギー U", "温度 T"],
+  correct: [0, 1],
+  note: "U と T は状態量"
+}
+
+{
+  question: "次の空欄を埋めよ。PV = n[[1]]T である。",
+  type: "fill",
+  blanks: {"1": "R"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。T[K] = [[1]] + t[℃] である。",
+  type: "fill",
+  blanks: {"1": "273"},
+  note: ""
+}
+
+{
+  question: "絶対零度はおよそ何℃か（負の数で）。",
+  type: "input",
+  correct: "-273",
+  note: "約−273℃"
+}

@@ -1,0 +1,188 @@
+// ========================================
+title: "熱力学③ 内部エネルギーと状態変化"
+description: "内部エネルギー・熱力学第一法則・定積/定圧/等温/断熱・モル比熱（熱力学③対応）"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 内部エネルギーと第一法則"
+
+{
+  question: "単原子分子理想気体の内部エネルギー U はどれか（気体定数 R）。",
+  type: "single",
+  options: ["U = (3/2) n R T", "U = n R T のみ", "U = (1/2) n R T", "U は T に無関係"],
+  correct: 0,
+  note: "単原子分子：U = (3/2) nRT"
+}
+
+{
+  question: "内部エネルギーは温度だけで決まり、理想気体では経路によらない（状態量である）。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "熱力学第一法則として適切なものはどれか。",
+  type: "single",
+  options: ["ΔU = Qin + Wされた", "ΔU = Qin × Wされた", "ΔU = 0 常に", "ΔU = Qin のみ常に"],
+  correct: 0,
+  note: "ΔU = Qin + Wされた"
+}
+
+{
+  question: "気体が外部にした仕事を Wした とすると、Wされた = −Wした と書ける。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "2. 定積・定圧変化"
+
+{
+  question: "体積一定の変化を何というか。",
+  type: "single",
+  options: ["定積変化", "定圧変化", "等温変化", "断熱変化"],
+  correct: 0,
+  note: "定積変化"
+}
+
+{
+  question: "定積変化では気体がする仕事はいくらか。",
+  type: "single",
+  options: ["0", "最大", "nRT", "PΔV のみ"],
+  correct: 0,
+  note: "ΔV=0 より仕事0"
+}
+
+{
+  question: "圧力一定の変化を何というか。",
+  type: "single",
+  options: ["定圧変化", "定積変化", "等温変化", "断熱変化"],
+  correct: 0,
+  note: "定圧変化"
+}
+
+{
+  question: "定圧変化で気体がする仕事はどれか。",
+  type: "single",
+  options: ["P ΔV", "P / ΔV", "P + ΔV", "ΔV / P"],
+  correct: 0,
+  note: "Wした = P ΔV"
+}
+
+{
+  question: "単原子分子の定積モル比熱 CV はどれか。",
+  type: "single",
+  options: ["(3/2) R", "(5/2) R", "R", "2R"],
+  correct: 0,
+  note: "CV = (3/2) R"
+}
+
+{
+  question: "単原子分子の定圧モル比熱 CP はどれか。",
+  type: "single",
+  options: ["(5/2) R", "(3/2) R", "R", "(1/2) R"],
+  correct: 0,
+  note: "CP = (5/2) R"
+}
+
+{
+  question: "CP − CV = R が成り立つ（理想気体）。",
+  type: "truefalse",
+  correct: true,
+  note: "マイヤーの関係"
+}
+
+section: "3. 等温・断熱変化"
+
+{
+  question: "温度一定の変化を何というか。",
+  type: "single",
+  options: ["等温変化", "定積変化", "定圧変化", "断熱変化"],
+  correct: 0,
+  note: "等温変化"
+}
+
+{
+  question: "理想気体の等温変化では ΔU はいくらか。",
+  type: "single",
+  options: ["0", "最大", "nRT", "常に正"],
+  correct: 0,
+  note: "ΔT=0 より ΔU=0"
+}
+
+{
+  question: "熱の出入りがない変化を何というか。",
+  type: "single",
+  options: ["断熱変化", "等温変化", "定圧変化", "定積変化"],
+  correct: 0,
+  note: "断熱変化"
+}
+
+{
+  question: "断熱変化では ΔU = Wされた が成り立つ。",
+  type: "truefalse",
+  correct: true,
+  note: "Qin=0"
+}
+
+{
+  question: "断熱膨張すると理想気体の温度はどうなるか。",
+  type: "single",
+  options: ["下がる", "上がる", "変わらない", "必ず絶対零度"],
+  correct: 0,
+  note: "温度低下"
+}
+
+{
+  question: "断熱圧縮すると理想気体の温度はどうなるか。",
+  type: "single",
+  options: ["上がる", "下がる", "変わらない", "0Kになる"],
+  correct: 0,
+  note: "温度上昇"
+}
+
+{
+  question: "P-V 図で等温線はどのような曲線か。",
+  type: "single",
+  options: ["反比例の曲線", "直線で傾き一定のみ", "水平線のみ", "垂直線のみ"],
+  correct: 0,
+  note: "P ∝ 1/V"
+}
+
+{
+  question: "次のうち状態量であるものをすべて選べ。",
+  type: "multiple",
+  options: ["内部エネルギー U", "温度 T", "圧力 P", "経路に依存する仕事 W"],
+  correct: [0, 1, 2],
+  note: "仕事と熱は過程量"
+}
+
+{
+  question: "次の空欄を埋めよ。単原子分子の U = ([[1]]/2) n R T である。",
+  type: "fill",
+  blanks: {"1": "3"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。等温変化では ΔU = [[1]] である。",
+  type: "fill",
+  blanks: {"1": "0"},
+  note: ""
+}
+
+{
+  question: "定積モル比熱を表す記号は通常どれか。",
+  type: "input",
+  correct: "CV",
+  note: ""
+}
+
+{
+  question: "定圧モル比熱を表す記号は通常どれか。",
+  type: "input",
+  correct: "CP",
+  note: ""
+}
