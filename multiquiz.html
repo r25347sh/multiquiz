@@ -75,7 +75,57 @@ function redrawAllConnections(svg,leftSide,rightSide,connections){svg.innerHTML=
 function drawSingleConnection(svg,leftSide,rightSide,leftIdx,rightIdx){const leftRect=leftSide.children[leftIdx].getBoundingClientRect();const rightRect=rightSide.children[rightIdx].getBoundingClientRect();const svgRect=svg.getBoundingClientRect();const x1=leftRect.right-svgRect.left+2,y1=leftRect.top+leftRect.height/2-svgRect.top,x2=rightRect.left-svgRect.left-2,y2=rightRect.top+rightRect.height/2-svgRect.top;const line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',x1);line.setAttribute('y1',y1);line.setAttribute('x2',x2);line.setAttribute('y2',y2);line.setAttribute('stroke','#8a6f52');line.setAttribute('stroke-width','3.5');line.setAttribute('stroke-linecap','round');svg.appendChild(line)}
 function updateMatchItemStyles(leftSide,rightSide,connections){Array.from(leftSide.children).forEach((el,i)=>el.classList.toggle('connected',connections[i]!==null));Array.from(rightSide.children).forEach((el,i)=>{const isUsed=connections.some(idx=>idx===i);el.classList.toggle('connected',isUsed)})}
 function makeSortable(ul,globalQIdx){ul.addEventListener('dragstart',e=>{e.dataTransfer.setData('text/plain',e.target.dataset.value);e.target.classList.add('dragging')});ul.addEventListener('dragend',e=>e.target.classList.remove('dragging'));ul.addEventListener('dragover',e=>e.preventDefault());ul.addEventListener('drop',e=>{e.preventDefault();const dragging=ul.querySelector('.dragging');const target=e.target.closest('li');if(dragging&&target&&dragging!==target){const children=Array.from(ul.children);if(children.indexOf(dragging)<children.indexOf(target))target.after(dragging);else target.before(dragging)}userAnswers[globalQIdx]=Array.from(ul.children).map(li=>li.dataset.value)})}
-document.getElementById('submitAllBtn').addEventListener('click',()=>{if(!currentQuiz)return;let score=0,total=0;currentQuiz.sections.forEach((section,secIdx)=>{section.questions.forEach((q,qIdx)=>{const idx=`${secIdx}-${qIdx}`;const ans=userAnswers[idx];total+=q.points||2;let correct=false;if(q.type==='single')correct=parseInt(ans)===q.correct;else if(q.type==='multiple')correct=JSON.stringify((ans||[]).sort())===JSON.stringify(q.correct.sort());else if(q.type==='truefalse')correct=ans===q.correct;else if(q.type==='input')correct=String(ans||'').trim()===String(q.correct||'').trim();else if(q.type==='fill')correct=Object.keys(q.blanks).every(k=>(ans&&ans[k])===q.blanks[k]);else if(q.type==='sort')correct=JSON.stringify(ans)===JSON.stringify(q.correct);else if(q.type==='matching')correct=JSON.stringify(ans)===JSON.stringify(q.correct);if(correct)score+=q.points||2;const note=document.getElementById(`note-${idx}`);if(note)note.classList.remove('hidden')})});alert(`採点結果: ${score} / ${total} 点`)});
+function normalizeAnswer(s){
+  if(s==null)return'';
+  s=String(s).trim();
+  // 全角英数記号→半角
+  s=s.replace(/[\uFF01-\uFF5E]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0xFEE0));
+  s=s.replace(/\u3000/g,' ');
+  // 括弧統一
+  s=s.replace(/[（【〔［]/g,'(').replace(/[）】〕］]/g,')');
+  // 中点・読点など軽く除去
+  s=s.replace(/[・･]/g,'');
+  // 空白除去
+  s=s.replace(/\s+/g,'');
+  // ラテン小文字化
+  s=s.toLowerCase();
+  return s;
+}
+function expandAnswerVariants(correct){
+  const list=Array.isArray(correct)?correct:[correct];
+  const variants=new Set();
+  for(const raw of list){
+    if(raw==null)continue;
+    const n=normalizeAnswer(raw);
+    if(!n)continue;
+    variants.add(n);
+    // 括弧付き: 境界人(マージナルマン) → 本体 / 括弧内 / 連結
+    const m=n.match(/^(.+?)\((.+)\)$/);
+    if(m){
+      variants.add(m[1]);
+      variants.add(m[2]);
+      variants.add(m[1]+m[2]);
+    }
+    // スラッシュ区切りも許容
+    if(n.includes('/')){
+      n.split('/').forEach(p=>{const t=p.trim();if(t)variants.add(t)});
+    }
+  }
+  return variants;
+}
+function isTextAnswerCorrect(userAns,correct){
+  const u=normalizeAnswer(userAns);
+  if(!u)return false;
+  const variants=expandAnswerVariants(correct);
+  if(variants.has(u))return true;
+  // ユーザー側が括弧付きで書いた場合も本体・括弧内で照合
+  const um=u.match(/^(.+?)\((.+)\)$/);
+  if(um){
+    if(variants.has(um[1])||variants.has(um[2])||variants.has(um[1]+um[2]))return true;
+  }
+  return false;
+}
+document.getElementById('submitAllBtn').addEventListener('click',()=>{if(!currentQuiz)return;let score=0,total=0;currentQuiz.sections.forEach((section,secIdx)=>{section.questions.forEach((q,qIdx)=>{const idx=`${secIdx}-${qIdx}`;const ans=userAnswers[idx];total+=q.points||2;let correct=false;if(q.type==='single')correct=parseInt(ans)===q.correct;else if(q.type==='multiple')correct=JSON.stringify((ans||[]).sort())===JSON.stringify((q.correct||[]).slice().sort());else if(q.type==='truefalse')correct=ans===q.correct;else if(q.type==='input')correct=isTextAnswerCorrect(ans,q.correct);else if(q.type==='fill')correct=Object.keys(q.blanks||{}).every(k=>isTextAnswerCorrect(ans&&ans[k],q.blanks[k]));else if(q.type==='sort')correct=JSON.stringify(ans)===JSON.stringify(q.correct);else if(q.type==='matching')correct=JSON.stringify(ans)===JSON.stringify(q.correct);if(correct)score+=q.points||2;const note=document.getElementById(`note-${idx}`);if(note)note.classList.remove('hidden')})});alert(`採点結果: ${score} / ${total} 点`)});
 document.getElementById('resetBtn').addEventListener('click',()=>{if(confirm('リセットしますか？'))location.reload()});
 </script>
 </body>
