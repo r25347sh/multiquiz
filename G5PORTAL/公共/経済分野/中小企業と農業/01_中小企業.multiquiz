@@ -1,0 +1,156 @@
+// ========================================
+title: "中小企業と農業① 中小企業"
+description: "大企業との割合・二重構造・下請け・定義・ベンチャーなど。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 割合と二重構造"
+
+{
+  question: "事業所数の比率で、大企業と中小企業はおよそ何対何か。",
+  type: "single",
+  options: ["1：99", "50：50", "99：1", "3：7"],
+  correct: 0,
+  note: "大企業1：中小企業99"
+}
+
+{
+  question: "従業員数の比率で、大企業と中小企業はおよそ何対何か。",
+  type: "single",
+  options: ["3：7", "1：99", "7：3", "1：1"],
+  correct: 0,
+  note: "大企業3：中小企業7"
+}
+
+{
+  question: "大企業と中小企業の間に賃金・労働時間・福利厚生で格差がある構造を何というか。",
+  type: "single",
+  options: ["経済の二重構造", "竹馬経済", "スタグフレーション", "産業の空洞化"],
+  correct: 0,
+  note: "経済の二重構造"
+}
+
+{
+  question: "中小企業は高い技術を持ち日本経済を底辺で支えている面がある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "1963年に制定された、中小企業発展のための基本法を何というか。",
+  type: "single",
+  options: ["中小企業基本法", "農業基本法", "労働組合法", "独占禁止法"],
+  correct: 0,
+  note: "中小企業基本法"
+}
+
+section: "2. 下請けと系列"
+
+{
+  question: "中小企業が大企業の製造などを請け負う関係を何というか。",
+  type: "single",
+  options: ["下請け", "財閥", "農地改革", "春闘"],
+  correct: 0,
+  note: "下請け関係"
+}
+
+{
+  question: "景気悪化時、中小企業は発注減や原価引き下げを求められやすい。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "人的・技術的・資本的に大企業と密接な系列企業となる中小企業が多い。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "3. 中小企業の定義"
+
+{
+  question: "製造業で中小企業とされる雇用者数の上限はおよそ何人以下か。",
+  type: "single",
+  options: ["300人以下", "50人以下", "1000人以下", "10人以下"],
+  correct: 0,
+  note: "300人以下（資本金3億円以下）"
+}
+
+{
+  question: "製造業の中小企業の資本金額の目安は何円以下か。",
+  type: "single",
+  options: ["3億円以下", "5000万円以下", "1億円以下", "10億円以下"],
+  correct: 0,
+  note: "3億円以下"
+}
+
+{
+  question: "小売業の中小企業は雇用者数およそ何人以下か。",
+  type: "single",
+  options: ["50人以下", "300人以下", "100人以下", "1000人以下"],
+  correct: 0,
+  note: "50人以下"
+}
+
+{
+  question: "中小企業の定義は業種によって異なる。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "サービス業は「形の無い財」を提供して対価を得るのが特徴である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "4. 現状とベンチャー"
+
+{
+  question: "アジア諸国に比べ日本の賃金が割高なため、輸出企業や下請けが海外へ移る動きがある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "積極的な技術開発で事業展開をめざす企業を何というか。",
+  type: "single",
+  options: ["ベンチャー企業", "財閥のみ", "寄生地主", "公務員"],
+  correct: 0,
+  note: "ベンチャー企業"
+}
+
+{
+  question: "ベンチャーはIT・バイオなど先端技術分野に多い。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。事業所数は大企業[[1]]：中小企業99である。",
+  type: "fill",
+  blanks: {"1": "1"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。大企業と中小企業の格差構造を経済の[[1]]という。",
+  type: "fill",
+  blanks: {"1": "二重構造"},
+  note: ""
+}
+
+{
+  question: "中小企業基本法が制定された年（西暦）を答えよ。",
+  type: "input",
+  correct: "1963",
+  note: ""
+}
