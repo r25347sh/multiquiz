@@ -1,0 +1,166 @@
+// ========================================
+title: "政治と権力⑦ 国際連合と日本の役割"
+description: "国際連合の組織・役割・日本の国際貢献。指導要領「国際貢献を含む国際社会における我が国の役割」。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 国際連合の成立と目的"
+
+{
+  question: "国際連合が発足した年（西暦）はいつか。",
+  type: "single",
+  options: ["1945年", "1919年", "1951年", "1991年"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "国連の目的として適切でないものはどれか。",
+  type: "single",
+  options: ["特定国の覇権確立", "国際の平和と安全の維持", "諸国民の平等の権利の尊重", "経済的・社会的・文化的協力"],
+  correct: 0,
+  note: "国連憲章1条。"
+}
+
+{
+  question: "次の空欄を埋めよ。国際連合は[[1]]年に発足した。",
+  type: "fill",
+  blanks: {"1": "1945"},
+  note: ""
+}
+
+{
+  question: "国際連盟と国際連合の大きな違いの一つは何か。",
+  type: "input",
+  correct: "国連は安全保障理事会に強制力のある措置（軍事含む）の権限を与えた点など",
+  note: ""
+}
+
+section: "2. 主要機関"
+
+{
+  question: "安全保障理事会の常任理事国は何か国か。",
+  type: "single",
+  options: ["5か国", "10か国", "15か国", "193か国"],
+  correct: 0,
+  note: "米英仏露中。"
+}
+
+{
+  question: "安保理常任理事国の特権は何か。",
+  type: "single",
+  options: ["拒否権（拒否権）", "総会での二重投票権のみ", "事務総長の任命権のみ", "特権はない"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "総会の議決の原則は何か。",
+  type: "single",
+  options: ["一国一票", "人口比例", "GDP比例", "常任理事国のみ投票"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。安保理の常任理事国は[[1]]か国である。",
+  type: "fill",
+  blanks: {"1": "5"},
+  note: ""
+}
+
+{
+  question: "国際司法裁判所（ICJ）の所在地はどこか。",
+  type: "input",
+  correct: "ハーグ（オランダ）",
+  note: ""
+}
+
+section: "3. 日本と国連"
+
+{
+  question: "日本が国連に加盟した年はいつか。",
+  type: "single",
+  options: ["1956年", "1945年", "1960年", "1972年"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "日本の国連外交の柱としてよく挙げられるものは何か。",
+  type: "single",
+  options: ["平和・人権・開発などへの貢献、安保理改革への関与", "軍事大国化のみ", "国連脱退", "拒否権の取得のみ"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。日本の国連加盟は[[1]]年である。",
+  type: "fill",
+  blanks: {"1": "1956"},
+  note: ""
+}
+
+{
+  question: "PKO（平和維持活動）への日本の参加の法的枠組みを述べよ。",
+  type: "input",
+  correct: "PKO協力法などに基づく参加（憲法との整合性を考慮した枠組み）",
+  note: ""
+}
+
+section: "4. 国際貢献の諸形態"
+
+{
+  question: "ODAとは何か。",
+  type: "single",
+  options: ["政府開発援助", "民間投資のみ", "軍事援助のみ", "国連予算のみ"],
+  correct: 0,
+  note: "Official Development Assistance。"
+}
+
+{
+  question: "人間の安全保障の概念の要点は何か。",
+  type: "single",
+  options: ["国家だけでなく個人の安全・尊厳を重視する考え方", "軍事力のみの安全保障", "国境の閉鎖", "経済制裁のみ"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。政府開発援助をアルファベットで[[1]]という。",
+  type: "fill",
+  blanks: {"1": "ODA"},
+  note: ""
+}
+
+{
+  question: "SDGsの正式名称を答えよ。",
+  type: "input",
+  correct: "持続可能な開発目標（Sustainable Development Goals）",
+  note: ""
+}
+
+section: "5. 課題"
+
+{
+  question: "国連の課題として指摘されるものはどれか。",
+  type: "single",
+  options: ["安保理の代表性・拒否権のあり方・財政・実効性など", "問題は全くない", "総会の廃止", "事務総長の独裁"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。安保理改革で日本が求めることの一つに常任理事国入りがある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "日本が国際社会で果たすべき役割について、指導要領の観点で重要な視点を述べよ。",
+  type: "input",
+  correct: "平和主義に基づく国際貢献、多国間協調、人権・開発・環境など",
+  note: ""
+}
