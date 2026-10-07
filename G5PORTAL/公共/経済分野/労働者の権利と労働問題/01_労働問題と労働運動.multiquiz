@@ -1,0 +1,132 @@
+// ========================================
+title: "労働者の権利① 労働問題の発生と労働運動"
+description: "資本主義下の労働者の立場、産業革命期・明治期の労働運動、治安立法まで。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 背景と資本主義"
+
+{
+  question: "資本主義経済において、労働者は資本家に対してどのような立場に置かれやすいか。",
+  type: "single",
+  options: ["弱い立場", "強い立場", "対等な立場", "支配する立場"],
+  correct: 0,
+  note: "資本家に対して弱い立場"
+}
+
+{
+  question: "資本主義経済において、生産手段を所有し労働者を雇用する側を何というか。",
+  type: "single",
+  options: ["資本家", "労働者", "小作人", "公務員"],
+  correct: 0,
+  note: "資本家"
+}
+
+{
+  question: "資本主義経済の労働者は資本家に対して弱い立場である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "2. 産業革命期のイギリス"
+
+{
+  question: "産業革命期のイギリスで、機械を打ち壊す運動を何というか。",
+  type: "single",
+  options: ["ラッダイト運動", "チャーチスト運動", "春闘", "労働組合運動"],
+  correct: 0,
+  note: "ラッダイト運動"
+}
+
+{
+  question: "参政権の要求を行った運動を何というか。",
+  type: "single",
+  options: ["チャーチスト運動", "ラッダイト運動", "労働三権運動", "安保闘争"],
+  correct: 0,
+  note: "チャーチスト運動"
+}
+
+{
+  question: "ラッダイト運動の内容を答えよ。",
+  type: "input",
+  correct: "機械打ち壊し運動",
+  note: ""
+}
+
+{
+  question: "チャーチスト運動が要求したものは何か。",
+  type: "input",
+  correct: "参政権",
+  note: ""
+}
+
+{
+  question: "産業革命期のイギリスでは労働者は過酷な労働環境にあった。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "次のうち産業革命期イギリスの労働運動に含まれるものをすべて選べ。",
+  type: "multiple",
+  options: ["ラッダイト運動", "チャーチスト運動", "春闘", "ワークシェアリング"],
+  correct: [0, 1],
+  note: ""
+}
+
+section: "3. 明治時代の日本"
+
+{
+  question: "明治時代に過酷な労働を強いられた例は何か。",
+  type: "single",
+  options: ["紡績工場の女工", "公務員", "地主", "財閥の幹部"],
+  correct: 0,
+  note: "紡績工場の女工"
+}
+
+{
+  question: "日本ではいつ頃から労働運動がはじまったか。",
+  type: "single",
+  options: ["明治期後半", "江戸時代", "戦後すぐ", "平成時代"],
+  correct: 0,
+  note: "明治期後半から"
+}
+
+{
+  question: "1925年の労働運動弾圧法を何というか。",
+  type: "single",
+  options: ["治安維持法", "労働組合法", "労働基準法", "最低賃金法"],
+  correct: 0,
+  note: "治安維持法"
+}
+
+{
+  question: "治安維持法はいつ制定されたか（西暦）。",
+  type: "input",
+  correct: "1925",
+  note: ""
+}
+
+{
+  question: "治安維持法は第二次世界大戦後に廃止された。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。明治期の紡績工場では[[1]]が過酷な労働を強いられた。",
+  type: "fill",
+  blanks: {"1": "女工"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。政府は治安警察法や[[1]]法で労働運動を弾圧した。",
+  type: "fill",
+  blanks: {"1": "治安維持"},
+  note: ""
+}
