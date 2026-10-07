@@ -1,0 +1,113 @@
+// ========================================
+title: "契約 総合"
+description: "契約の成立・意思表示・消費者保護の総合一問一答。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "総合"
+
+{
+  question: "当事者の意思表示の合致によって成立する法律行為を何というか。",
+  type: "input",
+  correct: "契約",
+  note: ""
+}
+
+{
+  question: "契約成立に必要な二つの意思表示は何か。",
+  type: "input",
+  correct: "申込みと承諾",
+  note: ""
+}
+
+{
+  question: "契約自由の原則は無制限である。",
+  type: "truefalse",
+  correct: false,
+  note: ""
+}
+
+{
+  question: "通謀虚偽表示の効果は原則無効である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "詐欺による意思表示は取消しうる。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "双方が対価的債務を負う契約を何というか。",
+  type: "input",
+  correct: "双務契約",
+  note: ""
+}
+
+{
+  question: "債務不履行の三類型を挙げよ。",
+  type: "input",
+  correct: "履行遅滞・履行不能・不完全履行",
+  note: ""
+}
+
+{
+  question: "公序良俗に反する法律行為の効力は何か。",
+  type: "input",
+  correct: "無効",
+  note: ""
+}
+
+{
+  question: "訪問販売のクーリングオフ期間は原則何日か。",
+  type: "input",
+  correct: "8日",
+  note: ""
+}
+
+{
+  question: "消費者契約法で事業者の不実告知があった場合の消費者の権利は何か。",
+  type: "input",
+  correct: "取消し",
+  note: ""
+}
+
+{
+  question: "製造物責任法の責任の性質は何か。",
+  type: "input",
+  correct: "無過失責任",
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。消費者と事業者の情報格差を情報の[[1]]という。",
+  type: "fill",
+  blanks: {"1": "非対称性"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。一定期間無条件に契約解除できる制度を[[1]]という。",
+  type: "fill",
+  blanks: {"1": "クーリングオフ"},
+  note: ""
+}
+
+{
+  question: "消費者庁設置年は西暦何年か。",
+  type: "input",
+  correct: "2009",
+  note: ""
+}
+
+{
+  question: "同時履行の抗弁権とは何か。",
+  type: "input",
+  correct: "双務契約で相手方が履行するまで自己の履行を拒める権利",
+  note: ""
+}

@@ -1,0 +1,113 @@
+// ========================================
+title: "司法 総合"
+description: "司法権・裁判所・裁判員制度・違憲審査の総合一問一答。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "総合"
+
+{
+  question: "具体的な争訟について法を適用し宣言する国家作用を何というか。",
+  type: "input",
+  correct: "司法",
+  note: ""
+}
+
+{
+  question: "日本の裁判所の頂点は何か。",
+  type: "input",
+  correct: "最高裁判所",
+  note: ""
+}
+
+{
+  question: "最高裁の裁判官は長官1名と判事何名か。",
+  type: "input",
+  correct: "14",
+  note: ""
+}
+
+{
+  question: "三審制の意義は何か。",
+  type: "input",
+  correct: "裁判の慎重・公正と誤判の救済",
+  note: ""
+}
+
+{
+  question: "裁判官は良心に従い独立して職権を行う。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "最高裁は憲法適合性に関する終審裁判所である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "日本の違憲審査制は付随的審査制である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "裁判員制度が導入された年は西暦何年か。",
+  type: "input",
+  correct: "2009",
+  note: ""
+}
+
+{
+  question: "裁判員の人数は原則何人か。",
+  type: "input",
+  correct: "6",
+  note: ""
+}
+
+{
+  question: "検察審査会の役割は何か。",
+  type: "input",
+  correct: "検察官の不起訴処分の当否を審査する",
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。裁判官は[[1]]に従い独立して職権を行う。",
+  type: "fill",
+  blanks: {"1": "良心"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。国民が司法に参加する制度の一つに[[1]]制度がある。",
+  type: "fill",
+  blanks: {"1": "裁判員"},
+  note: ""
+}
+
+{
+  question: "統治行為論とは何か。",
+  type: "input",
+  correct: "高度に政治的な国家行為は司法審査の対象外とする理論",
+  note: ""
+}
+
+{
+  question: "最高裁長官の任命は誰の指名に基づくか。",
+  type: "input",
+  correct: "内閣",
+  note: ""
+}
+
+{
+  question: "裁判員の守秘義務違反には罰則がある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
