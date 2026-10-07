@@ -1,0 +1,152 @@
+// ========================================
+title: "社会規範と法 総合"
+description: "法の意義・法の支配・権利義務・人権の総合一問一答。入力式・選択式混在。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "総合確認"
+
+{
+  question: "国家の強制力を伴う社会規範を何というか。",
+  type: "input",
+  correct: "法",
+  note: ""
+}
+
+{
+  question: "法と道徳の分離を主張する立場を何というか。",
+  type: "single",
+  options: ["法実証主義", "自然法論", "リアリズム法学", "批判法学"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "権力者をも法が拘束する原則を何というか。",
+  type: "input",
+  correct: "法の支配",
+  note: ""
+}
+
+{
+  question: "憲法によって国家権力を制限する考え方を何というか。",
+  type: "input",
+  correct: "立憲主義",
+  note: ""
+}
+
+{
+  question: "立法・行政・司法を分離する仕組みを何というか。",
+  type: "input",
+  correct: "権力分立",
+  note: ""
+}
+
+{
+  question: "個人間の権利義務を規律する法を何というか。",
+  type: "single",
+  options: ["私法", "公法", "国際法", "刑法"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "国家と個人の関係を規律する法を何というか。",
+  type: "single",
+  options: ["公法", "私法", "商法", "家族法"],
+  correct: 0,
+  note: ""
+}
+
+{
+  question: "基本的人権の三大分類は自由権・社会権・何か。",
+  type: "input",
+  correct: "参政権",
+  note: ""
+}
+
+{
+  question: "憲法25条が保障する権利を何というか。",
+  type: "input",
+  correct: "生存権",
+  note: ""
+}
+
+{
+  question: "人権を制限しうる根拠として憲法が定める概念は何か。",
+  type: "input",
+  correct: "公共の福祉",
+  note: ""
+}
+
+{
+  question: "私生活をみだりに公開されない権利を何というか。",
+  type: "input",
+  correct: "プライバシー権",
+  note: ""
+}
+
+{
+  question: "憲法の最高法規性を定める条文は第何条か（数字）。",
+  type: "input",
+  correct: "98",
+  note: ""
+}
+
+{
+  question: "日本の違憲審査制は付随的審査制である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "検閲は憲法で禁止されている。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "外国人は性質上可能な人権を享有する。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。法の支配の対概念は[[1]]である。",
+  type: "fill",
+  blanks: {"1": "人治"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。モンテスキューの著書は『[[1]]の精神』である。",
+  type: "fill",
+  blanks: {"1": "法"},
+  note: ""
+}
+
+{
+  question: "世界人権宣言が採択された年（西暦）を答えよ。",
+  type: "input",
+  correct: "1948",
+  note: ""
+}
+
+{
+  question: "ラートブルフの公式の要点を一言で述べよ。",
+  type: "input",
+  correct: "著しく正義に反する実定法は効力を失う",
+  note: ""
+}
+
+{
+  question: "二重の基準論では、精神的自由の制限はどのように審査されるか。",
+  type: "single",
+  options: ["厳格に審査される", "緩やかに審査される", "審査されない", "常に合憲"],
+  correct: 0,
+  note: ""
+}
