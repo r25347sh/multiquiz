@@ -1,0 +1,159 @@
+// ========================================
+title: "日本経済の変遷① 戦後復興と民主化"
+description: "GHQ民主化・農地改革・財閥解体・傾斜生産・ドッジライン・シャウプ勧告・朝鮮特需。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 戦後の背景とGHQ"
+
+{
+  question: "第二次世界大戦後、荒廃した日本の経済復興を援助した主な国はどこか。",
+  type: "single",
+  options: ["アメリカ", "ソ連", "中国", "イギリス"],
+  correct: 0,
+  note: "アメリカ"
+}
+
+{
+  question: "連合国軍総司令部の略称を答えよ。",
+  type: "input",
+  correct: "GHQ",
+  note: ""
+}
+
+{
+  question: "GHQは日本で民主化政策を推進した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "2. 民主化政策"
+
+{
+  question: "地主・小作関係を解体した改革を何というか。",
+  type: "single",
+  options: ["農地改革", "財閥解体", "傾斜生産方式", "ドッジ・ライン"],
+  correct: 0,
+  note: "農地改革"
+}
+
+{
+  question: "大企業を分割し寡占を崩した政策を何というか。",
+  type: "single",
+  options: ["財閥解体", "農地改革", "シャウプ勧告", "プラザ合意"],
+  correct: 0,
+  note: "財閥解体"
+}
+
+{
+  question: "独占を規制する法律は何か。",
+  type: "single",
+  options: ["独占禁止法", "労働組合法", "最低賃金法", "新食糧法"],
+  correct: 0,
+  note: "独占禁止法"
+}
+
+{
+  question: "労働三法により確立した権利を何というか。",
+  type: "single",
+  options: ["労働三権", "勤労権のみ", "参政権", "教育権"],
+  correct: 0,
+  note: "労働三権"
+}
+
+{
+  question: "次のうちGHQ民主化に含まれるものをすべて選べ。",
+  type: "multiple",
+  options: ["農地改革", "財閥解体", "労働組合の育成", "治安維持法の強化"],
+  correct: [0, 1, 2],
+  note: ""
+}
+
+section: "3. 復興政策"
+
+{
+  question: "石炭・鉄鋼・電力に集中投資した方式を何というか。",
+  type: "single",
+  options: ["傾斜生産方式", "ドッジ・ライン", "シャウプ勧告", "プラザ合意"],
+  correct: 0,
+  note: "傾斜生産方式"
+}
+
+{
+  question: "傾斜生産の悪影響として進行したものは何か。",
+  type: "single",
+  options: ["インフレーション", "デフレーションのみ", "円高のみ", "スタグフレーションのみ"],
+  correct: 0,
+  note: "インフレ"
+}
+
+{
+  question: "1949年の超均衡予算政策を何というか。",
+  type: "single",
+  options: ["ドッジ・ライン", "傾斜生産方式", "朝鮮特需", "アベノミクス"],
+  correct: 0,
+  note: "ドッジ・ライン"
+}
+
+{
+  question: "ドッジが批判した経済を何と呼んだか。",
+  type: "single",
+  options: ["竹馬経済", "バブル経済", "二重構造", "失われた20年"],
+  correct: 0,
+  note: "竹馬経済"
+}
+
+{
+  question: "ドッジ・ラインの単一為替レートは1ドル＝何円か。",
+  type: "input",
+  correct: "360",
+  note: ""
+}
+
+{
+  question: "直接税中心の税制を勧告したのは誰か。",
+  type: "single",
+  options: ["シャウプ", "ドッジ", "ニクソン", "ケインズ"],
+  correct: 0,
+  note: "シャウプ勧告"
+}
+
+{
+  question: "シャウプ勧告は直接税中心主義を示した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "4. 朝鮮特需"
+
+{
+  question: "1950年の特別需要を何というか。",
+  type: "single",
+  options: ["朝鮮特需", "ベトナム特需のみ", "オリンピック景気", "いざなぎ景気"],
+  correct: 0,
+  note: "朝鮮特需"
+}
+
+{
+  question: "朝鮮特需のきっかけとなった戦争は何か。",
+  type: "input",
+  correct: "朝鮮戦争",
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。1949年の[[1]]・ラインで1ドル＝360円が確立した。",
+  type: "fill",
+  blanks: {"1": "ドッジ"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。[[1]]改革により地主・小作関係が解体された。",
+  type: "fill",
+  blanks: {"1": "農地"},
+  note: ""
+}
