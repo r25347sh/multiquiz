@@ -1,0 +1,229 @@
+// ========================================
+title: "労働者の権利② 労働基本権と労働法"
+description: "労働三法・日本国憲法の労働条項・労働三権・不当労働行為・労働時間など。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 労働の民主化と労働三法"
+
+{
+  question: "戦後、GHQ主導のもと掲げられた方針は何か。",
+  type: "single",
+  options: ["労働の民主化", "労働の弾圧", "労働時間の無制限化", "労働組合の禁止"],
+  correct: 0,
+  note: "労働の民主化"
+}
+
+{
+  question: "1945年の、自立的組合活動を保障する法律は何か。",
+  type: "single",
+  options: ["労働組合法", "労働関係調整法", "労働基準法", "最低賃金法"],
+  correct: 0,
+  note: "労働組合法"
+}
+
+{
+  question: "1946年の労使紛争調整法は何か。",
+  type: "single",
+  options: ["労働関係調整法", "労働組合法", "労働基準法", "男女雇用機会均等法"],
+  correct: 0,
+  note: "労働関係調整法"
+}
+
+{
+  question: "1947年の労働条件最低基準の法律は何か。",
+  type: "single",
+  options: ["労働基準法", "労働組合法", "労働関係調整法", "治安維持法"],
+  correct: 0,
+  note: "労働基準法"
+}
+
+{
+  question: "労働組合法・労働関係調整法・労働基準法をまとめて何と呼ぶか。",
+  type: "input",
+  correct: "労働三法",
+  note: ""
+}
+
+section: "2. 日本国憲法と労働三権"
+
+{
+  question: "憲法第27条が保障する権利は何か。",
+  type: "single",
+  options: ["勤労権", "団結権", "参政権", "財産権"],
+  correct: 0,
+  note: "勤労権"
+}
+
+{
+  question: "憲法第28条が保障する権利を何というか。",
+  type: "single",
+  options: ["労働三権", "教育を受ける権利", "生存権", "営業の自由"],
+  correct: 0,
+  note: "労働三権"
+}
+
+{
+  question: "労働組合をつくる権利を何というか。",
+  type: "single",
+  options: ["団結権", "団体交渉権", "団体行動権", "勤労権"],
+  correct: 0,
+  note: "団結権"
+}
+
+{
+  question: "使用者と交渉する権利を何というか。",
+  type: "single",
+  options: ["団体交渉権", "団結権", "団体行動権", "争議権のみ"],
+  correct: 0,
+  note: "団体交渉権"
+}
+
+{
+  question: "ストライキを行う権利を何というか。",
+  type: "single",
+  options: ["団体行動権", "団結権", "団体交渉権", "勤労権"],
+  correct: 0,
+  note: "団体行動権"
+}
+
+{
+  question: "次のうち労働三権に含まれるものをすべて選べ。",
+  type: "multiple",
+  options: ["団結権", "団体交渉権", "団体行動権", "勤労権"],
+  correct: [0, 1, 2],
+  note: ""
+}
+
+{
+  question: "正当なストライキについて民事上・刑事上の責任は問われない。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "3. 不当労働行為と調整"
+
+{
+  question: "労働組合に加入しないことを条件に雇用する契約を何というか。",
+  type: "single",
+  options: ["黄犬契約", "春闘", "労使協定", "裁量労働"],
+  correct: 0,
+  note: "黄犬契約"
+}
+
+{
+  question: "正当な理由なく団体交渉を拒否することは不当労働行為である。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "話し合いの場を提供する調整を何というか。",
+  type: "single",
+  options: ["斡旋", "調停", "仲裁", "ストライキ"],
+  correct: 0,
+  note: "斡旋"
+}
+
+{
+  question: "調停案を提示する調整を何というか。",
+  type: "single",
+  options: ["調停", "斡旋", "仲裁", "黄犬契約"],
+  correct: 0,
+  note: "調停"
+}
+
+{
+  question: "法的拘束力のある裁定を行う調整を何というか。",
+  type: "single",
+  options: ["仲裁", "斡旋", "調停", "団体交渉"],
+  correct: 0,
+  note: "仲裁"
+}
+
+{
+  question: "警察官・消防士・自衛官など争議権を持たない公務員がいる。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "4. 労働基準・賃金・労働時間"
+
+{
+  question: "原則の1日の労働時間は何時間か。",
+  type: "single",
+  options: ["8時間", "10時間", "6時間", "12時間"],
+  correct: 0,
+  note: "1日8時間"
+}
+
+{
+  question: "週の原則労働時間は何時間か。",
+  type: "input",
+  correct: "40",
+  note: ""
+}
+
+{
+  question: "週に何日以上の休日が必要か。",
+  type: "input",
+  correct: "1",
+  note: ""
+}
+
+{
+  question: "解雇の通知は原則何日前までか。",
+  type: "input",
+  correct: "30",
+  note: ""
+}
+
+{
+  question: "賃金は毎月何回以上支払う必要があるか。",
+  type: "input",
+  correct: "1",
+  note: ""
+}
+
+{
+  question: "賃金の最低基準を定める法律は何か。",
+  type: "single",
+  options: ["最低賃金法", "労働組合法", "労働関係調整法", "独占禁止法"],
+  correct: 0,
+  note: "最低賃金法"
+}
+
+{
+  question: "労働基準法の監督機関はどこか。",
+  type: "single",
+  options: ["労働基準監督署", "労働委員会", "裁判所のみ", "厚生労働省のみ"],
+  correct: 0,
+  note: "労働基準監督署"
+}
+
+{
+  question: "特定職に労働基準法を一律適用しない制度は何か。",
+  type: "single",
+  options: ["裁量労働制", "フレックスタイム制", "年功序列", "終身雇用"],
+  correct: 0,
+  note: "裁量労働制"
+}
+
+{
+  question: "出退社を自由にできる制度は何か。",
+  type: "single",
+  options: ["フレックスタイム制", "裁量労働制", "年俸制", "ワークシェアリング"],
+  correct: 0,
+  note: "フレックスタイム制"
+}
+
+{
+  question: "次の空欄を埋めよ。憲法第28条は[[1]]を保障する。",
+  type: "fill",
+  blanks: {"1": "労働三権"},
+  note: ""
+}

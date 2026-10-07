@@ -1,0 +1,187 @@
+// ========================================
+title: "労働者の権利③ 雇用形態と現代の労働"
+description: "日本的経営、非正規雇用、ワークライフバランス、ハラスメント・育児休業など。"
+points_default: 2
+shuffle_questions: true
+shuffle_options: true
+
+section: "1. 現代の労働環境"
+
+{
+  question: "仕事と生活の適正なバランスを実現する考え方を何というか。",
+  type: "single",
+  options: ["ワーク・ライフ・バランス", "過労死", "サービス残業", "年功序列"],
+  correct: 0,
+  note: "ワーク・ライフ・バランス"
+}
+
+{
+  question: "賃金が支払われない残業を何というか。",
+  type: "single",
+  options: ["サービス残業", "裁量労働", "春闘", "フレックスタイム"],
+  correct: 0,
+  note: "サービス残業"
+}
+
+{
+  question: "長時間労働などにより死亡する問題を何というか。",
+  type: "input",
+  correct: "過労死",
+  note: ""
+}
+
+{
+  question: "労働環境が劣悪な企業を俗に何と呼ぶか。",
+  type: "input",
+  correct: "ブラック企業",
+  note: ""
+}
+
+{
+  question: "日本の有給休暇の取得率は高い。",
+  type: "truefalse",
+  correct: false,
+  note: ""
+}
+
+{
+  question: "欧州に比べ日本の労働時間は長い傾向がある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "2. 日本的経営"
+
+{
+  question: "定年まで同じ会社に勤める慣行を何というか。",
+  type: "single",
+  options: ["終身雇用制", "成果主義", "年俸制", "非正規雇用"],
+  correct: 0,
+  note: "終身雇用制"
+}
+
+{
+  question: "賃金が勤続年数に応じて決まる仕組みを何というか。",
+  type: "single",
+  options: ["年功序列型賃金", "成果主義", "最低賃金", "黄犬契約"],
+  correct: 0,
+  note: "年功序列型賃金"
+}
+
+{
+  question: "企業ごとに組織される労働組合を何というか。",
+  type: "single",
+  options: ["企業別労働組合", "産業別労働組合のみ", "公務員組合のみ", "国際労働組合"],
+  correct: 0,
+  note: "企業別労働組合"
+}
+
+{
+  question: "同業種がいっせいに行う賃金交渉を何というか。",
+  type: "input",
+  correct: "春闘",
+  note: ""
+}
+
+{
+  question: "日本では職種を限定せず雇用し職場内教育で技能を習得する傾向がある。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "次のうち日本的経営の特徴をすべて選べ。",
+  type: "multiple",
+  options: ["終身雇用制", "年功序列型賃金", "企業別労働組合", "専門職種単位の短期雇用のみ"],
+  correct: [0, 1, 2],
+  note: ""
+}
+
+{
+  question: "労働時間を短縮し雇用を維持・創出する方策を何というか。",
+  type: "single",
+  options: ["ワークシェアリング", "サービス残業", "黄犬契約", "傾斜生産方式"],
+  correct: 0,
+  note: "ワークシェアリング"
+}
+
+section: "3. 非正規雇用と格差"
+
+{
+  question: "パート・派遣・契約社員などの雇用を何というか。",
+  type: "single",
+  options: ["非正規雇用", "終身雇用", "正規雇用のみ", "公務員雇用"],
+  correct: 0,
+  note: "非正規雇用"
+}
+
+{
+  question: "働いているのに貧困に近い生活を送る状態を何というか。",
+  type: "single",
+  options: ["ワーキングプア", "過労死", "春闘", "年功序列"],
+  correct: 0,
+  note: "ワーキングプア"
+}
+
+{
+  question: "バブル崩壊後、非正規雇用の割合は増加した。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+{
+  question: "非正規雇用は一般に低賃金で不安定になりやすい。",
+  type: "truefalse",
+  correct: true,
+  note: ""
+}
+
+section: "4. 職場の人権"
+
+{
+  question: "1986年施行の男女差別禁止法は何か。",
+  type: "single",
+  options: ["男女雇用機会均等法", "労働組合法", "最低賃金法", "治安維持法"],
+  correct: 0,
+  note: "男女雇用機会均等法"
+}
+
+{
+  question: "1997年改正で防止義務が強化されたハラスメントは何か。",
+  type: "single",
+  options: ["セクシャルハラスメント", "サービス残業", "春闘", "黄犬契約"],
+  correct: 0,
+  note: "セクシャルハラスメント"
+}
+
+{
+  question: "育児・介護のための休業を整備する法律の核となる概念は何か。",
+  type: "single",
+  options: ["育児・介護休業", "終身雇用", "年功序列", "傾斜生産"],
+  correct: 0,
+  note: "育児・介護休業法"
+}
+
+{
+  question: "経済連携協定の略称を答えよ。",
+  type: "input",
+  correct: "EPA",
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。仕事も生活も大切にする考え方を[[1]]という。",
+  type: "fill",
+  blanks: {"1": "ワーク・ライフ・バランス"},
+  note: ""
+}
+
+{
+  question: "次の空欄を埋めよ。働いても貧困に近い状態を[[1]]という。",
+  type: "fill",
+  blanks: {"1": "ワーキングプア"},
+  note: ""
+}
