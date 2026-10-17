@@ -1,0 +1,141 @@
+// ========================================
+// 一陸技 無線工学の基礎 — 過去問準拠レベル
+// 過渡現象・交流回路・計算問題
+// ========================================
+title: "【基礎③】過渡現象・交流計算（過去問準拠）"
+description: "一陸技本番に近い計算・概念問題。時定数・共振・複素インピーダンス。解説にLaTeX数式。"
+points_default: 5
+shuffle_questions: false
+shuffle_options: true
+
+section: "1. RC過渡現象"
+
+{
+  question: "抵抗 $R=10\,\mathrm{k}\Omega$、容量 $C=0.1\,\mathrm{\mu F}$ の直列RC回路を直流電源 $E=10\,\mathrm{V}$ で充電する。時定数 $\tau$ はいくらか。",
+  type: "single",
+  options: [
+    "$1\,\mathrm{ms}$",
+    "$10\,\mathrm{ms}$",
+    "$0.1\,\mathrm{ms}$",
+    "$100\,\mathrm{ms}$",
+    "$1\,\mathrm{s}$"
+  ],
+  correct: 0,
+  note: "$$\\tau = RC = 10\\times 10^{3} \\times 0.1\\times 10^{-6} = 10^{-3}\,\\mathrm{s} = 1\,\\mathrm{ms}$$\n\n充電時のコンデンサ電圧: $v_C(t)=E(1-e^{-t/\\tau})$\n$t=\\tau$ で約 $63\%$ に達する。"
+}
+
+{
+  question: "前問の回路で、$t=0$ でスイッチを閉じてから $t=3\,\mathrm{ms}$ 後のコンデンサ電圧 $v_C$ に最も近い値はどれか。",
+  type: "single",
+  options: [
+    "$9.5\,\mathrm{V}$",
+    "$6.3\,\mathrm{V}$",
+    "$3.7\,\mathrm{V}$",
+    "$1.0\,\mathrm{V}$",
+    "$10\,\mathrm{V}$"
+  ],
+  correct: 0,
+  note: "$$v_C(3\\times10^{-3}) = 10(1-e^{-3}) \\approx 10(1-0.0498) \\approx 9.50\,\\mathrm{V}$$\n\n$3\\tau$ で約 $95\%$ に達する。"
+}
+
+{
+  question: "RL直列回路（$R=100\,\Omega$, $L=0.5\,\mathrm{H}$）の時定数 $\tau$ はいくらか。",
+  type: "single",
+  options: [
+    "$5\,\mathrm{ms}$",
+    "$50\,\mathrm{ms}$",
+    "$0.5\,\mathrm{ms}$",
+    "$2\,\mathrm{ms}$",
+    "$20\,\mathrm{ms}$"
+  ],
+  correct: 0,
+  note: "$$\\tau = \\frac{L}{R} = \\frac{0.5}{100} = 0.005\,\\mathrm{s} = 5\,\\mathrm{ms}$$\n\n電流: $i(t)=\\frac{E}{R}(1-e^{-t/\\tau})$"
+}
+
+section: "2. 交流・共振"
+
+{
+  question: "直列RLC回路で $R=50\,\Omega$, $L=10\,\mathrm{mH}$, $C=0.1\,\mathrm{\mu F}$ のとき、共振角周波数 $\omega_0$ [rad/s] に最も近い値はどれか。",
+  type: "single",
+  options: [
+    "$3.16\\times 10^{4}$",
+    "$1.0\\times 10^{5}$",
+    "$3.16\\times 10^{5}$",
+    "$1.0\\times 10^{4}$",
+    "$6.28\\times 10^{4}$"
+  ],
+  correct: 0,
+  note: "$$\\omega_0 = \\frac{1}{\\sqrt{LC}} = \\frac{1}{\\sqrt{10\\times10^{-3}\\times 0.1\\times10^{-6}}} = \\frac{1}{\\sqrt{10^{-9}}} = 10^{4.5} \\approx 3.16\\times10^{4}\,\\mathrm{rad/s}$$\n\n共振周波数 $f_0=\\omega_0/(2\\pi)\\approx 5.0\,\\mathrm{kHz}$"
+}
+
+{
+  question: "直列共振時の回路のインピーダンスはどれか。",
+  type: "single",
+  options: [
+    "$R$（最小）",
+    "$\\infty$（最大）",
+    "$\\omega L$",
+    "$1/(\\omega C)$",
+    "$0$"
+  ],
+  correct: 0,
+  note: "直列共振: $X_L=X_C$ より虚数部が打ち消し、$Z=R$（最小）。\n電流最大。並列共振ではインピーダンスが最大になる点に注意。"
+}
+
+{
+  question: "複素インピーダンス $Z=30+j40\,\Omega$ のとき、インピーダンスの大きさ $|Z|$ はいくらか。",
+  type: "single",
+  options: [
+    "$50\,\Omega$",
+    "$70\,\Omega$",
+    "$10\,\Omega$",
+    "$35\,\Omega$",
+    "$1200\,\Omega$"
+  ],
+  correct: 0,
+  note: "$$|Z|=\\sqrt{R^2+X^2}=\\sqrt{30^2+40^2}=\\sqrt{900+1600}=\\sqrt{2500}=50\,\\Omega$$\n\n位相角 $\\theta=\\tan^{-1}(40/30)\\approx 53.1^\\circ$（誘導性）"
+}
+
+{
+  question: "実効値 $100\,\mathrm{V}$ の正弦波交流の最大値はいくらか。",
+  type: "single",
+  options: [
+    "$100\\sqrt{2}\,\\mathrm{V}$",
+    "$100\,\\mathrm{V}$",
+    "$50\\sqrt{2}\,\\mathrm{V}$",
+    "$200\,\\mathrm{V}$",
+    "$100/\\sqrt{2}\,\\mathrm{V}$"
+  ],
+  correct: 0,
+  note: "$$V_m = V_{\\mathrm{rms}}\\sqrt{2} = 100\\sqrt{2} \\approx 141\,\\mathrm{V}$$\n\n平均値（半波整流後の平均）は $2V_m/\\pi$。"
+}
+
+section: "3. 電力・その他"
+
+{
+  question: "力率 $\\cos\\phi=0.8$、有効電力 $P=800\,\mathrm{W}$ のとき、皮相電力 $S$ はいくらか。",
+  type: "single",
+  options: [
+    "$1000\,\\mathrm{VA}$",
+    "$640\,\\mathrm{VA}$",
+    "$800\,\\mathrm{VA}$",
+    "$1250\,\\mathrm{VA}$",
+    "$400\,\\mathrm{VA}$"
+  ],
+  correct: 0,
+  note: "$$S = \\frac{P}{\\cos\\phi} = \\frac{800}{0.8} = 1000\,\\mathrm{VA}$$\n\n無効電力 $Q=S\\sin\\phi=1000\\times0.6=600\,\\mathrm{var}$（$\\sin\\phi=0.6$）"
+}
+
+{
+  question: "次のうち正しいものをすべて選べ。",
+  type: "multiple",
+  options: [
+    "直列共振でインピーダンスは最小",
+    "並列共振でインピーダンスは最大",
+    "時定数 $\\tau=L/R$ はRL回路",
+    "時定数 $\\tau=RC$ はRC回路",
+    "共振条件は常に $R=0$"
+  ],
+  correct: [0, 1, 2, 3],
+  note: "共振は $X_L=X_C$ であり $R=0$ ではない。$R$ は共振時の $Z$ の値を決める。"
+}
