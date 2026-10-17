@@ -1,0 +1,111 @@
+// ========================================
+// 一陸技 無線工学A — 過去問準拠
+// ========================================
+title: "【工学A③】スーパーヘテロダイン・変調・リンク計算（過去問準拠）"
+description: "影像周波数・占有帯域・EIRP/PFDなど本番頻出計算。LaTeX解説付き。"
+points_default: 5
+shuffle_questions: false
+shuffle_options: true
+
+section: "1. スーパーヘテロダイン・影像周波数"
+
+{
+  question: "受信周波数 $f_R=2800\,\mathrm{kHz}$、中間周波数 $f_{IF}=455\,\mathrm{kHz}$、局部発振が受信周波数より高いとき、影像周波数 $f_{IM}$ はいくらか。",
+  type: "single",
+  options: [
+    "$3710\,\mathrm{kHz}$",
+    "$2345\,\mathrm{kHz}$",
+    "$3255\,\mathrm{kHz}$",
+    "$2800\,\mathrm{kHz}$",
+    "$910\,\mathrm{kHz}$"
+  ],
+  correct: 0,
+  note: "上側ヘテロダイン: $f_{LO}=f_R+f_{IF}$\n\n影像周波数:\n$$f_{IM}=f_{LO}+f_{IF}=f_R+2f_{IF}=2800+2\\times455=3710\,\\mathrm{kHz}$$\n\n（下側ヘテロダインの場合は $f_{IM}=f_R-2f_{IF}$）"
+}
+
+{
+  question: "$f_R=10.7\,\mathrm{MHz}$、$f_{IF}=455\,\mathrm{kHz}$、上側ヘテロダインのとき $f_{LO}$ はいくらか。",
+  type: "single",
+  options: [
+    "$11.155\,\mathrm{MHz}$",
+    "$10.245\,\mathrm{MHz}$",
+    "$10.7\,\mathrm{MHz}$",
+    "$9.79\,\mathrm{MHz}$",
+    "$11.61\,\mathrm{MHz}$"
+  ],
+  correct: 0,
+  note: "$$f_{LO}=f_R+f_{IF}=10.7+0.455=11.155\,\\mathrm{MHz}$$"
+}
+
+{
+  question: "影像妨害比を改善するために有効な手段として正しいものをすべて選べ。",
+  type: "multiple",
+  options: [
+    "高周波同調回路の選択度を上げる",
+    "中間周波数を高くする",
+    "二重スーパーヘテロダインにする",
+    "局部発振周波数を下げすぎる"
+  ],
+  correct: [0, 1, 2],
+  note: "$f_{IM}$ と $f_R$ の間隔は $2f_{IF}$。IFを高くすると影像が離れ、前置同調で除去しやすい。"
+}
+
+section: "2. 変調・帯域"
+
+{
+  question: "最大周波数偏移 $\\Delta f=75\,\mathrm{kHz}$、最高変調周波数 $f_m=15\,\mathrm{kHz}$ のFMの占有帯域幅をカーソンの法則で見積もると約いくらか。",
+  type: "single",
+  options: [
+    "$180\,\mathrm{kHz}$",
+    "$75\,\mathrm{kHz}$",
+    "$30\,\mathrm{kHz}$",
+    "$150\,\mathrm{kHz}$",
+    "$90\,\mathrm{kHz}$"
+  ],
+  correct: 0,
+  note: "カーソンの法則:\n$$B \\approx 2(\\Delta f + f_m) = 2(75+15)=180\,\\mathrm{kHz}$$\n\n放送FM（$\\Delta f=75\,\\mathrm{kHz}$）の標準的な見積もり。"
+}
+
+{
+  question: "AMで搬送波振幅 $A_c$、変調指数 $m=0.5$ のとき、上側波の振幅はいくらか。",
+  type: "single",
+  options: [
+    "$0.25 A_c$",
+    "$0.5 A_c$",
+    "$A_c$",
+    "$1.5 A_c$",
+    "$0$"
+  ],
+  correct: 0,
+  note: "両側波帯AMの各側波振幅 $= m A_c / 2$\n$$\\frac{0.5 A_c}{2}=0.25 A_c$$"
+}
+
+section: "3. リンク・電力"
+
+{
+  question: "送信電力 $P_t=100\,\mathrm{W}$、送信アンテナ利得 $G_t=10\,\mathrm{dBi}$ のとき、EIRPはいくらか。",
+  type: "single",
+  options: [
+    "$30\,\mathrm{dBW}$",
+    "$20\,\mathrm{dBW}$",
+    "$10\,\mathrm{dBW}$",
+    "$40\,\mathrm{dBW}$",
+    "$100\,\mathrm{dBW}$"
+  ],
+  correct: 0,
+  note: "$$P_t\\,[\\mathrm{dBW}]=10\\log_{10}100=20\,\\mathrm{dBW}$$\n$$\\mathrm{EIRP}=P_t+G_t=20+10=30\,\\mathrm{dBW}$$\n\n（$=1000\,\\mathrm{W}$ 相当）"
+}
+
+{
+  question: "自由空間で距離 $r$、周波数 $f$ のとき、自由空間損失 $L_{fs}$ の式として正しいものはどれか。",
+  type: "single",
+  options: [
+    "$L_{fs}=\\left(\\dfrac{4\\pi r}{\\lambda}\\right)^2$",
+    "$L_{fs}=\\dfrac{4\\pi r}{\\lambda}$",
+    "$L_{fs}=\\lambda/(4\\pi r)$",
+    "$L_{fs}=G_t G_r$",
+    "$L_{fs}=P_t/P_r$"
+  ],
+  correct: 0,
+  note: "フリスの伝達公式より:\n$$\\frac{P_r}{P_t}=G_t G_r \\left(\\frac{\\lambda}{4\\pi r}\\right)^2$$\n\n自由空間損失 $L_{fs}=(4\\pi r/\\lambda)^2$。dB表記: $L_{fs}[\\mathrm{dB}]=20\\log_{10}(4\\pi r/\\lambda)$"
+}
