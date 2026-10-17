@@ -1,0 +1,112 @@
+// ========================================
+// 一陸技 無線工学B — 過去問準拠
+// ========================================
+title: "【工学B③】アンテナ利得・実効面積・VSWR（過去問準拠）"
+description: "半波長ダイポール、実効面積、反射係数、フリスなど計算中心。LaTeX解説。"
+points_default: 5
+shuffle_questions: false
+shuffle_options: true
+
+section: "1. 利得と実効面積"
+
+{
+  question: "周波数 $f=300\,\mathrm{MHz}$（$\\lambda=1\,\mathrm{m}$）のとき、等方性アンテナの実効面積 $A_e$ はいくらか。",
+  type: "single",
+  options: [
+    "$\\dfrac{1}{4\\pi}\,\\mathrm{m}^2$",
+    "$1\,\\mathrm{m}^2$",
+    "$4\\pi\,\\mathrm{m}^2$",
+    "$\\dfrac{\\lambda^2}{2}$",
+    "$0$"
+  ],
+  correct: 0,
+  note: "等方性アンテナ（$G=1$）:\n$$A_e = \\frac{\\lambda^2}{4\\pi} = \\frac{1}{4\\pi}\,\\mathrm{m}^2$$\n\n一般に $A_e = \\dfrac{\\lambda^2}{4\\pi} G$"
+}
+
+{
+  question: "半波長ダイポールの指向性利得（理論値）に最も近いものはどれか。",
+  type: "single",
+  options: [
+    "$1.64$（約 $2.15\,\\mathrm{dBi}$）",
+    "$1.0$（$0\,\\mathrm{dBi}$）",
+    "$2.0$",
+    "$10$",
+    "$0.5$"
+  ],
+  correct: 0,
+  note: "半波長ダイポールの最大指向性利得 $\\approx 1.64$（$2.15\,\\mathrm{dBi}$）。\n放射抵抗 $\\approx 73\,\\Omega$。"
+}
+
+{
+  question: "利得 $G=10\,\\mathrm{dBi}=10$（真数）、$\\lambda=0.1\,\\mathrm{m}$ のアンテナの実効面積はいくらか。",
+  type: "single",
+  options: [
+    "$\\dfrac{0.01}{4\\pi}\\times10 \approx 7.96\\times10^{-3}\,\\mathrm{m}^2$",
+    "$0.1\,\\mathrm{m}^2$",
+    "$1\,\\mathrm{m}^2$",
+    "$\\dfrac{0.01}{4\\pi}$",
+    "$10\,\\mathrm{m}^2$"
+  ],
+  correct: 0,
+  note: "$$A_e=\\frac{\\lambda^2}{4\\pi}G=\\frac{0.01}{4\\pi}\\times10\\approx7.96\\times10^{-3}\,\\mathrm{m}^2$$"
+}
+
+section: "2. 給電線・VSWR"
+
+{
+  question: "特性インピーダンス $Z_0=50\,\Omega$、負荷 $Z_L=150\,\Omega$（純抵抗）のとき、反射係数 $\\Gamma$ の大きさはいくらか。",
+  type: "single",
+  options: [
+    "$0.5$",
+    "$1$",
+    "$0$",
+    "$3$",
+    "$0.25$"
+  ],
+  correct: 0,
+  note: "$$\\Gamma=\\frac{Z_L-Z_0}{Z_L+Z_0}=\\frac{150-50}{150+50}=\\frac{100}{200}=0.5$$"
+}
+
+{
+  question: "前問で VSWR はいくらか。",
+  type: "single",
+  options: [
+    "$3$",
+    "$2$",
+    "$1$",
+    "$0.5$",
+    "$\\infty$"
+  ],
+  correct: 0,
+  note: "$$\\mathrm{VSWR}=\\frac{1+|\\Gamma|}{1-|\\Gamma|}=\\frac{1+0.5}{1-0.5}=3$$"
+}
+
+{
+  question: "VSWR $=1$ の意味として正しいものはどれか。",
+  type: "single",
+  options: [
+    "完全整合（反射なし）",
+    "全反射",
+    "反射係数 $1$",
+    "負荷開放",
+    "負荷短絡"
+  ],
+  correct: 0,
+  note: "$\\mathrm{VSWR}=1 \\Leftrightarrow |\\Gamma|=0 \\Leftrightarrow$ 完全整合。"
+}
+
+section: "3. 伝搬"
+
+{
+  question: "見通し内伝搬でアンテナ高 $h\,\mathrm{[m]}$ のとき、近似的な電波地平線距離 $d\,\mathrm{[km]}$ の式としてよく用いられるのはどれか。",
+  type: "single",
+  options: [
+    "$d \\approx 4.12\\sqrt{h}$",
+    "$d = h$",
+    "$d = 2h$",
+    "$d = \\lambda h$",
+    "$d = 1/h$"
+  ],
+  correct: 0,
+  note: "標準大気屈折を考慮した近似:\n$$d\\,[\\mathrm{km}] \\approx 4.12\\sqrt{h\,[\\mathrm{m}]}$$\n\n例: $h=100\,\\mathrm{m}$ なら $d\\approx41\,\\mathrm{km}$。"
+}
